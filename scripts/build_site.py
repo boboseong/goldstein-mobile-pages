@@ -1,13 +1,33 @@
 import csv
 import json
+import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-DEFAULT_SOURCE_ROOT = REPO_ROOT.parent / "physics_TTS" / "Mechanics_Goldstein_Classical"
-TARGET_SECTION_RE = re.compile(r"^GM_1\.[0-3]_")
+TARGET_SECTION_RE = re.compile(r"^GM_1\.\d+_")
+
+
+def find_source_root():
+    env_root = os.environ.get("GOLDSTEIN_SOURCE_ROOT")
+    candidates = []
+    if env_root:
+        candidates.append(Path(env_root))
+    candidates.extend(
+        [
+            REPO_ROOT.parent / "Mechanics_Goldstein_Classical",
+            REPO_ROOT.parent.parent / "Mechanics_Goldstein_Classical",
+            REPO_ROOT.parent / "physics_TTS" / "Mechanics_Goldstein_Classical",
+        ]
+    )
+    for candidate in candidates:
+        if (candidate / "TextBook" / "manifest.tsv").exists():
+            return candidate
+    raise SystemExit(
+        "Source root not found. Set GOLDSTEIN_SOURCE_ROOT to Mechanics_Goldstein_Classical."
+    )
 
 
 def read_manifest(source_root: Path):
@@ -48,7 +68,7 @@ def file_version(path: Path):
 
 
 def section_id_from_dir(section_dir: Path):
-    match = re.match(r"^(GM_1\.[0-3])_", section_dir.name)
+    match = re.match(r"^(GM_1\.\d+)_", section_dir.name)
     if not match:
         raise ValueError(f"Not a target section directory: {section_dir}")
     return match.group(1)
@@ -102,16 +122,13 @@ def build_data(source_root: Path):
 
     return {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "source": "Mechanics_Goldstein_Classical 1.0-1.3, PDFs excluded",
+        "source": "Mechanics_Goldstein_Classical Chapter 1, PDFs excluded",
         "sections": sections,
     }
 
 
 def main():
-    source_root = DEFAULT_SOURCE_ROOT
-    if not source_root.exists():
-      raise SystemExit(f"Source root does not exist: {source_root}")
-
+    source_root = find_source_root()
     data = build_data(source_root)
     output_path = REPO_ROOT / "data" / "site-data.js"
     output_path.parent.mkdir(parents=True, exist_ok=True)

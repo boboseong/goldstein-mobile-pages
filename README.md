@@ -5,10 +5,7 @@ Static GitHub Pages reader for selected Korean translation and TTS script files 
 
 Included scope:
 
-- GM 1.0 Survey of the Elementary Principles
-- GM 1.1 Mechanics of a Particle
-- GM 1.2 Mechanics of a System of Particles
-- GM 1.3 Constraints
+- Goldstein Chapter 1, GM 1.0 through GM 1.8
 
 PDF files are intentionally excluded. The generated site contains only the selected
 translation Markdown and Korean TTS script Markdown content needed for mobile reading.
