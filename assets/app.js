@@ -1,14 +1,17 @@
 const siteData = window.GOLDSTEIN_SITE_DATA;
+const STORAGE_KEY = "goldstein-reader-state-v1";
 const params = new URLSearchParams(window.location.search);
-const requestedSection = params.get("section");
-const requestedKind = params.get("kind");
+const savedState = readSavedState();
+const requestedSection = params.get("section") ?? savedState.sectionId;
+const requestedKind = params.get("kind") ?? savedState.kind;
+const requestedEntry = params.get("entry") ?? savedState.entryId;
 
 const state = {
   sectionId: siteData.sections.some((section) => section.id === requestedSection)
     ? requestedSection
     : siteData.sections[0]?.id,
   kind: requestedKind === "tts" ? "tts" : "translation",
-  entryId: null,
+  entryId: requestedEntry ?? null,
   paragraphs: [],
   paragraphIndex: 0,
   utterance: null,
@@ -19,6 +22,14 @@ const state = {
   wakeLockStatus: "",
   wakeLockStatusKind: "",
 };
+
+function readSavedState() {
+  try {
+    return JSON.parse(window.localStorage.getItem(STORAGE_KEY)) ?? {};
+  } catch {
+    return {};
+  }
+}
 
 const els = {
   itemCount: document.getElementById("itemCount"),
@@ -67,6 +78,36 @@ function matchingEntryForKind(section, previousEntry, targetKind) {
   return entries.find((entry) => pairedEntryKey(entry) === previousKey) ?? entries[0] ?? null;
 }
 
+function persistReaderState() {
+  const payload = {
+    sectionId: state.sectionId,
+    kind: state.kind,
+    entryId: state.entryId,
+  };
+
+  try {
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(payload));
+  } catch {
+    // Storage can be disabled in private modes; URL state still keeps refresh stable.
+  }
+
+  const nextParams = new URLSearchParams(window.location.search);
+  nextParams.set("section", payload.sectionId);
+  nextParams.set("kind", payload.kind);
+  if (payload.entryId) {
+    nextParams.set("entry", payload.entryId);
+  } else {
+    nextParams.delete("entry");
+  }
+
+  const nextUrl = `${window.location.pathname}?${nextParams.toString()}${window.location.hash}`;
+  try {
+    window.history.replaceState(null, "", nextUrl);
+  } catch {
+    // Some embedded/file contexts can reject history updates.
+  }
+}
+
 function sectionMatches(section, query) {
   if (!query) return true;
   const haystack = [
@@ -106,10 +147,12 @@ function renderSections() {
   });
 }
 
-function setKindWithFallback(kind) {
+function setKindWithFallback(kind, preferredEntryId = state.entryId) {
   const section = currentSection();
   state.kind = entriesFor(section, kind).length ? kind : "translation";
-  state.entryId = entriesFor(section, state.kind)[0]?.id ?? null;
+  const entries = entriesFor(section, state.kind);
+  state.entryId =
+    entries.find((entry) => entry.id === preferredEntryId)?.id ?? entries[0]?.id ?? null;
 }
 
 function renderHeader() {
@@ -350,6 +393,7 @@ function render() {
   renderTabs();
   renderEntrySelect();
   renderReader();
+  persistReaderState();
   if (window.lucide) lucide.createIcons();
 }
 
@@ -370,6 +414,7 @@ els.entrySelect.addEventListener("change", async () => {
   state.entryId = els.entrySelect.value;
   state.paragraphIndex = 0;
   renderReader();
+  persistReaderState();
 });
 
 els.playButton.addEventListener("click", async () => {
