@@ -14,6 +14,10 @@ const state = {
   utterance: null,
   paused: false,
   voices: [],
+  wakeLock: null,
+  wakeLockWanted: false,
+  wakeLockStatus: "",
+  wakeLockStatusKind: "",
 };
 
 const els = {
@@ -29,6 +33,7 @@ const els = {
   ttsPlayer: document.getElementById("ttsPlayer"),
   playerTitle: document.getElementById("playerTitle"),
   playerProgress: document.getElementById("playerProgress"),
+  wakeLockStatus: document.getElementById("wakeLockStatus"),
   playButton: document.getElementById("playButton"),
   pauseButton: document.getElementById("pauseButton"),
   stopButton: document.getElementById("stopButton"),
@@ -79,8 +84,8 @@ function renderSections() {
       </span>
       <span class="section-name">${section.title}</span>
     `;
-    button.addEventListener("click", () => {
-      stopSpeech();
+    button.addEventListener("click", async () => {
+      await stopSpeech();
       state.sectionId = section.id;
       setKindWithFallback(state.kind);
       render();
@@ -195,10 +200,57 @@ function selectKoreanVoice() {
   );
 }
 
-function speakFromCurrent() {
+function setWakeLockStatus(message, kind = "") {
+  state.wakeLockStatus = message;
+  state.wakeLockStatusKind = kind;
+  updatePlayer();
+}
+
+async function requestScreenWakeLock() {
+  state.wakeLockWanted = true;
+  if (!("wakeLock" in navigator)) {
+    setWakeLockStatus("화면 유지 미지원: 기기 자동 잠금을 꺼주세요.", "warning");
+    return;
+  }
+  if (state.wakeLock) {
+    setWakeLockStatus("화면 유지 켜짐", "active");
+    return;
+  }
+
+  try {
+    state.wakeLock = await navigator.wakeLock.request("screen");
+    state.wakeLock.addEventListener("release", () => {
+      state.wakeLock = null;
+      if (state.wakeLockWanted) {
+        setWakeLockStatus("화면 유지 대기 중", "warning");
+      }
+    });
+    setWakeLockStatus("화면 유지 켜짐", "active");
+  } catch (error) {
+    const reason = error?.name ? ` (${error.name})` : "";
+    setWakeLockStatus(`화면 유지 실패${reason}`, "warning");
+  }
+}
+
+async function releaseScreenWakeLock() {
+  state.wakeLockWanted = false;
+  const lock = state.wakeLock;
+  state.wakeLock = null;
+  if (lock) {
+    try {
+      await lock.release();
+    } catch {
+      // The browser may have already released the lock during visibility changes.
+    }
+  }
+  setWakeLockStatus("", "");
+}
+
+async function speakFromCurrent() {
   const speech = window.speechSynthesis;
   if (!speech || state.kind !== "tts" || !state.paragraphs.length) return;
 
+  await requestScreenWakeLock();
   speech.cancel();
   state.paused = false;
 
@@ -214,33 +266,40 @@ function speakFromCurrent() {
       state.paragraphIndex += 1;
       speakFromCurrent();
     } else {
+      releaseScreenWakeLock();
       updatePlayer();
     }
   };
 
-  state.utterance.onerror = () => updatePlayer();
+  state.utterance.onerror = () => {
+    releaseScreenWakeLock();
+    updatePlayer();
+  };
   speech.speak(state.utterance);
   updatePlayer();
 }
 
-function pauseSpeech() {
+async function pauseSpeech() {
   const speech = window.speechSynthesis;
   if (!speech) return;
   if (speech.paused) {
     speech.resume();
     state.paused = false;
+    await requestScreenWakeLock();
   } else if (speech.speaking) {
     speech.pause();
     state.paused = true;
+    await releaseScreenWakeLock();
   }
   updatePlayer();
 }
 
-function stopSpeech() {
+async function stopSpeech() {
   const speech = window.speechSynthesis;
   if (speech) speech.cancel();
   state.paused = false;
   state.utterance = null;
+  await releaseScreenWakeLock();
   updatePlayer();
 }
 
@@ -253,6 +312,8 @@ function updatePlayer() {
     state.kind === "tts" && state.paragraphs.length
       ? `문단 ${Math.min(state.paragraphIndex + 1, state.paragraphs.length)} / ${state.paragraphs.length}`
       : "";
+  els.wakeLockStatus.textContent = state.kind === "tts" ? state.wakeLockStatus : "";
+  els.wakeLockStatus.className = state.wakeLockStatusKind;
 
   els.readerSurface.querySelectorAll(".tts-paragraph").forEach((paragraph) => {
     paragraph.classList.toggle("active", Number(paragraph.dataset.index) === state.paragraphIndex);
@@ -283,33 +344,45 @@ function render() {
 els.searchInput.addEventListener("input", renderSections);
 
 els.tabs.forEach((tab) => {
-  tab.addEventListener("click", () => {
-    stopSpeech();
+  tab.addEventListener("click", async () => {
+    await stopSpeech();
     state.kind = tab.dataset.kind;
     state.entryId = entriesFor(currentSection(), state.kind)[0]?.id ?? null;
     render();
   });
 });
 
-els.entrySelect.addEventListener("change", () => {
-  stopSpeech();
+els.entrySelect.addEventListener("change", async () => {
+  await stopSpeech();
   state.entryId = els.entrySelect.value;
   state.paragraphIndex = 0;
   renderReader();
 });
 
-els.playButton.addEventListener("click", () => {
+els.playButton.addEventListener("click", async () => {
   if (window.speechSynthesis?.paused) {
     window.speechSynthesis.resume();
     state.paused = false;
+    await requestScreenWakeLock();
     updatePlayer();
     return;
   }
-  speakFromCurrent();
+  await speakFromCurrent();
 });
 
 els.pauseButton.addEventListener("click", pauseSpeech);
 els.stopButton.addEventListener("click", stopSpeech);
+
+document.addEventListener("visibilitychange", () => {
+  if (
+    document.visibilityState === "visible" &&
+    state.wakeLockWanted &&
+    state.kind === "tts" &&
+    !state.paused
+  ) {
+    requestScreenWakeLock();
+  }
+});
 
 els.rateInput.addEventListener("input", () => {
   els.rateOutput.textContent = `${Number(els.rateInput.value).toFixed(1)}x`;

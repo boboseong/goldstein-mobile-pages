@@ -357,9 +357,18 @@ button {
   font-weight: 760;
 }
 
-#playerProgress {
+#playerProgress,
+#wakeLockStatus {
   color: var(--muted);
   font-size: 0.84rem;
+}
+
+#wakeLockStatus.active {
+  color: var(--accent-strong);
+}
+
+#wakeLockStatus.warning {
+  color: #8a5b00;
 }
 
 .player-controls {
