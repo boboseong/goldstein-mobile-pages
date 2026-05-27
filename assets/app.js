@@ -55,6 +55,18 @@ function currentEntry() {
   return entries.find((entry) => entry.id === state.entryId) ?? entries[0] ?? null;
 }
 
+function pairedEntryKey(entry) {
+  return entry?.fileName
+    ?.replace(/_Korean_Translation\.md$/, "")
+    .replace(/_KR_TTS\.md$/, "");
+}
+
+function matchingEntryForKind(section, previousEntry, targetKind) {
+  const entries = entriesFor(section, targetKind);
+  const previousKey = pairedEntryKey(previousEntry);
+  return entries.find((entry) => pairedEntryKey(entry) === previousKey) ?? entries[0] ?? null;
+}
+
 function sectionMatches(section, query) {
   if (!query) return true;
   const haystack = [
@@ -345,9 +357,10 @@ els.searchInput.addEventListener("input", renderSections);
 
 els.tabs.forEach((tab) => {
   tab.addEventListener("click", async () => {
+    const previousEntry = currentEntry();
     await stopSpeech();
     state.kind = tab.dataset.kind;
-    state.entryId = entriesFor(currentSection(), state.kind)[0]?.id ?? null;
+    state.entryId = matchingEntryForKind(currentSection(), previousEntry, state.kind)?.id ?? null;
     render();
   });
 });
