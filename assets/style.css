@@ -257,6 +257,57 @@ button {
   padding: 0 12px;
 }
 
+.page-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  width: min(100%, 920px);
+  margin: 0 0 16px;
+}
+
+.page-nav-bottom {
+  margin: 16px 0 0;
+}
+
+.page-nav-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  min-width: 112px;
+  min-height: 42px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--panel);
+  color: var(--accent-strong);
+  padding: 0 14px;
+  font-weight: 760;
+}
+
+.page-nav-button:hover:not(:disabled) {
+  background: var(--accent-soft);
+}
+
+.page-nav-button:disabled {
+  cursor: not-allowed;
+  background: #eef1ef;
+  color: var(--muted);
+  opacity: 0.62;
+}
+
+.page-nav-button svg {
+  width: 18px;
+  height: 18px;
+}
+
+.page-position {
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.88rem;
+  font-weight: 760;
+}
+
 .reader-surface {
   width: min(100%, 920px);
   min-height: 60vh;
@@ -288,6 +339,32 @@ button {
   overflow-x: auto;
   overflow-y: hidden;
   padding: 10px 0;
+}
+
+.equation-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 1.1em;
+}
+
+.equation-math {
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.reader-surface .equation-row .katex-display {
+  margin: 0;
+  overflow: visible;
+}
+
+.equation-number {
+  color: var(--muted);
+  font-size: 1.05rem;
+  line-height: 1.82;
+  white-space: nowrap;
 }
 
 .reader-surface blockquote {
@@ -464,6 +541,21 @@ button {
     gap: 8px;
   }
 
+  .page-nav {
+    gap: 8px;
+  }
+
+  .page-nav-button {
+    flex: 1 1 0;
+    min-width: 0;
+    padding: 0 10px;
+  }
+
+  .page-position {
+    min-width: 58px;
+    text-align: center;
+  }
+
   .reader-surface {
     min-height: 52vh;
     padding: 20px 16px;
@@ -471,6 +563,15 @@ button {
 
   .reader-surface p,
   .reader-surface li {
+    font-size: 1rem;
+    line-height: 1.78;
+  }
+
+  .equation-row {
+    gap: 8px;
+  }
+
+  .equation-number {
     font-size: 1rem;
     line-height: 1.78;
   }

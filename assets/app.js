@@ -40,6 +40,8 @@ const els = {
   sectionNote: document.getElementById("sectionNote"),
   entrySelect: document.getElementById("entrySelect"),
   readerSurface: document.getElementById("readerSurface"),
+  pageNavButtons: Array.from(document.querySelectorAll("[data-page-nav]")),
+  pagePositions: Array.from(document.querySelectorAll("[data-page-position]")),
   tabs: Array.from(document.querySelectorAll(".tab-button")),
   ttsPlayer: document.getElementById("ttsPlayer"),
   playerTitle: document.getElementById("playerTitle"),
@@ -76,6 +78,18 @@ function matchingEntryForKind(section, previousEntry, targetKind) {
   const entries = entriesFor(section, targetKind);
   const previousKey = pairedEntryKey(previousEntry);
   return entries.find((entry) => pairedEntryKey(entry) === previousKey) ?? entries[0] ?? null;
+}
+
+function orderedEntriesForKind(kind = state.kind) {
+  return siteData.sections.flatMap((section) =>
+    entriesFor(section, kind).map((entry) => ({ section, entry }))
+  );
+}
+
+function currentOrderedEntryIndex(entries = orderedEntriesForKind()) {
+  return entries.findIndex(
+    ({ section, entry }) => section.id === state.sectionId && entry.id === state.entryId
+  );
 }
 
 function persistReaderState() {
@@ -187,6 +201,26 @@ function renderEntrySelect() {
   els.entrySelect.value = state.entryId ?? "";
 }
 
+function renderPageNav() {
+  const entries = orderedEntriesForKind();
+  const currentIndex = currentOrderedEntryIndex(entries);
+  const pageText = currentIndex >= 0 ? `${currentIndex + 1} / ${entries.length}` : "0 / 0";
+
+  els.pagePositions.forEach((position) => {
+    position.textContent = pageText;
+  });
+
+  els.pageNavButtons.forEach((button) => {
+    const direction = Number(button.dataset.pageNav);
+    const target = entries[currentIndex + direction];
+    const actionLabel = direction < 0 ? "이전 페이지" : "다음 페이지";
+
+    button.disabled = !target;
+    button.title = target ? `${actionLabel}: ${target.entry.label}` : `${actionLabel} 없음`;
+    button.setAttribute("aria-label", button.title);
+  });
+}
+
 function renderMarkdown(entry) {
   if (!entry) {
     els.readerSurface.innerHTML = `<p class="reader-empty">표시할 TR 파일이 없습니다.</p>`;
@@ -209,6 +243,7 @@ function renderMarkdown(entry) {
     ],
     throwOnError: false,
   });
+  alignEquationNumbers(els.readerSurface);
 }
 
 function protectMath(content) {
@@ -258,6 +293,82 @@ function restoreMathPlaceholders(root, math) {
   }
 
   visit(root);
+}
+
+function nextElementSiblingOutsideSelf(node, boundary) {
+  let current = node;
+
+  while (current && current !== boundary) {
+    if (current.nextElementSibling) return current.nextElementSibling;
+    current = current.parentElement;
+  }
+
+  return null;
+}
+
+function trimLeadingWhitespace(node) {
+  const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+  const firstText = walker.nextNode();
+
+  if (firstText) {
+    firstText.nodeValue = firstText.nodeValue.replace(/^\s+/, "");
+  }
+}
+
+function removeTextPrefix(node, length) {
+  let remaining = length;
+  const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT);
+  let textNode = walker.nextNode();
+
+  while (textNode && remaining > 0) {
+    const textLength = textNode.nodeValue.length;
+
+    if (textLength <= remaining) {
+      const consumedNode = textNode;
+      textNode = walker.nextNode();
+      remaining -= textLength;
+      consumedNode.nodeValue = "";
+    } else {
+      textNode.nodeValue = textNode.nodeValue.slice(remaining);
+      remaining = 0;
+    }
+  }
+
+  trimLeadingWhitespace(node);
+}
+
+function alignEquationNumbers(root) {
+  const equationNumberPattern = /^\s*(?:[—–-]\s*)?\((1\.\d+[a-z]?)\)\s*/;
+
+  Array.from(root.querySelectorAll(".katex-display")).forEach((display) => {
+    const mathBlock = display.closest("p") ?? display.parentElement;
+    const numberBlock = mathBlock ? nextElementSiblingOutsideSelf(mathBlock, root) : null;
+    const numberMatch = numberBlock?.textContent?.match(equationNumberPattern);
+
+    if (!mathBlock || !numberBlock || !numberMatch) return;
+
+    const row = document.createElement("div");
+    const mathCell = document.createElement("div");
+    const number = document.createElement("span");
+
+    row.className = "equation-row";
+    mathCell.className = "equation-math";
+    number.className = "equation-number";
+    number.textContent = `(${numberMatch[1]})`;
+
+    mathBlock.parentElement.insertBefore(row, mathBlock);
+    mathCell.appendChild(display);
+    row.append(mathCell, number);
+
+    if (!mathBlock.textContent.trim()) {
+      mathBlock.remove();
+    }
+
+    removeTextPrefix(numberBlock, numberMatch[0].length);
+    if (!numberBlock.textContent.trim()) {
+      numberBlock.remove();
+    }
+  });
 }
 
 function splitParagraphs(content) {
@@ -443,6 +554,7 @@ function render() {
   renderHeader();
   renderTabs();
   renderEntrySelect();
+  renderPageNav();
   renderReader();
   persistReaderState();
   if (window.lucide) lucide.createIcons();
@@ -464,8 +576,26 @@ els.entrySelect.addEventListener("change", async () => {
   await stopSpeech();
   state.entryId = els.entrySelect.value;
   state.paragraphIndex = 0;
+  renderPageNav();
   renderReader();
   persistReaderState();
+});
+
+els.pageNavButtons.forEach((button) => {
+  button.addEventListener("click", async () => {
+    const entries = orderedEntriesForKind();
+    const currentIndex = currentOrderedEntryIndex(entries);
+    const target = entries[currentIndex + Number(button.dataset.pageNav)];
+
+    if (!target) return;
+
+    await stopSpeech();
+    state.sectionId = target.section.id;
+    state.entryId = target.entry.id;
+    state.paragraphIndex = 0;
+    render();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 els.playButton.addEventListener("click", async () => {
