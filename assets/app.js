@@ -193,11 +193,13 @@ function renderMarkdown(entry) {
     return;
   }
 
-  const html = marked.parse(entry.content, {
+  const protectedContent = protectMath(entry.content);
+  const html = marked.parse(protectedContent.content, {
     breaks: false,
     gfm: true,
   });
   els.readerSurface.innerHTML = DOMPurify.sanitize(html);
+  restoreMathPlaceholders(els.readerSurface, protectedContent.math);
   renderMathInElement(els.readerSurface, {
     delimiters: [
       { left: "$$", right: "$$", display: true },
@@ -207,6 +209,55 @@ function renderMarkdown(entry) {
     ],
     throwOnError: false,
   });
+}
+
+function protectMath(content) {
+  const math = [];
+  const protectedContent = content.replace(
+    /(\$\$[\s\S]+?\$\$|\\\[[\s\S]+?\\\]|\\\([\s\S]+?\\\)|\$[^\n$]+?\$)/g,
+    (match) => {
+      const token = `@@GOLDSTEIN_MATH_${math.length}@@`;
+      math.push(match);
+      return token;
+    }
+  );
+
+  return { content: protectedContent, math };
+}
+
+function restoreMathPlaceholders(root, math) {
+  const tokenPattern = /@@GOLDSTEIN_MATH_(\d+)@@/g;
+
+  function visit(node) {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const text = node.nodeValue;
+      if (!text || !text.includes("@@GOLDSTEIN_MATH_")) return;
+
+      const fragment = document.createDocumentFragment();
+      let lastIndex = 0;
+      let match;
+
+      tokenPattern.lastIndex = 0;
+      while ((match = tokenPattern.exec(text))) {
+        if (match.index > lastIndex) {
+          fragment.appendChild(document.createTextNode(text.slice(lastIndex, match.index)));
+        }
+        fragment.appendChild(document.createTextNode(math[Number(match[1])] ?? match[0]));
+        lastIndex = match.index + match[0].length;
+      }
+
+      if (lastIndex < text.length) {
+        fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+      }
+
+      node.parentNode.replaceChild(fragment, node);
+      return;
+    }
+
+    Array.from(node.childNodes).forEach(visit);
+  }
+
+  visit(root);
 }
 
 function splitParagraphs(content) {
