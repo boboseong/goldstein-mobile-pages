@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="310" height="250" viewBox="0 0 310 250"><title>Figure 1.6 primitive reconstruction</title><rect width="310" height="250" fill="#fff"/><defs><style>.axis{stroke:#111111;stroke-width:1.05;fill:none;stroke-linecap:square}.line{stroke:#111111;stroke-width:2.0;fill:none;stroke-linecap:square;stroke-linejoin:miter}.thin{stroke:#111111;stroke-width:0.95;fill:none;stroke-linecap:square}.arrowhead{fill:#111111;stroke:none}.label{font-family:"Times New Roman",Times,serif;font-size:12px;fill:#111111;font-weight:500}.math{font-style:italic}</style></defs>
+<line class="axis" x1="42" y1="44" x2="42" y2="235"/><line class="axis" x1="23" y1="216" x2="261" y2="216"/>
+<line class="line" x1="42" y1="216" x2="199" y2="43"/><polygon class="arrowhead" points="199.00,43.00 195.66,50.77 191.59,47.08"/>
+<line class="line" x1="42" y1="216" x2="242" y2="94"/><polygon class="arrowhead" points="242.00,94.00 236.60,100.51 233.74,95.82"/>
+<line class="line" x1="199" y1="43" x2="242" y2="94"/><polygon class="arrowhead" points="242.00,94.00 234.74,89.66 238.95,86.11"/>
+<path class="thin" d="M 95 160 C 102 148, 113 139, 127 135"/><polygon class="arrowhead" points="127.00,135.00 122.04,138.93 120.68,135.17"/>
+<text class="label math" x="34" y="230">O</text><text class="label math" x="83" y="96">r (&#952; + &#916;&#952;)</text><text class="label math" x="175" y="151">r (&#952;)</text><text class="label math" x="237" y="66">r &#916;&#952;n</text><text class="label math" x="107" y="160">&#916;&#952;</text></svg>

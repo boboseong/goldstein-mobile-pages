@@ -370,6 +370,32 @@ button {
   border-radius: 8px;
 }
 
+.reader-surface img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.textbook-figure {
+  margin: 24px auto 28px;
+  padding: 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.textbook-figure img {
+  margin: 0 auto;
+}
+
+.textbook-figure figcaption {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
 .reader-surface h1,
 .reader-surface h2,
 .reader-surface h3 {

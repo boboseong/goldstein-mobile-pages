@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="430" height="168" viewBox="0 0 430 168"><title>Figure 2.3a primitive reconstruction</title><rect width="430" height="168" fill="#fff"/><defs><style>.line{stroke:#000000;stroke-width:1.0;fill:none;stroke-linecap:round;stroke-linejoin:round}.thin{stroke:#000000;stroke-width:.6;fill:none;stroke-linecap:square}.axis{stroke:#000000;stroke-width:.6;fill:none;stroke-linecap:square}.label{font-family:"Times New Roman",Times,serif;font-size:8px;fill:#000000;font-style:italic}.sub{font-size:5.5px;baseline-shift:sub}</style></defs><g transform="translate(113 0)">
+<path class="axis" d="M 70.8 35 L 70.8 136 L 43.8 161.4"/><path class="axis" d="M 70.8 136 L 154.2 136"/>
+<ellipse class="line" cx="70.8" cy="65" rx="52.8" ry="13.2"/>
+<path class="line" d="M 18.6 65 C 25.2 80.8, 40.8 93.8, 52.8 110.4 C 60.6 122.8, 60.6 126.4, 70.8 126.4"/>
+<path class="line" d="M 123 65 C 116.4 80.8, 100.8 93.8, 88.8 110.4 C 81 122.8, 81 126.4, 70.8 126.4"/>
+<path d="M 35.4 88.60000000000001 C 46.2 77.80000000000001, 94.8 77.80000000000001, 106.2 88.60000000000001 C 96 104.39999999999999, 46.2 104.39999999999999, 35.4 88.60000000000001 Z" fill="#888888" stroke="#000000" stroke-width="1.0"/>
+<ellipse class="line" cx="70.8" cy="88.60000000000001" rx="35.4" ry="10.2"/>
+<ellipse class="line" cx="70.8" cy="102.0" rx="28.8" ry="7.2" fill="#fff"/>
+<ellipse class="line" cx="70.8" cy="120.4" rx="21" ry="4.8"/>
+<path class="thin" d="M 57.6 91.0 L 87 91.0"/><path class="thin" d="M 63 84.4 L 78 84.4"/><path class="thin" d="M 64.2 96.8 L 83.4 96.8"/>
+<text class="label" x="65.4" y="34.8">y</text><text class="label" x="154.2" y="138.4">x</text><text class="label" x="43.8" y="164.4">z</text><text class="label" x="126" y="69.6">(x<tspan class="sub">2</tspan>,y<tspan class="sub">2</tspan>)</text><text class="label" x="90" y="120.4">(x<tspan class="sub">1</tspan>,y<tspan class="sub">1</tspan>)</text><text class="label" x="75.6" y="87.4">x</text><g class="shadefix" stroke="#111" stroke-width="1.0" stroke-linecap="round"><line x1="50" y1="103" x2="67" y2="103"/><line x1="73" y1="103" x2="90" y2="103"/><line x1="92" y1="102" x2="105" y2="102"/><line x1="108" y1="85" x2="120" y2="93"/><line x1="24" y1="86" x2="32" y2="91"/></g></g></svg>

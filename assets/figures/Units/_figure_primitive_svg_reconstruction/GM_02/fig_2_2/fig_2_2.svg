@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="395" viewBox="0 0 620 395">
+  <title>Figure 2.2 primitive reconstruction</title>
+  <rect width="620" height="395" fill="#fff"/>
+  <defs>
+    <style>
+      .axis { stroke: #000000; stroke-width: 0.75; fill: none; stroke-linecap: square; }
+      .path { stroke: #000000; stroke-width: 2.00; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .dot { fill: #000000; stroke: none; }
+      .label { font-family: "Times New Roman", Times, serif; font-size: 15.00px; fill: #000000; font-style: italic; }
+      .sub { font-size: 10.20px; baseline-shift: sub; }
+    </style>
+  </defs>
+  <line class="axis" x1="49.74" y1="80.40" x2="49.74" y2="383.91"/>
+  <line class="axis" x1="20.89" y1="356.78" x2="333.32" y2="356.78"/>
+  <path class="path" d="M 94.52 296.48 L 108.45 243.21 L 128.35 224.12 L 148.25 216.08 L 168.15 205.02 L 188.05 184.92 L 207.95 150.75 L 227.85 129.65 L 247.75 117.59 L 267.65 109.55 L 287.55 104.52 L 301.48 103.52"/>
+  <path class="path" d="M 94.52 296.48 L 108.45 283.41 L 128.35 267.33 L 148.25 254.27 L 168.15 241.20 L 188.05 229.14 L 207.95 219.09 L 227.85 207.03 L 247.75 191.96 L 267.65 160.80 L 287.55 124.62 L 301.48 103.52"/>
+  <circle class="dot" cx="94.52" cy="296.48" r="4.00"/>
+  <circle class="dot" cx="301.48" cy="103.52" r="4.00"/>
+  <text class="label" x="35.81" y="87.44">y</text>
+  <text class="label" x="324.37" y="372.86">x</text>
+  <text class="label" x="65.67" y="318.59">(x<tspan class="sub">1</tspan>, y<tspan class="sub">1</tspan>)</text>
+  <text class="label" x="276.61" y="89.45">(x<tspan class="sub">2</tspan>, y<tspan class="sub">2</tspan>)</text>
+</svg>

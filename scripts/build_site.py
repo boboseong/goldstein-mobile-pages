@@ -3,8 +3,10 @@ import json
 import os
 import re
 import shutil
+from html import unescape
 from datetime import datetime, timezone
 from pathlib import Path
+from urllib.parse import unquote, urlsplit, urlunsplit
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
@@ -200,6 +202,58 @@ def copy_entry_image(image_path: Path, source_root: Path):
     }
 
 
+def is_local_asset_url(url: str):
+    parsed = urlsplit(url)
+    return not parsed.scheme and not parsed.netloc and parsed.path and not parsed.path.startswith("/")
+
+
+def copy_inline_asset(url: str, md_path: Path, source_root: Path):
+    if not is_local_asset_url(url):
+        return url
+
+    parsed = urlsplit(url)
+    decoded_path = unquote(unescape(parsed.path))
+    source_path = (md_path.parent / decoded_path).resolve()
+    source_root_resolved = source_root.resolve()
+
+    try:
+        source_relative_path = source_path.relative_to(source_root_resolved)
+    except ValueError:
+        return url
+
+    if not source_path.is_file() or source_path.suffix.lower() not in IMAGE_EXTENSIONS:
+        return url
+
+    asset_relative_path = Path("assets") / "figures" / source_relative_path
+    output_path = REPO_ROOT / asset_relative_path
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(source_path, output_path)
+
+    rewritten = asset_relative_path.as_posix()
+    if parsed.query or parsed.fragment:
+        rewritten = urlunsplit(("", "", rewritten, parsed.query, parsed.fragment))
+    return rewritten
+
+
+def rewrite_inline_image_urls(content: str, md_path: Path, source_root: Path):
+    def replace_markdown_image(match):
+        alt, url = match.groups()
+        return f"![{alt}]({copy_inline_asset(url.strip(), md_path, source_root)})"
+
+    def replace_html_image_src(match):
+        prefix, url, suffix = match.groups()
+        return f"{prefix}{copy_inline_asset(url, md_path, source_root)}{suffix}"
+
+    content = re.sub(r"!\[([^\]]*)\]\(([^)\s]+)\)", replace_markdown_image, content)
+    content = re.sub(
+        r"(<img\b[^>]*?\bsrc=[\"'])([^\"']+)([\"'][^>]*>)",
+        replace_html_image_src,
+        content,
+        flags=re.IGNORECASE,
+    )
+    return content
+
+
 def file_label_key(path: Path, section_id: str):
     stem = path.stem
     label = stem
@@ -271,7 +325,11 @@ def build_data(source_root: Path):
                     "fileName": md_path.name,
                     "sourcePath": relative_path,
                     "image": copy_entry_image(image_path, source_root) if image_path else None,
-                    "content": md_path.read_text(encoding="utf-8-sig").strip(),
+                    "content": rewrite_inline_image_urls(
+                        md_path.read_text(encoding="utf-8-sig").strip(),
+                        md_path,
+                        source_root,
+                    ),
                 }
             )
 

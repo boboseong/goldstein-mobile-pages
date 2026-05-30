@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="235" height="230" viewBox="0 0 235 230">
+  <title>Figure 1.2 primitive reconstruction</title>
+  <rect width="235" height="230" fill="#fff"/>
+  <defs>
+    <style>
+      .line { stroke: #111111; stroke-width: 1.85; fill: none; stroke-linecap: square; stroke-linejoin: miter; }
+      .axis { stroke: #111111; stroke-width: 0.85; fill: none; stroke-linecap: square; }
+      .arrowhead { fill: #111111; stroke: none; }
+      .dot { fill: #111111; stroke: none; }
+      .label { font-family: "Times New Roman", Times, serif; font-size: 10.50px; fill: #111111; font-weight: 400; }
+      .math { font-style: italic; }
+      .sub { font-size: 7.14px; baseline-shift: sub; }
+    </style>
+  </defs>
+  <g transform="translate(0.20 0.00)">
+    <line class="axis" x1="42.00" y1="20.00" x2="42.00" y2="226.00"/>
+    <line class="axis" x1="20.00" y1="208.00" x2="205.00" y2="208.00"/>
+    <line class="line" x1="42.00" y1="208.00" x2="139.00" y2="51.00"/>
+    <polygon class="arrowhead" points="139.00,51.00 137.66,58.40 132.98,55.51"/>
+    <line class="line" x1="42.00" y1="208.00" x2="168.00" y2="114.00"/>
+    <polygon class="arrowhead" points="168.00,114.00 164.03,120.39 160.74,115.98"/>
+    <line class="line" x1="139.00" y1="51.00" x2="168.00" y2="114.00"/>
+    <polygon class="arrowhead" points="168.00,114.00 162.57,108.79 167.57,106.49"/>
+    <text class="label math" x="31.00" y="222.00">O</text>
+    <text class="label math" x="78.00" y="119.00">r<tspan class="sub">i</tspan></text>
+    <text class="label math" x="137.00" y="151.00">r<tspan class="sub">j</tspan></text>
+    <text class="label math" x="169.00" y="82.00">r<tspan class="sub">ij</tspan></text>
+    <circle class="dot" cx="144.60" cy="23.40" r="2.85"/>
+    <circle class="dot" cx="163.40" cy="28.30" r="2.85"/>
+    <circle class="dot" cx="122.30" cy="46.60" r="2.85"/>
+    <circle class="dot" cx="155.40" cy="50.40" r="2.85"/>
+    <circle class="dot" cx="181.30" cy="53.40" r="2.85"/>
+    <circle class="dot" cx="162.80" cy="67.40" r="2.85"/>
+    <circle class="dot" cx="114.50" cy="78.20" r="2.85"/>
+    <circle class="dot" cx="190.90" cy="77.10" r="2.85"/>
+    <circle class="dot" cx="164.80" cy="82.10" r="2.85"/>
+    <circle class="dot" cx="139.30" cy="92.40" r="2.85"/>
+    <circle class="dot" cx="182.70" cy="95.90" r="2.85"/>
+    <circle class="dot" cx="121.60" cy="98.50" r="2.85"/>
+    <circle class="dot" cx="194.50" cy="101.10" r="2.85"/>
+    <circle class="dot" cx="171.50" cy="103.50" r="2.85"/>
+    <circle class="dot" cx="149.30" cy="111.90" r="2.85"/>
+  </g>
+</svg>

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="220" viewBox="0 0 340 220">
+  <title>Figure 1.5 primitive reconstruction</title>
+  <rect width="340" height="220" fill="#fff"/>
+  <defs>
+    <style>
+      .axis { stroke: #666666; stroke-width: 1.35; fill: none; stroke-linecap: square; }
+      .thin { stroke: #666666; stroke-width: 0.95; fill: none; stroke-linecap: square; stroke-linejoin: miter; }
+      .line { stroke: #666666; stroke-width: 1.65; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .open { stroke: #666666; stroke-width: 1.65; fill: none; }
+      .arrowhead { fill: #666666; stroke: none; }
+      .label { font-family: "Times New Roman", Times, serif; font-size: 12.00px; fill: #666666; font-weight: 500; }
+      .math { font-style: italic; }
+    </style>
+  </defs>
+  <line class="axis" x1="25.00" y1="12.00" x2="25.00" y2="198.00"/>
+  <line class="axis" x1="25.00" y1="198.00" x2="296.00" y2="198.00"/>
+  <line class="thin" x1="25.00" y1="198.00" x2="172.00" y2="50.00"/>
+  <line class="thin" x1="158.00" y1="198.00" x2="226.00" y2="132.00"/>
+  <path class="line" d="M 155 112.00 C 178 104.00, 205 104.00, 228 115.00 C 249 127.00, 272 128.00, 298 128.00"/>
+  <path class="open" d="M 228 13 C 250 12, 270 34, 275 62 C 281 91, 266 124, 242 134 C 224 139, 213 123, 209 101 C 203 72, 202 42, 213 26 C 219 17, 224 14, 228 13"/>
+  <line class="line" x1="206.00" y1="91.00" x2="239.00" y2="70.00"/>
+  <line class="thin" x1="239.00" y1="70.00" x2="239.00" y2="116.00"/>
+  <line class="thin" x1="206.00" y1="91.00" x2="239.00" y2="116.00"/>
+  <path class="thin" d="M 224 91 C 229 98, 235 98, 239 91"/>
+  <line class="line" x1="256.00" y1="126.00" x2="296.00" y2="150.00"/>
+  <polygon class="arrowhead" points="296.00,150.00 287.73,148.24 290.55,143.53"/>
+  <text class="label math" x="14.00" y="210.00">O</text>
+  <text class="label math" x="14.00" y="18.00">z</text>
+  <text class="label math" x="291.00" y="207.00">x</text>
+  <text class="label math" x="156.00" y="55.00">y</text>
+  <text class="label math" x="190.00" y="187.00">&#952;</text>
+  <path class="thin" d="M 179 181 C 182 184, 185 188, 186 194"/><polygon class="arrowhead" points="186.00,194.00 183.45,189.36 186.90,188.78"/>
+<ellipse class="thin" cx="228" cy="91" rx="2.8" ry="4.5"/><line class="thin" x1="228" y1="84" x2="228" y2="98"/>
+<text class="label math" x="276.00" y="157.00">v</text>
+</svg>

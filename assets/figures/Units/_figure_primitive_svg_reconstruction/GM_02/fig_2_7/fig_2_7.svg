@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="205" viewBox="0 0 260 205">
+  <rect width="260" height="205" fill="#fff"/>
+  <style>
+    .axis { stroke:#111; stroke-width:1.25; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .vec { stroke:#111; stroke-width:2.45; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .label { font-family:"Times New Roman", Times, serif; font-size:14px; fill:#111; font-style:italic; }
+    .sub { font-size:9px; baseline-shift:sub; }
+  </style>
+
+  <line class="axis" x1="13" y1="175" x2="242" y2="175"/>
+  <line class="axis" x1="36" y1="7" x2="36" y2="198"/>
+
+  <line class="vec" x1="36" y1="175" x2="158" y2="28"/>
+  <polygon points="157,28 145,34 151,39" fill="#111"/>
+
+  <line class="vec" x1="36" y1="175" x2="240" y2="27"/>
+  <polygon points="239,27 226,30 231,38" fill="#111"/>
+
+  <line class="vec" x1="159" y1="25" x2="241" y2="25"/>
+  <polygon points="241,25 228,20 228,30" fill="#111"/>
+
+  <text class="label" x="76" y="84">r<tspan class="sub">i</tspan>(q<tspan class="sub">j</tspan>)</text>
+  <text class="label" x="145" y="113">r<tspan class="sub">i</tspan>(q<tspan class="sub">j</tspan> + dq<tspan class="sub">j</tspan>)</text>
+  <text class="label" x="180" y="16">dq<tspan class="sub">j</tspan> n</text>
+</svg>

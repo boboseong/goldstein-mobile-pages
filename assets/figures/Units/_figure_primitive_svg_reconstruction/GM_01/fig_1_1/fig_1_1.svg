@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="475" height="245" viewBox="0 0 475 245">
+  <title>Figure 1.1 - honest primitive reconstruction, phase3_559</title>
+  <rect width="475" height="245" fill="#fff"/>
+  <defs>
+    <style>
+      .line { stroke: #111; stroke-width: 1.60; fill: none; stroke-linecap: square; }
+      .axis { stroke: #111; stroke-width: 0.95; fill: none; stroke-linecap: square; }
+      .arrowhead { fill: #111; stroke: none; }
+      .dot { fill: #111; }
+      .label { font-family: "Times New Roman", Times, serif; font-size: 14.00px; fill: #111; font-weight: 500; }
+      .math { font-style: italic; }
+      .sub { font-size: 9.52px; baseline-shift: sub; }
+    </style>
+  </defs>
+  <g transform="translate(1.273 -0.777) scale(0.99313 0.99154)">
+    <line class="axis" x1="91.11" y1="228.82" x2="343.26" y2="228.82"/>
+    <line class="axis" x1="111.00" y1="226.11" x2="111.00" y2="3.00"/>
+    <text class="label math" x="97.00" y="241.00">O</text>
+
+    <line class="line" x1="111.00" y1="226.11" x2="211.71" y2="52.55"/>
+    <polygon class="arrowhead" points="215.62,45.80 215.07,54.50 208.34,50.60"/>
+    <line class="line" x1="111.00" y1="226.11" x2="247.94" y2="86.60"/>
+    <polygon class="arrowhead" points="252.62,81.83 249.84,88.46 246.04,84.73"/>
+    <line class="line" x1="111.00" y1="226.11" x2="286.16" y2="116.32"/>
+    <polygon class="arrowhead" points="292.42,112.40 287.02,117.69 285.30,114.95"/>
+
+    <text class="label math" x="151.91" y="127.27">r<tspan class="sub">i</tspan></text>
+    <text class="label math" x="195.20" y="38.71">m<tspan class="sub">i</tspan></text>
+    <text class="label math" x="198.59" y="119.32">R</text>
+    <text class="label math" x="220.52" y="179.78">r<tspan class="sub">j</tspan></text>
+    <text class="label math" x="288.38" y="132.38">m<tspan class="sub">j</tspan></text>
+
+    <line class="axis" x1="258.19" y1="88.37" x2="281.49" y2="91.52"/>
+    <text class="label" x="283.32" y="90.82">Center of mass</text>
+
+    <circle class="dot" cx="226.50" cy="19.50" r="2.20"/>
+    <circle class="dot" cx="301.50" cy="21.50" r="2.20"/>
+    <circle class="dot" cx="257.72" cy="33.11" r="2.20"/>
+    <circle class="dot" cx="283.50" cy="39.50" r="2.20"/>
+    <circle class="dot" cx="216.00" cy="42.50" r="2.20"/>
+    <circle class="dot" cx="307.50" cy="45.50" r="2.20"/>
+    <circle class="dot" cx="235.50" cy="51.50" r="2.20"/>
+    <circle class="dot" cx="265.24" cy="62.76" r="2.20"/>
+    <circle class="dot" cx="218.00" cy="73.50" r="2.20"/>
+    <circle class="dot" cx="255.00" cy="75.35" r="2.20"/>
+    <circle class="dot" cx="227.50" cy="87.00" r="2.20"/>
+    <circle class="dot" cx="205.00" cy="87.65" r="2.20"/>
+    <circle class="dot" cx="295.50" cy="95.50" r="2.20"/>
+    <circle class="dot" cx="261.50" cy="99.50" r="2.20"/>
+    <circle class="dot" cx="284.50" cy="110.50" r="2.20"/>
+    <circle class="dot" cx="252.12" cy="117.41" r="2.20"/>
+    <circle class="dot" cx="232.24" cy="119.76" r="2.20"/>
+  </g>
+</svg>

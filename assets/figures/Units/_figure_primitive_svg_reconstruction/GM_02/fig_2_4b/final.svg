@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="160" viewBox="0 0 280 160">
+  <rect width="280" height="160" fill="#fff"/>
+  <style>
+    .axis { stroke:#111; stroke-width:1.15; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .curve { stroke:#111; stroke-width:1.8; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .thin { stroke:#111; stroke-width:0.95; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .dot { fill:#111; stroke:none; }
+    .label { font-family:"Times New Roman", Times, serif; font-size:13px; fill:#111; }
+    .ticklabel { font-family:"Times New Roman", Times, serif; font-size:11px; fill:#111; }
+    .small { font-size:11px; }
+    .math { font-style:italic; }
+    .sub { font-size:8px; baseline-shift:sub; }
+  </style>
+
+  <line class="axis" x1="21" y1="36" x2="247" y2="36"/>
+  <line class="axis" x1="46" y1="12" x2="46" y2="154"/>
+
+  <line class="thin" x1="136" y1="30" x2="136" y2="42"/>
+  <line class="thin" x1="222" y1="30" x2="222" y2="42"/>
+  <line class="thin" x1="40" y1="66" x2="52" y2="66"/>
+  <line class="thin" x1="40" y1="96" x2="52" y2="96"/>
+  <line class="thin" x1="40" y1="127" x2="52" y2="127"/>
+
+  <path class="curve" d="M 46 36
+    C 46 49, 50 60, 60 67
+    C 78 82, 103 91, 130 93
+    C 166 95, 195 83, 215 62
+    C 221 50, 224 42, 223 36"/>
+  <path class="curve" d="M 223 36
+    C 226 47, 232 58, 247 73"/>
+
+  <circle class="dot" cx="53" cy="57" r="2.6"/>
+  <circle class="dot" cx="136" cy="93" r="2.6"/>
+  <circle class="dot" cx="223" cy="36" r="2.8"/>
+
+  <text class="ticklabel math" x="14" y="32">x<tspan class="sub">1</tspan>, y<tspan class="sub">1</tspan></text>
+  <text class="label math" x="59" y="59">x<tspan class="sub">2</tspan> &lt;&lt; y<tspan class="sub">2</tspan></text>
+  <text class="label math" x="156" y="59">x<tspan class="sub">2</tspan> &gt;&gt; y<tspan class="sub">2</tspan></text>
+  <text class="label math" x="124" y="111">x<tspan class="sub">2</tspan> = <tspan baseline-shift="super" font-size="8">&#960;</tspan>/<tspan baseline-shift="sub" font-size="8">2</tspan> y<tspan class="sub">2</tspan></text>
+
+  <text class="ticklabel math" x="132" y="26">&#960;a</text>
+  <text class="ticklabel math" x="218" y="29">2&#960;a</text>
+  <text class="ticklabel math" x="242" y="48">x</text>
+  <text class="ticklabel math" x="30" y="68">a</text>
+  <text class="ticklabel math" x="23" y="98">2a</text>
+  <text class="ticklabel math" x="23" y="129">3a</text>
+  <text class="ticklabel math" x="35" y="153">y</text>
+</svg>

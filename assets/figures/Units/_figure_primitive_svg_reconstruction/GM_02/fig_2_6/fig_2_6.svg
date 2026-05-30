@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="205" viewBox="0 0 300 205">
+  <rect width="300" height="205" fill="#fff"/>
+  <defs>
+    <style>
+      .wire { stroke: #666666; stroke-width: 2.20; fill: none; stroke-linecap: square; stroke-linejoin: miter; }
+      .comp { stroke: #666666; stroke-width: 3.00; fill: none; stroke-linecap: round; stroke-linejoin: round; }
+      .label { font-family: "Times New Roman", Times, serif; font-size: 18.00px; fill: #666666; font-style: italic; }
+      .sub { font-size: 11.88px; baseline-shift: sub; }
+    </style>
+  </defs>
+  <g transform="translate(20 13) scale(0.5 0.50140845)">
+  <line class="wire" x1="120.39" y1="85.57" x2="156.21" y2="85.57"/> <line class="comp" x1="159.19" y1="71.64" x2="159.19" y2="99.50"/>
+  <line class="comp" x1="169.15" y1="71.64" x2="169.15" y2="99.50"/> <line class="wire" x1="169.15" y1="85.57" x2="209.94" y2="85.57"/> <path class="comp" d="M 209.94 85.57 L 215.01 78.61 L 220.09 92.53 L 225.16 78.61 L 230.24 92.53 L 235.31 78.61 L 240.39 92.53 L 245.46 78.61 L 250.54 92.53 L 255.61 78.61 L 260.69 85.57"/> <line class="wire" x1="260.69" y1="85.57" x2="287.55" y2="85.57"/> <line class="wire" x1="287.55" y1="85.57" x2="287.55" y2="183.08"/> <line class="wire" x1="287.55" y1="183.08" x2="271.63" y2="183.08"/> <ellipse class="comp" cx="227.50" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="234.90" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="242.30" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="249.70" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="257.10" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="264.50" cy="183.08" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="271.90" cy="183.08" rx="4.78" ry="3.92"/> <line class="wire" x1="228.84" y1="183.08" x2="181.50" y2="183.08"/> <ellipse class="comp" cx="128.00" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="135.40" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="142.80" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="150.20" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="157.60" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="165.00" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="172.40" cy="183.08" rx="4.68" ry="3.83"/>
+  <ellipse class="comp" cx="179.80" cy="183.08" rx="4.68" ry="3.83"/> <line class="wire" x1="120.39" y1="183.08" x2="120.39" y2="177.11"/> <ellipse class="comp" cx="120.39" cy="100.40" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="107.95" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="115.51" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="123.07" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="130.62" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="138.18" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="145.74" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="153.29" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="160.84" rx="4.00" ry="4.88"/>
+  <ellipse class="comp" cx="120.39" cy="168.40" rx="4.00" ry="4.88"/> <line class="wire" x1="120.39" y1="85.57" x2="120.39" y2="95.52"/> <line class="wire" x1="54.72" y1="207.96" x2="123.38" y2="207.96"/> <ellipse class="comp" cx="128.00" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="135.40" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="142.80" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="150.20" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="157.60" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="165.00" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="172.40" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="179.80" cy="207.96" rx="4.78" ry="3.92"/> <line class="wire" x1="181.09" y1="207.96" x2="187.50" y2="207.96"/> <line class="wire" x1="187.50" y1="207.96" x2="187.50" y2="224.00"/> <ellipse class="comp" cx="187.50" cy="229.00" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="236.40" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="243.80" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="251.20" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="258.60" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="266.00" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="273.40" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="280.80" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="288.20" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="187.50" cy="295.60" rx="3.92" ry="4.78"/> <line class="wire" x1="187.50" y1="307.45" x2="168.15" y2="307.45"/> <path class="comp" d="M 110.44 307.45 L 115.25 300.49 L 120.06 314.42 L 124.87 300.49 L 129.68 314.42 L 134.49 300.49 L 139.29 314.42 L 144.10 300.49 L 148.91 314.42 L 153.72 300.49 L 158.53 314.42 L 163.34 300.49 L 168.15 307.45"/> <line class="wire" x1="93.53" y1="307.45" x2="110.44" y2="307.45"/> <line class="comp" x1="79.59" y1="292.53" x2="79.59" y2="322.38"/>
+  <line class="comp" x1="89.55" y1="292.53" x2="89.55" y2="322.38"/> <line class="wire" x1="54.72" y1="307.45" x2="79.59" y2="307.45"/> <line class="wire" x1="54.72" y1="207.96" x2="54.72" y2="307.45"/> <path class="comp" d="M 46.76 243.78 C 50.74 238.80, 54.72 248.75, 59.70 243.78"/> <line class="wire" x1="218.00" y1="207.96" x2="226.00" y2="207.96"/> <ellipse class="comp" cx="230.00" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="237.40" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="244.80" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="252.20" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="259.60" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="267.00" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="274.40" cy="207.96" rx="4.78" ry="3.92"/>
+  <ellipse class="comp" cx="281.80" cy="207.96" rx="4.78" ry="3.92"/> <line class="wire" x1="292.00" y1="207.96" x2="347.21" y2="207.96"/> <line class="wire" x1="347.21" y1="207.96" x2="347.21" y2="307.45"/> <path class="comp" d="M 339.25 243.78 C 343.24 238.80, 347.21 248.75, 352.19 243.78"/> <line class="wire" x1="347.21" y1="307.45" x2="328.34" y2="307.45"/> <line class="comp" x1="316.40" y1="292.53" x2="316.40" y2="322.38"/>
+  <line class="comp" x1="326.36" y1="292.53" x2="326.36" y2="322.38"/> <line class="wire" x1="316.40" y1="307.45" x2="295.51" y2="307.45"/> <path class="comp" d="M 237.80 307.45 L 242.61 300.49 L 247.42 314.42 L 252.23 300.49 L 257.04 314.42 L 261.85 300.49 L 266.65 314.42 L 271.46 300.49 L 276.27 314.42 L 281.08 300.49 L 285.89 314.42 L 290.70 300.49 L 295.51 307.45"/> <line class="wire" x1="219.89" y1="307.45" x2="237.80" y2="307.45"/> <ellipse class="comp" cx="218.00" cy="229.00" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="236.40" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="243.80" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="251.20" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="258.60" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="266.00" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="273.40" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="280.80" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="288.20" rx="3.92" ry="4.78"/>
+  <ellipse class="comp" cx="218.00" cy="295.60" rx="3.92" ry="4.78"/> <line class="wire" x1="218.00" y1="207.96" x2="218.00" y2="224.00"/> <text class="label" x="153.22" y="61.00">C<tspan class="sub">1</tspan></text> <text class="label" x="230.00" y="65.00">R<tspan class="sub">1</tspan></text> <text class="label" x="306.44" y="122.39">E<tspan class="sub">1</tspan></text> <text class="label" x="132.00" y="139.00">L<tspan class="sub">1</tspan></text> <text class="label" x="96.00" y="198.00">M<tspan class="sub">12</tspan></text> <text class="label" x="287.00" y="197.00">M<tspan class="sub">13</tspan></text> <text class="label" x="26.00" y="245.50">E<tspan class="sub">2</tspan></text> <text class="label" x="366.00" y="245.50">E<tspan class="sub">3</tspan></text> <text class="label" x="161.00" y="263.00">L<tspan class="sub">2</tspan></text> <text class="label" x="233.50" y="263.00">L<tspan class="sub">3</tspan></text> <text class="label" x="73.50" y="338.00">C<tspan class="sub">2</tspan></text> <text class="label" x="132.50" y="337.00">R<tspan class="sub">2</tspan></text> <text class="label" x="193.00" y="323.00">M<tspan class="sub">23</tspan></text> <text class="label" x="251.00" y="337.00">R<tspan class="sub">3</tspan></text> <text class="label" x="313.50" y="338.00">C<tspan class="sub">3</tspan></text>
+  </g>
+</svg>

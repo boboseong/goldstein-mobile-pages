@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="280" height="272" viewBox="0 0 280 272">
+  <rect width="280" height="272" fill="#fff"/>
+  <style>
+    .axis { stroke:#111; stroke-width:1.25; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .curve { stroke:#111; stroke-width:2.1; fill:none; stroke-linecap:round; stroke-linejoin:round; }
+    .thin { stroke:#111; stroke-width:1.15; fill:none; stroke-linecap:square; stroke-linejoin:miter; }
+    .dot { fill:#111; stroke:none; }
+    .label { font-family:"Times New Roman", Times, serif; font-size:14px; fill:#111; }
+    .math { font-style:italic; }
+  </style>
+
+  <line class="axis" x1="18" y1="36" x2="253" y2="36"/>
+  <line class="axis" x1="38" y1="16" x2="38" y2="260"/>
+
+  <line class="thin" x1="224" y1="25" x2="253" y2="25"/>
+  <polygon points="253,25 245,22.5 245,27.5" fill="#111"/>
+  <text class="label math" x="209" y="28">x</text>
+
+  <line class="thin" x1="27" y1="233" x2="27" y2="260"/>
+  <polygon points="27,260 24.5,252 29.5,252" fill="#111"/>
+  <text class="label math" x="22" y="223">y</text>
+
+  <path class="curve" d="M 80 36
+    C 94 37, 106 48, 119 62
+    C 137 81, 149 102, 160 123
+    C 174 149, 191 177, 211 203
+    C 226 221, 241 235, 252 258"/>
+
+  <line class="thin" x1="187" y1="158" x2="202" y2="182"/>
+  <polygon points="202,182 195,176.5 200,173.5" fill="#111"/>
+
+  <circle class="dot" cx="80" cy="36" r="3.1"/>
+  <circle class="dot" cx="252" cy="258" r="3.1"/>
+
+  <text class="label" x="73" y="28">1</text>
+  <text class="label" x="236" y="262">2</text>
+  <text class="label math" x="181" y="155">v</text>
+</svg>
