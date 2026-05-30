@@ -21,6 +21,7 @@ const state = {
   wakeLockWanted: false,
   wakeLockStatus: "",
   wakeLockStatusKind: "",
+  sidebarCollapsed: savedState.sidebarCollapsed === true,
 };
 
 function readSavedState() {
@@ -32,9 +33,12 @@ function readSavedState() {
 }
 
 const els = {
+  appShell: document.getElementById("appShell"),
   itemCount: document.getElementById("itemCount"),
   searchInput: document.getElementById("searchInput"),
   sectionList: document.getElementById("sectionList"),
+  sidebarCollapseButton: document.getElementById("sidebarCollapseButton"),
+  sidebarExpandButton: document.getElementById("sidebarExpandButton"),
   sectionMeta: document.getElementById("sectionMeta"),
   sectionTitle: document.getElementById("sectionTitle"),
   sectionNote: document.getElementById("sectionNote"),
@@ -92,11 +96,31 @@ function currentOrderedEntryIndex(entries = orderedEntriesForKind()) {
   );
 }
 
+function setSidebarCollapsed(collapsed, options = {}) {
+  state.sidebarCollapsed = Boolean(collapsed);
+  els.appShell.classList.toggle("sidebar-collapsed", state.sidebarCollapsed);
+
+  const expanded = String(!state.sidebarCollapsed);
+  els.sidebarCollapseButton.setAttribute("aria-expanded", expanded);
+  els.sidebarExpandButton.setAttribute("aria-expanded", expanded);
+  els.sidebarCollapseButton.title = state.sidebarCollapsed
+    ? "챕터 선택바 숨김"
+    : "챕터 선택바 숨기기";
+  els.sidebarExpandButton.title = state.sidebarCollapsed
+    ? "챕터 선택바 보이기"
+    : "챕터 선택바 표시됨";
+
+  if (options.persist !== false) {
+    persistReaderState();
+  }
+}
+
 function persistReaderState() {
   const payload = {
     sectionId: state.sectionId,
     kind: state.kind,
     entryId: state.entryId,
+    sidebarCollapsed: state.sidebarCollapsed,
   };
 
   try {
@@ -580,6 +604,14 @@ function render() {
 
 els.searchInput.addEventListener("input", renderSections);
 
+els.sidebarCollapseButton.addEventListener("click", () => {
+  setSidebarCollapsed(true);
+});
+
+els.sidebarExpandButton.addEventListener("click", () => {
+  setSidebarCollapsed(false);
+});
+
 els.tabs.forEach((tab) => {
   tab.addEventListener("click", async () => {
     const previousEntry = currentEntry();
@@ -652,5 +684,6 @@ if ("speechSynthesis" in window) {
   };
 }
 
+setSidebarCollapsed(state.sidebarCollapsed, { persist: false });
 setKindWithFallback(state.kind);
 render();

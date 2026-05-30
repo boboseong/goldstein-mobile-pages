@@ -9,14 +9,39 @@
     <link rel="stylesheet" href="assets/style.css" />
   </head>
   <body>
-    <div class="app-shell">
-      <aside class="sidebar" aria-label="단원 목록">
+    <div class="app-shell" id="appShell">
+      <button
+        class="sidebar-reopen"
+        id="sidebarExpandButton"
+        type="button"
+        title="챕터 선택바 보이기"
+        aria-controls="chapterSidebar"
+        aria-expanded="false"
+      >
+        <i data-lucide="panel-left-open" aria-hidden="true"></i>
+        <span class="sr-only">챕터 선택바 보이기</span>
+      </button>
+
+      <aside class="sidebar" id="chapterSidebar" aria-label="단원 목록">
         <div class="brand">
           <div>
             <p class="eyebrow">Goldstein</p>
             <h1>Chapters 1-2 Reader</h1>
           </div>
-          <span class="sync-pill" id="itemCount">0 files</span>
+          <div class="brand-actions">
+            <span class="sync-pill" id="itemCount">0 files</span>
+            <button
+              class="sidebar-toggle"
+              id="sidebarCollapseButton"
+              type="button"
+              title="챕터 선택바 숨기기"
+              aria-controls="chapterSidebar"
+              aria-expanded="true"
+            >
+              <i data-lucide="panel-left-close" aria-hidden="true"></i>
+              <span class="sr-only">챕터 선택바 숨기기</span>
+            </button>
+          </div>
         </div>
         <label class="search-wrap">
           <i data-lucide="search" aria-hidden="true"></i>
