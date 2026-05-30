@@ -318,6 +318,17 @@ button {
   padding: clamp(20px, 4vw, 42px);
 }
 
+.entry-image {
+  margin: 0 0 28px;
+}
+
+.entry-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
 .reader-surface h1,
 .reader-surface h2,
 .reader-surface h3 {
@@ -559,6 +570,10 @@ button {
   .reader-surface {
     min-height: 52vh;
     padding: 20px 16px;
+  }
+
+  .entry-image {
+    margin-bottom: 20px;
   }
 
   .reader-surface p,

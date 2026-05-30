@@ -221,6 +221,22 @@ function renderPageNav() {
   });
 }
 
+function prependEntryImage(entry) {
+  if (!entry?.image?.src) return;
+
+  const figure = document.createElement("figure");
+  const image = document.createElement("img");
+
+  figure.className = "entry-image";
+  image.src = entry.image.src;
+  image.alt = entry.image.alt || `${entry.label} infographic`;
+  image.loading = "lazy";
+  image.decoding = "async";
+
+  figure.appendChild(image);
+  els.readerSurface.prepend(figure);
+}
+
 function renderMarkdown(entry) {
   if (!entry) {
     els.readerSurface.innerHTML = `<p class="reader-empty">표시할 TR 파일이 없습니다.</p>`;
@@ -244,6 +260,7 @@ function renderMarkdown(entry) {
     throwOnError: false,
   });
   alignEquationNumbers(els.readerSurface);
+  prependEntryImage(entry);
 }
 
 function protectMath(content) {
@@ -390,6 +407,7 @@ function renderTts(entry) {
   els.readerSurface.innerHTML = state.paragraphs
     .map((paragraph, index) => `<p class="tts-paragraph" data-index="${index}">${escapeHtml(paragraph)}</p>`)
     .join("");
+  prependEntryImage(entry);
   els.readerSurface.querySelectorAll(".tts-paragraph").forEach((node) => {
     node.addEventListener("click", () => {
       state.paragraphIndex = Number(node.dataset.index);

@@ -2,12 +2,14 @@ import csv
 import json
 import os
 import re
+import shutil
 from datetime import datetime, timezone
 from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 TARGET_SECTION_RE = re.compile(r"^GM_1\.\d+_")
+IMAGE_EXTENSIONS = {".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"}
 
 SECTION_TITLES_KO = {
     "GM_1.0": "기본 원리의 개관",
@@ -15,8 +17,8 @@ SECTION_TITLES_KO = {
     "GM_1.2": "입자계의 역학",
     "GM_1.3": "구속조건",
     "GM_1.4": "달랑베르의 원리와 라그랑주 방정식",
-    "GM_1.5": "속도 의존 퍼텐셜과 소산 함수",
-    "GM_1.6": "라그랑주 정식화의 간단한 응용",
+    "GM_1.5": "속도 의존 퍼텐셜과 흩어지기 함수",
+    "GM_1.6": "라그랑지언 정식화의 간단한 응용",
     "GM_1.7": "유도 문제",
     "GM_1.8": "연습문제",
 }
@@ -51,11 +53,11 @@ ENTRY_LABELS_KO = {
         "part01_DAlemberts_Principle_and_Lagranges_Equations_virtual_displacements_and_virtual_work": "1부: 가상변위와 가상일",
         "part02_DAlemberts_Principle_and_Lagranges_Equations_dalemberts_principle_and_generalized_forces": "2부: 달랑베르의 원리와 일반화 힘",
         "part03_DAlemberts_Principle_and_Lagranges_Equations_kinetic_energy_form_of_lagranges_equations": "3부: 라그랑주 방정식의 운동에너지 형태",
-        "part04_DAlemberts_Principle_and_Lagranges_Equations_potential_forces_and_lagrangian": "4부: 퍼텐셜 힘과 라그랑지안",
+        "part04_DAlemberts_Principle_and_Lagranges_Equations_potential_forces_and_lagrangian": "4부: 퍼텐셜 힘과 라그랑지언",
     },
     "GM_1.5": {
         "part01_Velocity-Dependent_Potentials_and_the_Dissipation_Function_velocity_dependent_potentials_and_lorentz_force": "1부: 속도 의존 퍼텐셜과 로런츠 힘",
-        "part02_Velocity-Dependent_Potentials_and_the_Dissipation_Function_nonpotential_forces_and_rayleigh_dissipation": "2부: 비퍼텐셜 힘과 레일리 소산",
+        "part02_Velocity-Dependent_Potentials_and_the_Dissipation_Function_nonpotential_forces_and_rayleigh_dissipation": "2부: 비퍼텐셜 힘과 레일리 흩어지기 함수",
     },
     "GM_1.6": {
         "part01_Simple_Applications_of_the_Lagrangian_Formulation_setup_and_kinetic_energy_form": "1부: 설정과 운동에너지 형태",
@@ -107,6 +109,38 @@ def entry_kind(path: Path):
     if name.endswith("_KR_TTS.md"):
         return "tts"
     return None
+
+
+def entry_content_stem(path: Path):
+    stem = path.stem
+    stem = stem.removesuffix("_Korean_Translation")
+    stem = stem.removesuffix("_KR_TTS")
+    return stem
+
+
+def find_entry_image(path: Path):
+    image_stem = f"{entry_content_stem(path)}_infographic"
+    candidates = [
+        candidate
+        for candidate in path.parent.glob(f"{image_stem}.*")
+        if candidate.is_file() and candidate.suffix.lower() in IMAGE_EXTENSIONS
+    ]
+    return sorted(candidates, key=lambda item: item.name.lower())[0] if candidates else None
+
+
+def copy_entry_image(image_path: Path, source_root: Path):
+    source_relative_path = image_path.relative_to(source_root)
+    asset_relative_path = Path("assets") / "infographics" / image_path.name
+    output_path = REPO_ROOT / asset_relative_path
+
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    shutil.copy2(image_path, output_path)
+
+    return {
+        "src": asset_relative_path.as_posix(),
+        "alt": image_path.stem.replace("_", " "),
+        "sourcePath": source_relative_path.as_posix(),
+    }
 
 
 def file_label_key(path: Path, section_id: str):
@@ -170,6 +204,7 @@ def build_data(source_root: Path):
             if not kind:
                 continue
             relative_path = md_path.relative_to(source_root).as_posix()
+            image_path = find_entry_image(md_path)
             entries.append(
                 {
                     "id": re.sub(r"[^a-zA-Z0-9_-]+", "-", md_path.stem),
@@ -178,6 +213,7 @@ def build_data(source_root: Path):
                     "label": file_label(md_path, section_id),
                     "fileName": md_path.name,
                     "sourcePath": relative_path,
+                    "image": copy_entry_image(image_path, source_root) if image_path else None,
                     "content": md_path.read_text(encoding="utf-8-sig").strip(),
                 }
             )
