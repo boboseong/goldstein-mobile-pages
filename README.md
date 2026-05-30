@@ -5,7 +5,7 @@ Static GitHub Pages reader for selected Korean translation and TTS script files 
 
 Included scope:
 
-- Goldstein Chapter 1, GM 1.0 through GM 1.8
+- Goldstein Chapters 1-2, GM 1.0 through GM 2.9
 
 PDF files are intentionally excluded. The generated site contains only the selected
 translation Markdown and Korean TTS script Markdown content needed for mobile reading.

@@ -355,7 +355,7 @@ function removeTextPrefix(node, length) {
 }
 
 function alignEquationNumbers(root) {
-  const equationNumberPattern = /^\s*(?:[—–-]\s*)?\((1\.\d+[a-z]?)\)\s*/;
+  const equationNumberPattern = /^\s*(?:[—–-]\s*)?\((\d+\.\d+[a-z]?)\)\s*/;
 
   Array.from(root.querySelectorAll(".katex-display")).forEach((display) => {
     const mathBlock = display.closest("p") ?? display.parentElement;

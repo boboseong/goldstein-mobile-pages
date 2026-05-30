@@ -8,7 +8,7 @@ from pathlib import Path
 
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-TARGET_SECTION_RE = re.compile(r"^GM_1\.\d+_")
+TARGET_SECTION_RE = re.compile(r"^GM_[12]\.\d+_")
 IMAGE_EXTENSIONS = {".gif", ".jpeg", ".jpg", ".png", ".svg", ".webp"}
 
 SECTION_TITLES_KO = {
@@ -21,6 +21,16 @@ SECTION_TITLES_KO = {
     "GM_1.6": "라그랑지언 정식화의 간단한 응용",
     "GM_1.7": "유도 문제",
     "GM_1.8": "연습문제",
+    "GM_2.0": "변분 원리와 라그랑주 방정식",
+    "GM_2.1": "해밀턴의 원리",
+    "GM_2.2": "변분법의 몇 가지 기법",
+    "GM_2.3": "해밀턴의 원리로부터 라그랑주 방정식의 유도",
+    "GM_2.4": "구속조건이 있는 계로의 해밀턴 원리 확장",
+    "GM_2.5": "변분 원리 정식화의 장점",
+    "GM_2.6": "보존 정리와 대칭성",
+    "GM_2.7": "에너지 함수와 에너지 보존",
+    "GM_2.8": "유도 문제",
+    "GM_2.9": "연습문제",
 }
 
 ENTRY_LABELS_KO = {
@@ -72,6 +82,53 @@ ENTRY_LABELS_KO = {
         "part01_Exercises_exercises_11_to_17": "1부: 연습문제 11-17",
         "part02_Exercises_exercises_18_to_21": "2부: 연습문제 18-21",
         "part03_Exercises_exercises_22_to_24": "3부: 연습문제 22-24",
+    },
+    "GM_2.0": {
+        "part01_Variational_Principles_and_Lagranges_Equations_chapter_opener": "1부: 장 개요",
+    },
+    "GM_2.1": {
+        "part01_Hamiltons_Principle_hamiltons_principle_and_configuration_space": "1부: 해밀턴 원리와 배치 공간",
+        "part02_Hamiltons_Principle_stationary_action_and_lagrange_equations": "2부: 정지 작용과 라그랑주 방정식",
+    },
+    "GM_2.2": {
+        "part01_Some_Techniques_of_the_Calculus_of_Variations_variational_problem_and_parametric_paths": "1부: 변분 문제와 매개변수화된 경로",
+        "part02_Some_Techniques_of_the_Calculus_of_Variations_fundamental_lemma_and_delta_notation": "2부: 기본 보조정리와 델타 표기",
+        "part03_Some_Techniques_of_the_Calculus_of_Variations_shortest_path_and_minimum_surface_examples": "3부: 최단 경로와 최소 곡면 예시",
+        "part04_Some_Techniques_of_the_Calculus_of_Variations_brachistochrone_problem": "4부: 최속강하선 문제",
+    },
+    "GM_2.3": {
+        "part01_Derivation_of_Lagranges_Equations_from_Hamiltons_Principle_euler_lagrange_equations_and_hamiltons_principle": "1부: 오일러-라그랑주 방정식과 해밀턴 원리",
+    },
+    "GM_2.4": {
+        "part01_Extending_Hamiltons_Principle_to_Systems_with_Constraints_holonomic_constraints_and_lagrange_multipliers": "1부: 홀로노믹 구속조건과 라그랑주 승수",
+        "part02_Extending_Hamiltons_Principle_to_Systems_with_Constraints_hemisphere_example_and_semiholonomic_setup": "2부: 반구 예제와 세미홀로노믹 설정",
+        "part03_Extending_Hamiltons_Principle_to_Systems_with_Constraints_constraint_forces_and_workless_condition": "3부: 구속력과 무일 조건",
+        "part04_Extending_Hamiltons_Principle_to_Systems_with_Constraints_rolling_hoop_example": "4부: 굴러가는 고리 예제",
+    },
+    "GM_2.5": {
+        "part01_Advantages_of_a_Variational_Principle_Formulation_advantages_and_rl_drag_analogy": "1부: 장점과 RL 항력 유비",
+        "part02_Advantages_of_a_Variational_Principle_Formulation_lc_and_coupled_circuit_analogies": "2부: LC 및 결합 회로 유비",
+        "part03_Advantages_of_a_Variational_Principle_Formulation_structural_analogies_and_quantization": "3부: 구조적 유비와 양자화",
+    },
+    "GM_2.6": {
+        "part01_Conservation_Theorems_and_Symmetry_Properties_generalized_momentum_and_cyclic_coordinates": "1부: 일반화 운동량과 순환 좌표",
+        "part02_Conservation_Theorems_and_Symmetry_Properties_canonical_momentum_and_conservation_scope": "2부: 정준 운동량과 보존 범위",
+        "part03_Conservation_Theorems_and_Symmetry_Properties_translation_symmetry_and_linear_momentum": "3부: 병진 대칭과 선운동량",
+        "part04_Conservation_Theorems_and_Symmetry_Properties_rotation_symmetry_and_conservation_examples": "4부: 회전 대칭과 보존 예제",
+    },
+    "GM_2.7": {
+        "part01_Energy_Function_and_the_Conservation_of_Energy_energy_function_derivation": "1부: 에너지 함수의 유도",
+        "part02_Energy_Function_and_the_Conservation_of_Energy_h_as_total_energy_conditions": "2부: 총에너지로서의 h 조건",
+        "part03_Energy_Function_and_the_Conservation_of_Energy_conservation_distinctions_and_dissipation": "3부: 보존의 구분과 흩어지기",
+    },
+    "GM_2.8": {
+        "part01_Derivations_derivations": "1부: 유도 문제",
+    },
+    "GM_2.9": {
+        "part01_Exercises_exercises_5_to_10": "1부: 연습문제 5-10",
+        "part02_Exercises_exercises_11_to_16": "2부: 연습문제 11-16",
+        "part03_Exercises_exercises_17_to_21": "3부: 연습문제 17-21",
+        "part04_Exercises_exercises_22_to_27": "4부: 연습문제 22-27",
     },
 }
 
@@ -179,7 +236,7 @@ def file_version(path: Path):
 
 
 def section_id_from_dir(section_dir: Path):
-    match = re.match(r"^(GM_1\.\d+)_", section_dir.name)
+    match = re.match(r"^(GM_[12]\.\d+)_", section_dir.name)
     if not match:
         raise ValueError(f"Not a target section directory: {section_dir}")
     return match.group(1)
@@ -235,7 +292,7 @@ def build_data(source_root: Path):
 
     return {
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "source": "Mechanics_Goldstein_Classical Chapter 1, PDFs excluded",
+        "source": "Mechanics_Goldstein_Classical Chapters 1-2, PDFs excluded",
         "sections": sections,
     }
 
