@@ -22,6 +22,8 @@ const state = {
   wakeLockStatus: "",
   wakeLockStatusKind: "",
   sidebarCollapsed: savedState.sidebarCollapsed === true,
+  repeatMode: normalizeRepeatMode(savedState.repeatMode),
+  playbackRunId: 0,
 };
 
 function readSavedState() {
@@ -54,9 +56,20 @@ const els = {
   playButton: document.getElementById("playButton"),
   pauseButton: document.getElementById("pauseButton"),
   stopButton: document.getElementById("stopButton"),
+  repeatModeButton: document.getElementById("repeatModeButton"),
   rateInput: document.getElementById("rateInput"),
   rateOutput: document.getElementById("rateOutput"),
 };
+
+function normalizeRepeatMode(mode) {
+  return mode === "paragraph" || mode === "all" ? mode : "none";
+}
+
+function repeatModeLabel(mode = state.repeatMode) {
+  if (mode === "paragraph") return "각 문단 반복";
+  if (mode === "all") return "전체 반복";
+  return "";
+}
 
 function entriesFor(section, kind = state.kind) {
   return section.entries.filter((entry) => entry.kind === kind);
@@ -121,6 +134,7 @@ function persistReaderState() {
     kind: state.kind,
     entryId: state.entryId,
     sidebarCollapsed: state.sidebarCollapsed,
+    repeatMode: state.repeatMode,
   };
 
   try {
@@ -509,6 +523,14 @@ async function speakFromCurrent() {
   const speech = window.speechSynthesis;
   if (!speech || state.kind !== "tts" || !state.paragraphs.length) return;
 
+  state.playbackRunId += 1;
+  await speakCurrentParagraph(state.playbackRunId);
+}
+
+async function speakCurrentParagraph(playbackRunId) {
+  const speech = window.speechSynthesis;
+  if (!speech || playbackRunId !== state.playbackRunId) return;
+
   await requestScreenWakeLock();
   speech.cancel();
   state.paused = false;
@@ -521,16 +543,33 @@ async function speakFromCurrent() {
   if (voice) state.utterance.voice = voice;
 
   state.utterance.onend = () => {
+    if (playbackRunId !== state.playbackRunId) return;
+
+    if (state.repeatMode === "paragraph") {
+      speakCurrentParagraph(playbackRunId);
+      return;
+    }
+
     if (state.paragraphIndex < state.paragraphs.length - 1) {
       state.paragraphIndex += 1;
-      speakFromCurrent();
-    } else {
-      releaseScreenWakeLock();
-      updatePlayer();
+      speakCurrentParagraph(playbackRunId);
+      return;
     }
+
+    if (state.repeatMode === "all") {
+      state.paragraphIndex = 0;
+      speakCurrentParagraph(playbackRunId);
+      return;
+    }
+
+    state.utterance = null;
+    releaseScreenWakeLock();
+    updatePlayer();
   };
 
   state.utterance.onerror = () => {
+    if (playbackRunId !== state.playbackRunId) return;
+    state.utterance = null;
     releaseScreenWakeLock();
     updatePlayer();
   };
@@ -555,6 +594,7 @@ async function pauseSpeech() {
 
 async function stopSpeech() {
   const speech = window.speechSynthesis;
+  state.playbackRunId += 1;
   if (speech) speech.cancel();
   state.paused = false;
   state.utterance = null;
@@ -562,17 +602,35 @@ async function stopSpeech() {
   updatePlayer();
 }
 
+function cycleRepeatMode() {
+  const modes = ["none", "paragraph", "all"];
+  const currentIndex = modes.indexOf(state.repeatMode);
+  state.repeatMode = modes[(currentIndex + 1) % modes.length];
+  updatePlayer();
+  persistReaderState();
+}
+
 function updatePlayer() {
   const entry = currentEntry();
+  const repeatActive = state.repeatMode !== "none";
+  const repeatLabel = repeatModeLabel();
+
   els.ttsPlayer.hidden = state.kind !== "tts";
   els.playerTitle.textContent =
     state.kind === "tts" && entry ? entry.label : "TTS 파일을 선택하세요";
   els.playerProgress.textContent =
     state.kind === "tts" && state.paragraphs.length
-      ? `문단 ${Math.min(state.paragraphIndex + 1, state.paragraphs.length)} / ${state.paragraphs.length}`
+      ? `문단 ${Math.min(state.paragraphIndex + 1, state.paragraphs.length)} / ${state.paragraphs.length}${repeatLabel ? ` · ${repeatLabel}` : ""}`
       : "";
   els.wakeLockStatus.textContent = state.kind === "tts" ? state.wakeLockStatus : "";
   els.wakeLockStatus.className = state.wakeLockStatusKind;
+
+  els.repeatModeButton.classList.toggle("active", repeatActive);
+  els.repeatModeButton.setAttribute("aria-pressed", String(repeatActive));
+  els.repeatModeButton.title = repeatActive
+    ? `${repeatLabel} 켜짐: 다음 반복 모드`
+    : "반복 꺼짐: 반복 모드 선택";
+  els.repeatModeButton.setAttribute("aria-label", els.repeatModeButton.title);
 
   els.readerSurface.querySelectorAll(".tts-paragraph").forEach((paragraph) => {
     paragraph.classList.toggle("active", Number(paragraph.dataset.index) === state.paragraphIndex);
@@ -661,6 +719,7 @@ els.playButton.addEventListener("click", async () => {
 
 els.pauseButton.addEventListener("click", pauseSpeech);
 els.stopButton.addEventListener("click", stopSpeech);
+els.repeatModeButton.addEventListener("click", cycleRepeatMode);
 
 document.addEventListener("visibilitychange", () => {
   if (
