@@ -5,6 +5,7 @@ const savedState = readSavedState();
 const requestedSection = params.get("section") ?? savedState.sectionId;
 const requestedKind = params.get("kind") ?? savedState.kind;
 const requestedEntry = params.get("entry") ?? savedState.entryId;
+const PARAGRAPH_REPEAT_DELAY_MS = 2500;
 
 const state = {
   sectionId: siteData.sections.some((section) => section.id === requestedSection)
@@ -24,6 +25,7 @@ const state = {
   sidebarCollapsed: savedState.sidebarCollapsed === true,
   repeatMode: normalizeRepeatMode(savedState.repeatMode),
   playbackRunId: 0,
+  repeatTimer: null,
 };
 
 function readSavedState() {
@@ -69,6 +71,25 @@ function repeatModeLabel(mode = state.repeatMode) {
   if (mode === "paragraph") return "각 문단 반복";
   if (mode === "all") return "전체 반복";
   return "";
+}
+
+function clearRepeatTimer() {
+  if (state.repeatTimer) {
+    window.clearTimeout(state.repeatTimer);
+    state.repeatTimer = null;
+  }
+}
+
+function repeatCurrentParagraphAfterDelay(playbackRunId) {
+  clearRepeatTimer();
+  state.utterance = null;
+  state.repeatTimer = window.setTimeout(() => {
+    state.repeatTimer = null;
+    if (playbackRunId === state.playbackRunId && state.repeatMode === "paragraph") {
+      speakCurrentParagraph(playbackRunId);
+    }
+  }, PARAGRAPH_REPEAT_DELAY_MS);
+  updatePlayer();
 }
 
 function entriesFor(section, kind = state.kind) {
@@ -524,6 +545,7 @@ async function speakFromCurrent() {
   if (!speech || state.kind !== "tts" || !state.paragraphs.length) return;
 
   state.playbackRunId += 1;
+  clearRepeatTimer();
   await speakCurrentParagraph(state.playbackRunId);
 }
 
@@ -531,6 +553,7 @@ async function speakCurrentParagraph(playbackRunId) {
   const speech = window.speechSynthesis;
   if (!speech || playbackRunId !== state.playbackRunId) return;
 
+  clearRepeatTimer();
   await requestScreenWakeLock();
   speech.cancel();
   state.paused = false;
@@ -546,7 +569,7 @@ async function speakCurrentParagraph(playbackRunId) {
     if (playbackRunId !== state.playbackRunId) return;
 
     if (state.repeatMode === "paragraph") {
-      speakCurrentParagraph(playbackRunId);
+      repeatCurrentParagraphAfterDelay(playbackRunId);
       return;
     }
 
@@ -595,6 +618,7 @@ async function pauseSpeech() {
 async function stopSpeech() {
   const speech = window.speechSynthesis;
   state.playbackRunId += 1;
+  clearRepeatTimer();
   if (speech) speech.cancel();
   state.paused = false;
   state.utterance = null;
@@ -626,6 +650,8 @@ function updatePlayer() {
   els.wakeLockStatus.className = state.wakeLockStatusKind;
 
   els.repeatModeButton.classList.toggle("active", repeatActive);
+  els.repeatModeButton.classList.toggle("repeat-paragraph", state.repeatMode === "paragraph");
+  els.repeatModeButton.classList.toggle("repeat-all", state.repeatMode === "all");
   els.repeatModeButton.setAttribute("aria-pressed", String(repeatActive));
   els.repeatModeButton.title = repeatActive
     ? `${repeatLabel} 켜짐: 다음 반복 모드`

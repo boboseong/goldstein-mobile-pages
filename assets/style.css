@@ -552,12 +552,32 @@ button {
 }
 
 .repeat-toggle.active {
+  border-color: #59636c;
+  background: #59636c;
+  color: #fff;
+}
+
+.repeat-toggle.repeat-paragraph {
+  border-color: #a35b00;
+  background: #a35b00;
+  color: #fff;
+}
+
+.repeat-toggle.repeat-all {
   border-color: var(--accent);
   background: var(--accent);
   color: #fff;
 }
 
 .repeat-toggle.active:hover {
+  background: #424a51;
+}
+
+.repeat-toggle.repeat-paragraph:hover {
+  background: #7a4300;
+}
+
+.repeat-toggle.repeat-all:hover {
   background: var(--accent-strong);
 }
 
