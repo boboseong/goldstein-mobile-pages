@@ -163,6 +163,8 @@ def read_manifest(source_root: Path):
 
 def entry_kind(path: Path):
     name = path.name
+    if "Snack" in name and name.endswith(".md"):
+        return "translation"
     if name.endswith("_Korean_Translation.md"):
         return "translation"
     if name.endswith("_KR_TTS.md"):

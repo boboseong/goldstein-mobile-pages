@@ -1,5 +1,5 @@
 window.GOLDSTEIN_SITE_DATA = {
-  "generatedAt": "2026-06-19T15:21:30.861879+00:00",
+  "generatedAt": "2026-06-19T15:23:31.908350+00:00",
   "source": "Mechanics_Goldstein_Classical Chapters 1-2, PDFs excluded",
   "sections": [
     {
@@ -24,7 +24,48 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "1",
       "pageLabelEnd": "5",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-1_Snack_01_-2-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · Snack 01 선운동량과뉴턴제2법칙",
+          "fileName": "GM_1.1_Snack_01_선운동량과뉴턴제2법칙.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_01_선운동량과뉴턴제2법칙.md",
+          "image": null,
+          "content": "# 1.1 MECHANICS OF A PARTICLE (입자의 역학)\n\n어떤 주어진 원점에서 입자까지의 위치 벡터(radius vector)를 $\\mathbf{r}$, 속도 벡터를 $\\mathbf{v}$라고 하자.\n\n$$\n\\mathbf{v} = \\frac{d\\mathbf{r}}{dt}. \\quad (1.1)\n$$\n\n입자의 선운동량(linear momentum) $\\mathbf{p}$는 입자의 질량과 속도의 곱으로 정의된다.\n\n$$\n\\mathbf{p} = m\\mathbf{v}. \\quad (1.2)\n$$\n\n외부 물체 및 장(field)과의 상호작용의 결과로, 입자는 중력이나 전자기력 등 다양한 종류의 힘을 받을 수 있다. 입자에 작용하는 이러한 힘들의 벡터 합이 총 힘(알짜힘) $\\mathbf{F}$이다. 입자의 역학은 뉴턴의 운동 제2법칙에 포함되어 있으며, 이 법칙은 입자의 운동이 다음과 같은 미분 방정식으로 기술되는 기준계가 존재한다고 서술한다.\n\n$$\n\\mathbf{F} = \\frac{d\\mathbf{p}}{dt} \\equiv \\dot{\\mathbf{p}}, \\quad (1.3)\n$$\n\n또는\n\n$$\n\\mathbf{F} = \\frac{d}{dt}(m\\mathbf{v}). \\quad (1.4)\n$$\n\n대부분의 경우 입자의 질량은 일정하며, 식 (1.4)는 다음과 같이 간단해진다.\n\n$$\n\\mathbf{F} = m \\frac{d\\mathbf{v}}{dt} = m\\mathbf{a}, \\quad (1.5)\n$$\n\n여기서 $\\mathbf{a}$는 다음과 같이 정의된 입자의 가속도 벡터이다.\n\n$$\n\\mathbf{a} = \\frac{d^2\\mathbf{r}}{dt^2}. \\quad (1.6)\n$$\n\n따라서 $\\mathbf{F}$가 고계 미분값에 의존하지 않는다고 가정할 때, 운동 방정식은 2계 미분 방정식이 된다.\n\n식 (1.3)이 성립하는 기준계를 관성계(inertial system) 또는 갈릴레이계(Galilean system)라고 부른다. 고전 역학 내에서도 관성계라는 개념은 다소 이상적인 것이다. 그러나 실제로는 요구되는 성질에 필요한 만큼 충분히 근접한 좌표계를 설정하는 것이 대개 가능하다. 많은 목적에 있어서 지구에 고정된 기준계(\"실험실 좌표계\")는 관성계에 대한 충분한 근사치가 되지만, 일부 천문학적 목적을 위해서는 먼 은하들을 기준으로 관성계(또는 관성 기준계)를 구성해야 할 수도 있다.\n\n역학의 중요한 결론들 중 많은 것들은 보존 정리(conservation theorem)의 형태로 표현될 수 있는데, 이는 어떠한 조건 하에서 다양한 역학적 양들이 시간에 따라 일정하게 유지되는지를 나타낸다. 식 (1.3)은 이들 중 첫 번째인 다음을 즉각적으로 제공한다.\n\n**입자의 선운동량 보존 정리:** 총 힘 $\\mathbf{F}$가 0이면 $\\dot{\\mathbf{p}} = 0$이 되고, 선운동량 $\\mathbf{p}$는 보존된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_01_선운동량과뉴턴제2법칙.png)"
+        },
+        {
+          "id": "GM_1-1_Snack_02_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · Snack 02 각운동량과토크",
+          "fileName": "GM_1.1_Snack_02_각운동량과토크.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_02_각운동량과토크.md",
+          "image": null,
+          "content": "점 $O$에 대한 입자의 각운동량(angular momentum)은 $\\mathbf{L}$로 표기하며, 다음과 같이 정의된다.\n\n$$\n\\mathbf{L} = \\mathbf{r} \\times \\mathbf{p}, \\quad (1.7)\n$$\n\n여기서 $\\mathbf{r}$은 $O$에서 입자까지의 위치 벡터이다. 인자들의 곱셈 순서가 중요하다는 점에 유의하라. 이제 $O$에 대한 힘의 모멘트(moment of force) 또는 토크(torque)를 다음과 같이 정의한다.\n\n$$\n\\mathbf{N} = \\mathbf{r} \\times \\mathbf{F}. \\quad (1.8)\n$$\n\n$\\mathbf{N}$에 대하여 식 (1.3)과 유사한 방정식은 식 (1.4)에 $\\mathbf{r}$의 외적(cross product)을 취하여 얻을 수 있다.\n\n$$\n\\mathbf{r} \\times \\mathbf{F} = \\mathbf{N} = \\mathbf{r} \\times \\frac{d}{dt}(m\\mathbf{v}). \\quad (1.9)\n$$\n\n벡터 항등식을 사용하면 식 (1.9)를 다른 형태로 쓸 수 있다.\n\n$$\n\\frac{d}{dt}(\\mathbf{r} \\times m\\mathbf{v}) = \\mathbf{v} \\times m\\mathbf{v} + \\mathbf{r} \\times \\frac{d}{dt}(m\\mathbf{v}), \\quad (1.10)\n$$\n\n여기서 우변의 첫 번째 항은 명백히 0이 된다. 이 항등식의 결과로, 식 (1.9)는 다음과 같은 형태를 취한다.\n\n$$\n\\mathbf{N} = \\frac{d}{dt}(\\mathbf{r} \\times m\\mathbf{v}) = \\frac{d\\mathbf{L}}{dt} \\equiv \\dot{\\mathbf{L}}. \\quad (1.11)\n$$\n\n$\\mathbf{N}$과 $\\mathbf{L}$모두 모멘트의 기준이 되는 점$O$에 의존한다는 점에 유의하라.\n\n식 (1.3)의 경우와 마찬가지로, 토크 방정식 (1.11) 역시 즉각적인 보존 정리를 내놓는다. 이번에는 다음과 같다.\n\n**입자의 각운동량 보존 정리:** 총 토크 $\\mathbf{N}$이 0이면 $\\dot{\\mathbf{L}} = 0$이 되고, 각운동량 $\\mathbf{L}$은 보존된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_02_각운동량과토크.png)"
+        },
+        {
+          "id": "GM_1-1_Snack_03_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · Snack 03 일과운동에너지",
+          "fileName": "GM_1.1_Snack_03_일과운동에너지.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_03_일과운동에너지.md",
+          "image": null,
+          "content": "다음으로 점 1에서 점 2로 이동할 때 외부의 힘 $\\mathbf{F}$가 입자에 한 일(work)을 고려해 보자. 정의에 따라 이 일은 다음과 같다.\n\n$$\nW_{12} = \\int_{1}^{2} \\mathbf{F} \\cdot d\\mathbf{s}. \\quad (1.12)\n$$\n\n질량이 일정할 경우(특별히 다르게 명시하지 않는 한 지금부터 그렇다고 가정할 것이다), 식 (1.12)의 적분은 다음과 같이 간단해진다.\n\n$$\n\\int \\mathbf{F} \\cdot d\\mathbf{s} = m \\int \\frac{d\\mathbf{v}}{dt} \\cdot \\mathbf{v} \\, dt = \\frac{m}{2} \\int \\frac{d}{dt}(v^2) \\, dt,\n$$\n\n그리고 따라서\n\n$$\nW_{12} = \\frac{m}{2} (v_2^2 - v_1^2). \\quad (1.13)\n$$\n\n스칼라양 $mv^2/2$은 입자의 운동 에너지(kinetic energy)라고 부르며 $T$로 표기한다. 따라서 한 일은 운동 에너지의 변화량과 같다.\n\n$$\nW_{12} = T_2 - T_1. \\quad (1.14)\n$$\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_03_일과운동에너지.png)"
+        },
+        {
+          "id": "GM_1-1_Snack_04_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · Snack 04 보존력과에너지보존",
+          "fileName": "GM_1.1_Snack_04_보존력과에너지보존.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_04_보존력과에너지보존.md",
+          "image": null,
+          "content": "힘의 장(force field)이 점 1과 2 사이의 물리적으로 가능한 어떠한 경로에 대해서도 한 일 $W_{12}$가 동일하게 나타난다면, 그 힘(그리고 그 계)을 보존적(conservative)이라고 한다. 보존계에 대한 대안적인 설명은 입자가 한 가능한 경로를 통해 점 1에서 점 2로 이동한 다음 다른 경로를 통해 점 1로 되돌아오는 것을 상상함으로써 얻어진다. 특정 경로에 대해 $W_{12}$가 독립적이라는 것은 그러한 폐회로(closed circuit)를 따라 한 일이 0임을 의미한다. 즉:\n\n$$\n\\oint \\mathbf{F} \\cdot d\\mathbf{s} = 0. \\quad (1.15)\n$$\n\n물리적으로 볼 때, 마찰력이나 다른 소산력(dissipation force)이 존재하는 경우 계는 보존계일 수 없음이 분명하다. 왜냐하면 마찰에 의한 $\\mathbf{F} \\cdot d\\mathbf{s}$는 항상 양수이며 적분값이 사라질 수 없기 때문이다.\n\n벡터 해석학의 잘 알려진 정리에 따르면, 일 $W_{12}$가 입자가 취하는 물리적 경로에 무관하기 위한 필요충분조건은 $\\mathbf{F}$가 위치에 대한 어떤 스칼라 함수의 그래디언트(gradient)가 되는 것이다.\n\n$$\n\\mathbf{F} = -\\nabla V(\\mathbf{r}), \\quad (1.16)\n$$\n\n여기서 $V$는 퍼텐셜(potential) 또는 퍼텐셜 에너지(potential energy)라고 부른다. $V$의 존재는 간단한 논증을 통해 직관적으로 추론할 수 있다. 끝점 1과 2 사이의 적분 경로에 대해 $W_{12}$가 독립적이라면, $W_{12}$를 양 끝점의 위치에만 의존하는 어떤 양의 변화로 표현하는 것이 가능해야 한다. 이 양을 $-V$로 지정할 수 있으며, 그러면 미소 경로 길이에 대해 다음과 같은 관계식을 얻는다.\n\n$$\n\\mathbf{F} \\cdot d\\mathbf{s} = -dV\n$$\n\n또는\n\n$$\nF_s = -\\frac{\\partial V}{\\partial s},\n$$\n\n이는 식 (1.16)과 동치이다. 식 (1.16)에서 결과에 영향을 주지 않고 $V$에 공간상 일정한 임의의 양을 더할 수 있다는 점에 유의하라. 따라서 $V$의 영점(zero level)은 임의적이다.\n\n보존계에서 힘이 한 일은 다음과 같다.\n\n$$\nW_{12} = V_1 - V_2. \\quad (1.17)\n$$\n\n식 (1.17)을 식 (1.14)와 결합하면 다음의 결과를 얻는다.\n\n$$\nT_1 + V_1 = T_2 + V_2, \\quad (1.18)\n$$\n\n이는 기호로 다음을 진술하는 것이다.\n\n**입자의 에너지 보존 정리:** 입자에 작용하는 힘이 보존력이면 입자의 총 에너지 $T + V$는 보존된다.\n\n입자에 가해지는 힘이 어떤 상황에서는 입자의 위치와 시간에 모두 명시적으로 의존하는 스칼라 함수의 그래디언트로 주어질 수도 있다. 그러나, 입자가 거리 $ds$를 이동할 때 입자에 한 일은\n\n$$\n\\mathbf{F} \\cdot d\\mathbf{s} = -\\frac{\\partial V}{\\partial s} ds,\n$$\n\n가 되며, 이는 더 이상 변위 동안의 $-V$의 전체 변화량이 되지 않는데, 왜냐하면 입자가 움직임에 따라 $V$역시 시간에 대해 명시적으로 변하기 때문이다. 따라서, 입자가 점 1에서 점 2로 이동할 때 한 일은 더 이상 그 점들 사이의 함수$V$의 차이가 아니다. 총 에너지 $T + V$를 여전히 정의할 수는 있겠지만, 그것은 입자의 운동 과정 동안 보존되지 않는다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_04_보존력과에너지보존.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.2",
@@ -36,7 +77,68 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "5",
       "pageLabelEnd": "12",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-2_Snack_01_-2-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 01 뉴턴제2법칙과질량중심",
+          "fileName": "GM_1.2_Snack_01_뉴턴제2법칙과질량중심.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_01_뉴턴제2법칙과질량중심.md",
+          "image": null,
+          "content": "# 1.2 입자계의 역학\n\n이전 절의 아이디어를 많은 입자로 이루어진 계로 일반화할 때, 우리는 계 외부의 원인에 의해 입자에 작용하는 외력(external forces)과 계 내의 다른 모든 입자들에 의해 어떤 입자 $i$에 작용하는 내력(internal forces)을 구별해야 한다. 따라서, $i$번째 입자에 대한 운동 방정식(뉴턴의 제2법칙)은 다음과 같이 쓰인다.\n\n$$\n\\sum_j \\mathbf{F}_{ji} + \\mathbf{F}_i^{(e)} = \\dot{\\mathbf{p}}_i, \\quad (1.19)\n$$\n\n여기서 $\\mathbf{F}_i^{(e)}$는 외력을 나타내며, $\\mathbf{F}_{ji}$는 $j$번째 입자로 인해 $i$번째 입자에 작용하는 내력이다(당연히 $\\mathbf{F}_{ii}$는 0이다). 우리는 ( $\\mathbf{F}_i^{(e)}$와 마찬가지로) $\\mathbf{F}_{ij}$가 원래 형태의 뉴턴 제3법칙을 따른다고 가정할 것이다. 즉, 두 입자가 서로에게 작용하는 힘은 크기가 같고 방향이 반대이다. (모든 종류의 힘에 대해 성립하지는 않는) 이 가정은 종종 작용과 반작용의 약한 법칙(weak law of action and reaction)이라고 불린다.\n\n모든 입자에 대해 합을 구하면, 식 (1.19)는 다음과 같은 형태를 취한다.\n\n$$\n\\frac{d^2}{dt^2} \\sum_i m_i \\mathbf{r}_i = \\sum_i \\mathbf{F}_i^{(e)} + \\sum_{\\substack{i,j \\\\ i \\neq j}} \\mathbf{F}_{ji}. \\quad (1.20)\n$$\n\n우변의 첫 번째 합은 단순히 전체 외력 $\\mathbf{F}^{(e)}$이며, 두 번째 항은 작용과 반작용의 법칙에 따라 각각의 쌍 $\\mathbf{F}_{ij} + \\mathbf{F}_{ji}$가 0이 되므로 사라진다. 좌변을 간단히 하기 위해, 입자들의 질량에 비례하여 가중치를 둔 위치 벡터(radii vectors)의 평균으로 벡터 $\\mathbf{R}$을 정의한다.\n\n$$\n\\mathbf{R} = \\frac{\\sum m_i \\mathbf{r}_i}{\\sum m_i} = \\frac{\\sum m_i \\mathbf{r}_i}{M}. \\quad (1.21)\n$$\n\n벡터 $\\mathbf{R}$은 계의 질량 중심(center of mass), 혹은 더 넓은 의미로 무게 중심(center of gravity)으로 알려진 점을 정의한다(그림 1.1 참조). 이 정의를 사용하면 (1.20)은 다음과 같이 줄어든다.\n\n$$\nM \\frac{d^2\\mathbf{R}}{dt^2} = \\sum_i \\mathbf{F}_i^{(e)} \\equiv \\mathbf{F}^{(e)}, \\quad (1.22)\n$$\n\n이는 질량 중심이 마치 전체 외력이 질량 중심에 집중된 계의 전체 질량에 작용하는 것처럼 움직인다는 것을 나타낸다. 순수한 내력은 그것이 뉴턴의 제3법칙을 따른다면, 질량 중심의 운동에 아무런 영향을 미치지 않는다. 자주 인용되는 예로 폭발하는 포탄의 운동이 있다. 파편들의 질량 중심은 (공기 저항을 무시할 때) 포탄이 여전히 하나의 조각인 것처럼 이동한다. 제트 및 로켓 추진에도 같은 원리가 적용된다. 질량 중심의 운동이 영향을 받지 않도록 하려면, 고속으로 배출되는 배기가스는 비행체의 더 느린 전진 운동으로 상쇄되어야 한다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_01_뉴턴제2법칙과질량중심.png)"
+        },
+        {
+          "id": "GM_1-2_Snack_02_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 02 선운동량과각운동량보존",
+          "fileName": "GM_1.2_Snack_02_선운동량과각운동량보존.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_02_선운동량과각운동량보존.md",
+          "image": null,
+          "content": "앞서 정의한 질량 중심 벡터 $\\mathbf{R}$에 의해 계의 전체 선운동량은 다음과 같이 쓸 수 있다.\n\n$$\n\\mathbf{P} = \\sum m_i \\frac{d\\mathbf{r}_i}{dt} = M \\frac{d\\mathbf{R}}{dt}, \\quad (1.23)\n$$\n\n즉, 계의 전체 질량에 질량 중심의 속도를 곱한 것이다. 결과적으로, 질량 중심에 대한 운동 방정식은 다음과 같이 다시 쓰일 수 있다.\n\n입자계의 선운동량 보존 정리: 전체 외력이 0이면, 전체 선운동량은 보존된다.\n\n외적 $\\mathbf{r}_i \\times \\mathbf{p}_i$를 취하고 $i$에 대해 합산함으로써 계의 전체 각운동량을 얻는다. 식 (1.19)에서 이 연산을 수행하면 항등식의 도움으로 다음 결과를 얻는다.\n\n$$\n\\sum_i (\\mathbf{r}_i \\times \\dot{\\mathbf{p}}_i) = \\sum_i \\frac{d}{dt} (\\mathbf{r}_i \\times \\mathbf{p}_i) = \\dot{\\mathbf{L}} = \\sum_i \\mathbf{r}_i \\times \\mathbf{F}_i^{(e)} + \\sum_{\\substack{i,j \\\\ i \\neq j}} \\mathbf{r}_i \\times \\mathbf{F}_{ji}. \\quad (1.24)\n$$\n\n식 (1.24) 우변의 마지막 항은 다음과 같은 형태의 쌍의 합으로 생각할 수 있다.\n\n$$\n\\mathbf{r}_i \\times \\mathbf{F}_{ji} + \\mathbf{r}_j \\times \\mathbf{F}_{ij} = (\\mathbf{r}_i - \\mathbf{r}_j) \\times \\mathbf{F}_{ji}, \\quad (1.25)\n$$\n\n여기서 작용과 반작용의 동등성이 사용되었다. 그러나 $\\mathbf{r}_i - \\mathbf{r}_j$는 $j$에서 $i$로 향하는 벡터 $\\mathbf{r}_{ij}$와 동일하므로, 식 (1.25)의 우변은 $\\mathbf{r}_{ij} \\times \\mathbf{F}_{ji}$ 와 같이 쓸 수 있다.\n\n두 입자 사이의 내력이 크기가 같고 반대 방향일 뿐만 아니라, 입자들을 잇는 선분을 따라 놓여 있다면—작용과 반작용의 강한 법칙(strong law of action and reaction)으로 알려진 조건—이러한 외적은 모두 0이 되어 사라진다. 이 가정 하에서는 쌍에 대한 합이 0이 되며, 식 (1.24)는 다음과 같은 형태로 쓰일 수 있다.\n\n$$\n\\frac{d\\mathbf{L}}{dt} = \\mathbf{N}^{(e)}. \\quad (1.26)\n$$\n\n따라서 전체 각운동량의 시간 미분은 주어진 점에 대한 외력의 모멘트와 같다. 식 (1.26)에 대응하는 것은 다음과 같다.\n\n전체 각운동량 보존 정리: 가해진(외부) 토크가 0이면 $\\mathbf{L}$은 시간에 대해 일정하다.\n\n가해진 힘이 없을 때의 선운동량 보존은 내력에 대해 작용과 반작용의 약한 법칙이 유효하다고 가정한다는 것에 유의하라. 가해진 토크가 없을 때 계의 전체 각운동량 보존은 작용과 반작용의 강한 법칙의 유효성을 요구한다. 즉, 내력이 추가로 중심력(central force)이어야 한다는 것이다. 비오-사바르 법칙(Biot-Savart law)에 의해 예측되는 움직이는 전하 사이의 힘은 실제로 작용과 반작용의 법칙의 두 가지 형태를 모두 위반할 수 있다. 이런 경우 기계적 선운동량과 각운동량 보존 정리들은 적용할 수 없으며, 장(field)의 전자기적 운동량을 더한 일반화된 보존을 고려해야 한다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_02_선운동량과각운동량보존.png)"
+        },
+        {
+          "id": "GM_1-2_Snack_03_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 03 질량중심에대한각운동량",
+          "fileName": "GM_1.2_Snack_03_질량중심에대한각운동량.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_03_질량중심에대한각운동량.md",
+          "image": null,
+          "content": "식 (1.23)은 계의 전체 선운동량이 마치 전체 질량이 질량 중심에 집중되어 질량 중심과 함께 움직이는 것과 같음을 나타낸다. 각운동량에 대한 유사한 정리는 이보다 더 복잡하다. 원점 $O$를 기준점으로 할 때, 계의 전체 각운동량은\n\n$$\n\\mathbf{L} = \\sum_i \\mathbf{r}_i \\times \\mathbf{p}_i.\n$$\n\n$\\mathbf{R}$을 원점 $O$에서 질량 중심으로 향하는 위치 벡터로, $\\mathbf{r}'_i$를 질량 중심에서 $i$번째 입자로 향하는 위치 벡터로 두자. 그러면 다음을 얻는다(그림 1.3 참조).\n\n$$\n\\mathbf{r}_i = \\mathbf{r}'_i + \\mathbf{R} \\quad (1.27)\n$$\n\n그리고\n\n$$\n\\mathbf{v}_i = \\mathbf{v}'_i + \\mathbf{v}\n$$\n\n여기서\n\n$$\n\\mathbf{v} = \\frac{d\\mathbf{R}}{dt}\n$$\n\n는 $O$에 대한 질량 중심의 속도이며,\n\n$$\n\\mathbf{v}'_i = \\frac{d\\mathbf{r}'_i}{dt}\n$$\n\n는 계의 질량 중심에 대한 $i$번째 입자의 속도이다. 식 (1.27)을 사용하면, 전체 각운동량은 다음과 같은 형태를 띤다.\n\n$$\n\\mathbf{L} = \\sum_i \\mathbf{R} \\times m_i \\mathbf{v} + \\sum_i \\mathbf{r}'_i \\times m_i \\mathbf{v}'_i + \\left( \\sum_i m_i \\mathbf{r}'_i \\right) \\times \\mathbf{v} + \\mathbf{R} \\times \\frac{d}{dt} \\sum_i m_i \\mathbf{r}'_i.\n$$\n\n이 식에서 마지막 두 항은 사라지는데, 둘 다 $\\sum m_i \\mathbf{r}'_i$라는 인수를 포함하기 때문이다. 이 인수는 알 수 있듯이 기원이 바로 질량 중심인 좌표계 내에서 질량 중심의 위치 벡터를 정의하므로 0벡터(null vector)이다. 남은 항들을 다시 쓰면, $O$에 대한 전체 각운동량은\n\n$$\n\\mathbf{L} = \\mathbf{R} \\times M\\mathbf{v} + \\sum_i \\mathbf{r}'_i \\times \\mathbf{p}'_i. \\quad (1.28)\n$$\n\n말로 표현하자면, 식 (1.28)은 점 $O$에 대한 전체 각운동량이 질량 중심에 집중된 운동의 각운동량에, 질량 중심에 대한 운동의 각운동량을 더한 것과 같다는 것을 말해준다. 식 (1.28)의 형태는 일반적으로 $\\mathbf{L}$이 벡터 $\\mathbf{R}$을 통해 원점 $O$에 의존한다는 것을 강조한다. 질량 중심이 $O$에 대해 정지해 있을 때만 각운동량이 기준점과 무관하게 된다. 이 경우 (1.28)의 첫 번째 항은 사라지고, $\\mathbf{L}$은 항상 질량 중심에 대해 취해진 각운동량으로 축소된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_03_질량중심에대한각운동량.png)"
+        },
+        {
+          "id": "GM_1-2_Snack_04_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 04 계의운동에너지",
+          "fileName": "GM_1.2_Snack_04_계의운동에너지.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_04_계의운동에너지.md",
+          "image": null,
+          "content": "마지막으로 에너지 방정식을 고려해 보자. 단일 입자의 경우에서와 마찬가지로, 계를 초기 배열 1에서 최종 배열 2로 이동시키는 데 모든 힘이 한 일(work)을 계산한다.\n\n$$\nW_{12} = \\sum_i \\int_1^2 \\mathbf{F}_i \\cdot d\\mathbf{s}_i = \\sum_i \\int_1^2 \\mathbf{F}_i^{(e)} \\cdot d\\mathbf{s}_i + \\sum_{\\substack{i,j \\\\ i \\neq j}} \\int_1^2 \\mathbf{F}_{ji} \\cdot d\\mathbf{s}_i. \\quad (1.29)\n$$\n\n마찬가지로 운동 방정식을 사용하여 적분을 다음과 같이 간단히 할 수 있다.\n\n$$\n\\sum_i \\int_1^2 \\mathbf{F}_i \\cdot d\\mathbf{s}_i = \\sum_i \\int_1^2 m_i \\dot{\\mathbf{v}}_i \\cdot \\mathbf{v}_i \\, dt = \\sum_i \\int_1^2 d\\left(\\frac{1}{2}m_i v_i^2\\right).\n$$\n\n따라서 행해진 일은 여전히 최종 운동 에너지와 초기 운동 에너지의 차이로 쓸 수 있다.\n\n$$\nW_{12} = T_2 - T_1,\n$$\n\n여기서 계의 전체 운동 에너지 $T$는\n\n$$\nT = \\frac{1}{2} \\sum_i m_i v_i^2. \\quad (1.30)\n$$\n\n식 (1.27)에 주어진 질량 중심 좌표계로의 변환을 이용하면, $T$를 다음과 같이 쓸 수도 있다.\n\n$$\nT = \\frac{1}{2} \\sum_i m_i (\\mathbf{v} + \\mathbf{v}'_i) \\cdot (\\mathbf{v} + \\mathbf{v}'_i)\n$$\n\n$$\n= \\frac{1}{2} \\sum_i m_i v^2 + \\frac{1}{2} \\sum_i m_i {v'_i}^2 + \\mathbf{v} \\cdot \\frac{d}{dt} \\left( \\sum_i m_i \\mathbf{r}'_i \\right),\n$$\n\n그리고 각운동량을 계산할 때 이미 사용했던 논리에 의해 $\\sum m_i \\mathbf{r}'_i = 0$ 이 되어 마지막 항은 사라지며 다음이 남는다.\n\n$$\nT = \\frac{1}{2} Mv^2 + \\frac{1}{2} \\sum_i m_i {v'_i}^2 \\quad (1.31)\n$$\n\n따라서 각운동량과 마찬가지로 운동 에너지 역시 두 부분으로 구성된다. 모든 질량이 질량 중심에 집중되어 있을 때 얻어지는 운동 에너지에, 질량 중심에 대한 운동의 운동 에너지를 더한 것이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_04_계의운동에너지.png)"
+        },
+        {
+          "id": "GM_1-2_Snack_05_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 05 내력의퍼텐셜에너지",
+          "fileName": "GM_1.2_Snack_05_내력의퍼텐셜에너지.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_05_내력의퍼텐셜에너지.md",
+          "image": null,
+          "content": "이제 식 (1.29)의 우변을 살펴보자. 외력을 어떤 퍼텐셜의 그래디언트(gradient)로 도출할 수 있는 특수한 경우에, 첫 번째 항은 다음과 같이 쓸 수 있다.\n\n$$\n\\sum_i \\int_1^2 \\mathbf{F}_i^{(e)} \\cdot d\\mathbf{s}_i = - \\sum_i \\int_1^2 \\nabla_i V_i \\cdot d\\mathbf{s}_i = - \\sum_i \\left. V_i \\right|_1^2,\n$$\n\n여기서 델 연산자(del operator)의 아래첨자 $i$는 미분이 $\\mathbf{r}_i$의 성분들에 대한 것임을 나타낸다. 만약 내력도 보존력이라면, $i$번째와 $j$번째 입자 사이의 상호 작용력 $\\mathbf{F}_{ij}$와 $\\mathbf{F}_{ji}$는 퍼텐셜 함수 $V_{ij}$로부터 얻어질 수 있다. 작용과 반작용의 강한 법칙을 만족시키기 위해, $V_{ij}$는 입자들 사이의 거리에 대한 함수일 수밖에 없다.\n\n$$\nV_{ij} = V_{ij}(|\\mathbf{r}_i - \\mathbf{r}_j|). \\quad (1.32)\n$$\n\n그러면 두 힘은 자동적으로 크기가 같고 반대 방향이 된다.\n\n$$\n\\mathbf{F}_{ji} = -\\nabla_i V_{ij} = +\\nabla_j V_{ij} = -\\mathbf{F}_{ij}, \\quad (1.33)\n$$\n\n또한 두 입자를 잇는 선을 따라 놓이게 된다.\n\n$$\n\\nabla V_{ij}(|\\mathbf{r}_i - \\mathbf{r}_j|) = (\\mathbf{r}_i - \\mathbf{r}_j)f, \\quad (1.34)\n$$\n\n여기서 $f$는 어떤 스칼라 함수이다. 만약 $V_{ij}$가 속도나 (현대 물리학의 영역으로 넘어가서) 고유한 \"스핀(spin)\" 각운동량과 같이 입자들과 연관된 어떤 다른 벡터 쌍의 차이의 함수이기도 하다면, 힘은 여전히 크기가 같고 방향이 반대이겠지만 반드시 입자 사이의 방향을 따라 놓이지는 않을 것이다.\n\n모든 힘이 보존력일 때, 식 (1.29)의 두 번째 항은 입자 쌍에 대한 합으로 다시 쓸 수 있으며, 각 쌍에 대한 항은 다음과 같은 형태가 된다.\n\n$$\n- \\int_1^2 (\\nabla_i V_{ij} \\cdot d\\mathbf{s}_i + \\nabla_j V_{ij} \\cdot d\\mathbf{s}_j).\n$$\n\n차이 벡터 $\\mathbf{r}_i - \\mathbf{r}_j$를 $\\mathbf{r}_{ij}$로 나타내고, $\\nabla_{ij}$가 $\\mathbf{r}_{ij}$에 대한 그래디언트를 의미한다면, 다음이 성립한다.\n\n$$\n\\nabla_i V_{ij} = \\nabla_{ij} V_{ij} = -\\nabla_j V_{ij},\n$$\n\n그리고\n\n$$\nd\\mathbf{s}_i - d\\mathbf{s}_j = d\\mathbf{r}_i - d\\mathbf{r}_j = d\\mathbf{r}_{ij},\n$$\n\n따라서 $ij$ 쌍에 대한 항은 다음과 같은 형태가 된다.\n\n$$\n- \\int \\nabla_{ij} V_{ij} \\cdot d\\mathbf{r}_{ij}.\n$$\n\n그러면 내력으로 인해 발생하는 총 일(work)은 다음과 같이 간단해진다.\n\n$$\n-\\frac{1}{2} \\sum_{\\substack{i,j \\\\ i \\neq j}} \\int_1^2 \\nabla_{ij} V_{ij} \\cdot d\\mathbf{r}_{ij} = -\\frac{1}{2} \\sum_{\\substack{i,j \\\\ i \\neq j}} \\left. V_{ij} \\right|_1^2. \\quad (1.35)\n$$\n\n식 (1.35)에서 $\\frac{1}{2}$이라는 계수가 나타나는 이유는, $i$와 $j$모두에 대해 합을 구할 때 주어진 쌍의 각 구성원이 한 번은$i$에 대한 합산에서, 그리고 다음에는 $j$에 대한 합산에서 총 두 번 포함되기 때문이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_05_내력의퍼텐셜에너지.png)"
+        },
+        {
+          "id": "GM_1-2_Snack_06_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · Snack 06 전체에너지와강체",
+          "fileName": "GM_1.2_Snack_06_전체에너지와강체.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_06_전체에너지와강체.md",
+          "image": null,
+          "content": "이러한 고찰로부터, 외력과 내력이 모두 퍼텐셜로부터 도출될 수 있다면 계의 전체 퍼텐셜 에너지 $V$를 정의하는 것이 가능함이 분명해진다.\n\n$$\nV = \\sum_i V_i + \\frac{1}{2} \\sum_{\\substack{i,j \\\\ i \\neq j}} V_{ij}, \\quad (1.36)\n$$\n\n이 정의를 통해 전체 에너지 $T + V$가 보존되며, 이는 단일 입자에 대한 보존 정리 (1.18)과 유사하다.\n\n식 (1.36)의 우변 두 번째 항은 계의 내부 퍼텐셜 에너지(internal potential energy)라고 불릴 것이다. 일반적으로 이것은 0일 필요가 없으며, 더 중요하게는 계가 시간에 따라 변함에 따라 함께 변할 수 있다. 오직 강체(rigid bodies)로 알려진 특정 부류의 계에 대해서만 내부 퍼텐셜이 항상 일정한 값을 갖는다.\n\n형식적으로, 강체는 거리 $r_{ij}$가 고정되어 시간에 따라 변할 수 없는 입자계로 정의할 수 있다. 그러한 경우에 벡터 $d\\mathbf{r}_{ij}$는 대응하는 $\\mathbf{r}_{ij}$에, 따라서 $\\mathbf{F}_{ij}$에 수직일 수밖에 없다. 그러므로 강체에서 내력은 일을 하지 않으며, 내부 퍼텐셜은 일정하게 유지되어야 한다. 어떤 경우든 전체 퍼텐셜은 더해지는 상수(additive constant)만큼의 불확실성을 가지므로, 변하지 않는 내부 퍼텐셜은 계의 운동을 논할 때 완전히 무시할 수 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_06_전체에너지와강체.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.3",
@@ -48,7 +150,68 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "12",
       "pageLabelEnd": "16",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-3_Snack_01_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 01 구속의개요",
+          "fileName": "GM_1.3_Snack_01_구속의개요.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_01_구속의개요.md",
+          "image": null,
+          "content": "# 1.3 구속 (Constraints)\n\n앞의 섹션들을 통해 고전 역학의 모든 문제들이 다음의 미분 방정식 (1.19)의 세트를 푸는 것으로 환원되었다는 인상을 받을 수 있을 것이다.\n\n$$\nm_i \\ddot{\\mathbf{r}}_i = \\mathbf{F}_i^{(e)} + \\sum_j \\mathbf{F}_{ji}\n$$\n\n단지 계의 입자들에 작용하는 다양한 힘들을 대입하고, 수학적인 절차를 돌려 답을 얻어내기만 하면 될 것처럼 보인다! 그러나 순수하게 물리적인 관점에서 보더라도, 이러한 관점은 지나치게 단순화된 것이다. 예를 들어, 계의 운동을 제한하는 구속(constraints)을 고려해야 할 수도 있다. 우리는 이미 구속이 포함된 한 가지 유형의 계, 즉 입자들의 운동에 대한 구속이 거리 $r_{ij}$를 변하지 않게 유지하는 강체(rigid bodies)를 만난 적이 있다. 구속된 계의 다른 예시들도 쉽게 제시될 수 있다. 주판의 알들은 지지하는 철사에 의해 1차원 운동으로 구속되어 있다. 용기 안의 기체 분자들은 용기의 벽에 의해 구속되어 오직 용기 내부에서만 움직인다. 단단한 구의 표면에 놓인 입자는 표면 위에서만, 또는 구의 외부 영역에서만 움직일 수 있다는 구속 조건의 영향을 받는다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_01_구속의개요.png)"
+        },
+        {
+          "id": "GM_1-3_Snack_02_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 02 홀로노믹과비홀로노믹구속",
+          "fileName": "GM_1.3_Snack_02_홀로노믹과비홀로노믹구속.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_02_홀로노믹과비홀로노믹구속.md",
+          "image": null,
+          "content": "구속은 여러 가지 방법으로 분류될 수 있으며, 여기서는 다음의 체계를 따를 것이다. 만약 구속 조건이 입자들의 좌표(그리고 가능한 경우 시간)를 연결하는 방정식으로 표현될 수 있고 그 형태가 다음과 같다면,\n\n$$\nf(\\mathbf{r}_1, \\mathbf{r}_2, \\mathbf{r}_3, \\dots, t) = 0, \\quad (1.37)\n$$\n\n이러한 구속을 홀로노믹(holonomic)이라고 한다. 홀로노믹 구속의 아마도 가장 간단한 예는 강체일 텐데, 강체에서 구속 조건은 다음과 같은 형태의 방정식으로 표현된다.\n\n$$\n(\\mathbf{r}_i - \\mathbf{r}_j)^2 - c_{ij}^2 = 0\n$$\n\n임의의 곡선이나 주어진 표면을 따라 움직이도록 구속된 입자는 홀로노믹 구속의 또 다른 명백한 예시이며, 이 곡선이나 표면을 정의하는 방정식이 곧 구속 방정식으로 작용한다.\n\n이러한 방식으로 표현할 수 없는 구속을 비홀로노믹(nonholonomic)이라고 한다. 기체 용기의 벽은 비홀로노믹 구속을 구성한다. 구의 표면에 놓인 입자의 예에 관련된 구속 조건 역시 비홀로노믹인데, 이는 부등식\n\n$$\nr^2 - a^2 \\ge 0\n$$\n\n으로 표현될 수 있으며 (여기서 $a$는 구의 반지름), 이 형태는 식 (1.37)의 형태가 아니기 때문이다. 따라서, 중력장 안에서 구의 꼭대기에 놓인 입자는 일정 구간 표면을 따라 미끄러져 내려가겠지만 결국에는 표면에서 떨어져 나가게 된다.\n\n구속은 구속 방정식에 시간이 명시적인 변수로 포함되는지(레오노믹, rheonomous) 혹은 시간에 명시적으로 의존하지 않는지(스클레로노믹, scleronomous)에 따라 더 분류된다. 공간에 고정된 단단한 곡선 철사를 따라 미끄러지는 구슬은 명백하게 스클레로노믹 구속을 받는다. 만약 철사가 정해진 방식으로 움직이고 있다면, 그 구속은 레오노믹이다. 만약 철사가 구슬의 운동에 대한 반작용 등으로 움직인다면, 구속 조건의 시간 의존성은 (이제 계의 좌표 일부가 된) 굽은 철사의 좌표를 통해서만 구속 방정식에 들어가게 됨에 유의하라. 이 경우 전체적인 구속 조건은 스클레로노믹이 된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_02_홀로노믹과비홀로노믹구속.png)"
+        },
+        {
+          "id": "GM_1-3_Snack_03_-_Part1",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 03 일반화좌표 Part1",
+          "fileName": "GM_1.3_Snack_03_일반화좌표_Part1.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_03_일반화좌표_Part1.md",
+          "image": null,
+          "content": "구속은 역학 문제의 풀이에 두 가지 유형의 어려움을 도입한다. 첫째, 좌표 $\\mathbf{r}_i$는 구속 방정식에 의해 연결되어 있기 때문에 더 이상 모두 독립적이지 않으며, 따라서 운동 방정식 또한 모두 독립적인 것은 아니다. 둘째, 구속력(forces of constraint), 예를 들어 철사가 구슬에 작용하는 힘(또는 벽이 기체 분자에 작용하는 힘)은 선험적으로(a priori) 주어지지 않는다. 이러한 구속력들은 문제의 미지수들에 포함되며 우리가 찾고자 하는 해로부터 얻어져야 한다. 사실, 계에 구속을 부여한다는 것은 단지 그 문제에 직접적으로 명시될 수 없고 계의 운동에 미치는 효과라는 관점에서만 알려진 힘들이 존재한다고 말하는 또 다른 방법에 불과하다.\n\n홀로노믹 구속의 경우, 첫 번째 어려움은 일반화 좌표(generalized coordinates)를 도입함으로써 해결된다. 지금까지 우리는 암묵적으로 데카르트 좌표계를 기준으로 생각해왔다. 구속이 없는 $N$개의 입자로 이루어진 계는 $3N$개의 독립적인 좌표 혹은 자유도(degrees of freedom)를 가진다. 만약 $f=0$형태의$k$개의 방정식으로 표현되는 홀로노믹 구속 조건이 존재한다면, 이 방정식들을 사용하여 $3N$개의 좌표 중 $k$개를 제거할 수 있으며, 결국 $3N - k$개의 독립적인 좌표만 남게 되고, 이 계는 $3N - k$의 자유도를 가진다고 말한다. 종속된 좌표들을 이렇게 제거하는 방법은 또 다른 방식으로 표현될 수 있는데, 이는 새로운 $3N - k$개의 독립 변수 $q_1, q_2, \\dots, q_{3N-k}$를 도입하여 옛 좌표 $\\mathbf{r}_1, \\mathbf{r}_2, \\dots, \\mathbf{r}_N$를 그 변수들로 표현하는 다음과 같은 형태의 방정식들이다.\n\n$$\n\\mathbf{r}_1 = \\mathbf{r}_1(q_1, q_2, \\dots, q_{3N-k}, t)\n$$\n\n$$\n\\vdots \\quad (1.38)\n$$\n\n$$\n\\mathbf{r}_N = \\mathbf{r}_N(q_1, q_2, \\dots, q_{3N-k}, t)\n$$\n\n이 방정식들은 그 안에 구속 조건을 암묵적으로 포함하고 있다. 이들은 변수들의 집합 ($\\mathbf{r}_l$)에서 변수들의 집합 ($q_l$)로 가는 변환 방정식(transformation equations)이며, 대안적으로 식 (1.38)은 ($\\mathbf{r}_l$) 변수들의 매개변수 표현으로 간주할 수도 있다. 항상 변수들의 집합 ($q_l$)에서 다시 변수들의 집합 ($\\mathbf{r}_l$)로 역변환을 할 수 있다고 가정한다. 즉, 식 (1.38)과 $k$개의 구속 방정식들을 결합하면 이를 역전시켜 임의의 $q_i$를 변수 ($\\mathbf{r}_l$)와 시간의 함수로 얻을 수 있다는 것이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_03_일반화좌표_Part1.png)"
+        },
+        {
+          "id": "GM_1-3_Snack_03_-_Part2",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 03 일반화좌표 Part2",
+          "fileName": "GM_1.3_Snack_03_일반화좌표_Part2.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_03_일반화좌표_Part2.md",
+          "image": null,
+          "content": "일반적으로 일반화 좌표 $q_l$은 데카르트 좌표계와 달리 함께 묶여 벡터를 형성할 수 있는 편리한 세 개짜리 그룹으로 나뉘지 않을 것이다. 따라서 구의 표면을 따라 움직이도록 구속된 입자의 경우, 구 위에서의 위치를 나타내는 두 각도, 예를 들어 위도와 경도는 사용할 수 있는 명백한 일반화 좌표이다. 혹은 평면상에서 움직이는 이중 진자(늘어나지 않는 가벼운 막대로 연결된 두 입자이며, 한 입자에 고정된 비슷한 막대에 의해 매달려 있는)의 예에서, 만족스러운 일반화 좌표는 두 각도 $\\theta_1, \\theta_2$가 된다 (그림 1.4 참고). 일반화 좌표는 데카르트 좌표계 이외의 좌표라는 의미에서 구속이 없는 계에서도 종종 유용하게 사용된다. 따라서 외부 중심력장($V = V(r)$) 안에서 움직이는 입자의 문제에서는 포함된 구속이 전혀 없지만 데카르트 좌표계보다 구면 극좌표계를 사용하는 것이 분명히 더 편리하다. 그러나 일반화 좌표를 통상적인 직교 위치 좌표의 개념으로만 생각해서는 안 된다. 모든 종류의 물리량이 일반화 좌표의 역할을 하도록 동원될 수 있다. 따라서 $\\mathbf{r}_j$의 푸리에 전개에서 진폭이 일반화 좌표로 사용될 수도 있고, 에너지나 각운동량의 차원을 갖는 양을 사용하는 것이 편리하다는 사실을 발견할 수도 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_03_일반화좌표_Part2.png)"
+        },
+        {
+          "id": "GM_1-3_Snack_04_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 04 비홀로노믹구속의예",
+          "fileName": "GM_1.3_Snack_04_비홀로노믹구속의예.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_04_비홀로노믹구속의예.md",
+          "image": null,
+          "content": "구속이 비홀로노믹인 경우, 그 구속을 표현하는 방정식들을 종속적인 좌표들을 제거하는 데 사용할 수 없다. 비홀로노믹 구속의 자주 인용되는 예는 미끄러짐 없이 거친 표면 위를 구르는 물체이다. 계를 묘사하는 데 사용되는 좌표들은 일반적으로 물체의 방향을 명시하기 위한 각도 좌표들과, 더불어 표면 위 접촉점의 위치를 묘사하는 한 세트의 좌표들을 포함할 것이다. \"구름(rolling)\"의 구속 조건은 이 두 세트의 좌표들을 서로 연결해주며, 이들은 독립적이지 않다. 접촉점의 위치 변화는 필연적으로 방향의 변화를 의미한다. 그러나 우리는 좌표의 개수를 줄일 수 없는데, 이는 \"구름\" 조건이 좌표들 사이의 대수적 방정식으로 표현될 수 없기 때문이다. 오히려 그것은 속도에 대한 조건(즉, 접촉점이 정지해 있다는 것)이며, 오직 문제가 풀린 뒤에야 적분된 형태로 주어질 수 있는 미분 조건(differential condition)이다.\n\n간단한 예시 하나가 이 점을 설명해줄 것이다. 디스크의 평면이 항상 수직을 유지하도록 구속된 채 수평 $xy$평면 위를 구르는 디스크를 생각해 보자. 운동을 기술하는 데 사용되는 좌표들은 아마도 디스크 중심의 $x, y$좌표, 디스크의 축에 대한 회전각 $\\phi$, 그리고 디스크의 축과 이를테면 $x$축 사이의 각도 $\\theta$일 것이다 (그림 1.5 참고). 구속의 결과로 디스크 중심의 속도 $\\mathbf{v}$의 크기는 $\\dot{\\phi}$에 비례하게 되며,\n\n$$\nv = a\\dot{\\phi}\n$$\n\n여기서 $a$는 디스크의 반지름이고, 속도의 방향은 디스크의 축과 수직을 이룬다.\n\n$$\n\\dot{x} = v \\sin \\theta\n$$\n\n$$\n\\dot{y} = -v \\cos \\theta\n$$\n\n이 조건들을 결합하면 두 개의 미분 구속 방정식을 얻는다.\n\n$$\ndx - a \\sin \\theta \\, d\\phi = 0\n$$\n\n$$\ndy + a \\cos \\theta \\, d\\phi = 0 \\quad (1.39)\n$$\n\n식 (1.39)의 어느 쪽도 실제로 문제를 풀지 않고는 적분될 수 없다. 즉, 두 방정식 중 어느 하나라도 완전 미분(exact differentials)으로 바꾸어 줄 적분 인자(integrating factor) $f(x, y, \\theta, \\phi)$를 찾을 수 없다 (파생 4 참고).* 따라서 구속 조건은 비홀로노믹이다. 물리적인 관점에서도 경로상의 어떤 지점에서든 디스크를 경로에 접하는 임의의 반지름의 원을 따라 구르게 할 수 있음에 유의하면 $\\phi$와 나머지 좌표들 $x, y, \\theta$사이에 어떠한 직접적인 함수 관계도 있을 수 없다는 것을 알 수 있다. 원을 따라 굴러 제자리로 돌아온 과정의 끝에서,$x, y, \\theta$는 원래의 값으로 돌아오지만 $\\phi$는 굴러간 원의 반지름에 의존하는 양만큼 변화해 있기 때문이다.\n\n*원칙적으로 단지 두 개의 좌표만이 포함된 계에서 1계 미분 구속 방정식에 대한 적분 인자는 항상 찾을 수 있으며, 따라서 그러한 구속 조건은 홀로노믹이다. 익숙한 예로 빗면 위를 구르는 원의 2차원 운동이 있다.\n\n식 (1.39) 형태의 적분 불가능한 미분 구속들이 비홀로노믹 구속의 유일한 유형은 물론 아니다. 우리가 이미 보았듯이 구속 조건들은 고계 도함수를 포함할 수도 있고 부등식의 형태로 나타날 수도 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_04_비홀로노믹구속의예.png)"
+        },
+        {
+          "id": "GM_1-3_Snack_05_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · Snack 05 구속의처리",
+          "fileName": "GM_1.3_Snack_05_구속의처리.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_05_구속의처리.md",
+          "image": null,
+          "content": "부분적으로는 종속적인 좌표들을 제거할 수 있기 때문에, 홀로노믹 구속들을 포함하는 문제들은 언제나 형식적인 해법으로 다루어질 수 있다. 하지만 비홀로노믹 예제들을 공략할 일반적인 방법은 존재하지 않는다. 물론 구속이 적분 불가능한 경우, 구속의 미분 방정식을 운동의 미분 방정식과 함께 문제 안으로 끌어들여 결과적으로 라그랑주 승수법(method of Lagrange multipliers)을 통해 종속 방정식들을 제거할 수는 있다.\n\n우리는 나중에 이 방법으로 다시 돌아올 것이다. 그러나 더 악랄한 형태의 비홀로노믹 구속 문제들은 개별적으로 대처되어야만 하며, 결과적으로 고전 역학의 형식적인 측면들을 전개할 때는 거의 변함없이, 만일 구속이 존재한다면 그것은 홀로노믹이라고 가정하게 된다. 일상생활에서 접하는 많은 구속들이 비홀로노믹이라는 사실에도 불구하고, 이러한 제약이 역학 이론의 적용 가능성을 크게 제한하지는 않는다. 그 이유는 철사나 표면, 혹은 벽 등의 매개체를 통해 계에 부여되는 구속이라는 전체적인 개념이 특히 거시적이거나 대규모의 문제에서만 적절하기 때문이다. 그러나 오늘날 물리학자들은 원자나 원자핵 문제에 더 큰 관심을 두고 있다. 이러한 미시적인 규모에서는 계의 안팎을 막론하고 모든 대상들이 한결같이 분자, 원자, 혹은 더 작은 입자들로 구성되어 명확한 힘을 가하고 있으며, 구속이라는 개념은 인위적인 것이 되어 거의 나타나지 않는다. 이때 구속 조건은 실제 물리적 상황에 대한 수학적 이상화(mathematical idealizations)로 사용되거나, \"스핀(spin)\"에 대한 강체 회전의 예처럼 양자 역학적 성질에 대한 고전적인 근사로만 쓰이게 된다. 그러한 구속들은 항상 홀로노믹이며, 역학 이론의 체계 안에 매끄럽게 잘 들어맞는다.\n\n두 번째 어려움, 즉 구속력이 선험적으로 알려져 있지 않다는 점을 극복하기 위해, 우리는 구속력이 사라지도록 역학을 공식화하고자 강구한다. 그렇게 되면 우리는 오직 이미 알려진 가해진 힘(applied forces)만을 다루면 된다. 이러한 절차에 대한 힌트는 구속이 있는 특정 계, 즉 강체에서 내부의 힘(여기서는 구속력)이 한 일(work)이 사라진다는 사실로부터 제공된다. 이어지는 섹션들에서 우리는 이러한 단서를 좇아 그 안에 포함된 아이디어들을 일반화할 것이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_05_구속의처리.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.4",
@@ -60,7 +223,78 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "16",
       "pageLabelEnd": "21",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-4_Snack_01_-_Part1",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 01 가상일의원리 Part1",
+          "fileName": "GM_1.4_Snack_01_가상일의원리_Part1.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_01_가상일의원리_Part1.md",
+          "image": null,
+          "content": "# 1.4 달랑베르 원리와 라그랑주 방정식 (D'Alembert's Principle and Lagrange's Equations)\n\n계의 가상적(무한소) 변위란, 주어진 순간 $t$에 계에 가해진 힘과 구속에 모순되지 않도록 좌표를 임의의 무한소만큼 변화시킨 결과($\\delta \\mathbf{r}_i$)로 나타나는 계의 배열(configuration)의 변화를 의미한다. 이 변위는 시간 간격 $dt$ 동안 실제로 일어나는(그 동안 힘과 구속 조건이 변할 수 있는) 계의 실제 변위와 구별하기 위해 가상적(virtual)이라고 부른다. 계가 평형 상태에 있다고 가정하자. 즉, 각 입자에 작용하는 알짜힘이 영($\\mathbf{F}_i = 0$)이다. 그러면 내적 $\\mathbf{F}_i \\cdot \\delta \\mathbf{r}_i$역시 명백히 영이 되는데, 이것은 변위$\\delta \\mathbf{r}_i$동안 힘$\\mathbf{F}_i$가 한 가상일(virtual work)이다. 모든 입자에 대해 이 영이 되는 곱들을 합한 것 역시 영이어야만 한다.\n\n$$\n\\sum_i \\mathbf{F}_i \\cdot \\delta \\mathbf{r}_i = 0. \\qquad (1.40)\n$$\n\n여기까지는 어떤 새로운 물리적 내용도 언급되지 않았다. $\\mathbf{F}_i$를 가해진 힘(applied force) $\\mathbf{F}_i^{(a)}$와 구속력(force of constraint) $\\mathbf{f}_i$로 분해하자.\n\n$$\n\\mathbf{F}_i = \\mathbf{F}_i^{(a)} + \\mathbf{f}_i, \\qquad (1.41)\n$$\n\n그러면 식 (1.40)은 다음과 같이 된다.\n\n$$\n\\sum_i \\mathbf{F}_i^{(a)} \\cdot \\delta \\mathbf{r}_i + \\sum_i \\mathbf{f}_i \\cdot \\delta \\mathbf{r}_i = 0. \\qquad (1.42)\n$$\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_01_가상일의원리_Part1.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_01_-_Part2",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 01 가상일의원리 Part2",
+          "fileName": "GM_1.4_Snack_01_가상일의원리_Part2.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_01_가상일의원리_Part2.md",
+          "image": null,
+          "content": "이제 우리는 구속력이 한 알짜 가상일이 영이 되는 계로 국한하여 생각하기로 한다. 우리는 이 조건이 강체에 대해 참이며 그 밖의 많은 구속 조건에 대해서도 유효함을 본 바 있다. 예를 들어, 어떤 입자가 표면 위에서만 움직이도록 구속되어 있다면 구속력은 표면에 수직인 반면 가상 변위는 표면에 접해야 하므로 가상일은 영이 된다. 미끄럼 마찰력이 존재하는 경우에는 이것이 더 이상 참이 아니며, 이러한 계는 우리의 공식화에서 제외해야 한다. 마찰은 본질적으로 거시적인 현상이므로, 이러한 제한이 부당하게 방해가 되지는 않는다. 반면에 구름 마찰력은 이 조건을 위배하지 않는데, 그 힘이 순간적으로 정지해 있는 점에 작용하여 구름 구속(rolling constraint)을 만족하는 무한소 변위에서 어떤 일도 할 수 없기 때문이다. 입자가 시간에 따라 움직이는 표면에 구속되어 있는 경우, 구속력은 순간적으로 그 표면에 수직이며 시간 $dt$ 동안의 실제 변위 과정에서 한 일이 반드시 영이 되는 것은 아닐지라도 가상 변위 동안 한 일은 여전히 영이라는 점에 유의하라.\n\n그러므로 가해진 힘이 한 가상일이 영이 된다는 것이 계의 평형 조건이 된다.\n\n$$\n\\sum_i \\mathbf{F}_i^{(a)} \\cdot \\delta \\mathbf{r}_i = 0. \\qquad (1.43)\n$$\n\n식 (1.43)은 종종 가상일의 원리(principle of virtual work)라 불린다. 여기서 $\\delta \\mathbf{r}_i$들이 완전히 독립적인 것이 아니라 구속 조건에 의해 연결되어 있기 때문에, $\\delta \\mathbf{r}_i$의 계수들을 더 이상 0으로 둘 수 없다. 즉, 일반적으로 $\\mathbf{F}_i^{(a)} \\neq 0$이다. 그 계수들을 0으로 두기 위해, 우리는 이 원리를 서로 독립적인 $q_i$의 가상 변위를 포함하는 형태로 변환해야만 한다. 식 (1.43)은 $\\mathbf{f}_i$를 포함하지 않는다는 점에서는 우리의 요구를 충족시키지만, 정역학(statics)만을 다루고 있다. 우리가 원하는 것은 계의 일반적인 운동을 포함하는 조건이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_01_가상일의원리_Part2.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_02_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 02 달랑베르원리",
+          "fileName": "GM_1.4_Snack_02_달랑베르원리.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_02_달랑베르원리.md",
+          "image": null,
+          "content": "앞서 다룬 가상일의 원리는 정역학만을 다루고 있다. 우리가 원하는 계의 일반적인 운동을 포함하는 원리를 얻기 위해, 제임스 베르누이(James Bernoulli)가 처음 고안하고 달랑베르(D'Alembert)가 발전시킨 방식을 사용한다. 운동 방정식,\n\n$$\n\\mathbf{F}_i = \\dot{\\mathbf{p}}_i,\n$$\n\n는 다음과 같이 쓸 수 있다.\n\n$$\n\\mathbf{F}_i - \\dot{\\mathbf{p}}_i = 0,\n$$\n\n이는 계 안의 입자들이 실제 힘에 \"역유효력(reversed effective force)\"인 $-\\dot{\\mathbf{p}}_i$를 더한 힘 아래에서 평형 상태에 있을 것임을 뜻한다. (1.40) 대신에, 즉시 다음과 같이 쓸 수 있다.\n\n$$\n\\sum_i (\\mathbf{F}_i - \\dot{\\mathbf{p}}_i) \\cdot \\delta \\mathbf{r}_i = 0, \\qquad (1.44)\n$$\n\n그리고 앞서와 같이 가해진 힘과 구속력으로 분해하면 다음의 결과를 얻는다.\n\n$$\n\\sum_i (\\mathbf{F}_i^{(a)} - \\dot{\\mathbf{p}}_i) \\cdot \\delta \\mathbf{r}_i + \\sum_i \\mathbf{f}_i \\cdot \\delta \\mathbf{r}_i = 0.\n$$\n\n우리는 구속력이 한 가상일이 영이 되는 계로 다시 국한시켜 다음과 같은 결과를 얻는다.\n\n$$\n\\sum_i (\\mathbf{F}_i^{(a)} - \\dot{\\mathbf{p}}_i) \\cdot \\delta \\mathbf{r}_i = 0, \\qquad (1.45)\n$$\n\n이것을 흔히 달랑베르 원리(D'Alembert's principle)라 부른다. 구속력이 더 이상 나타나지 않는다는 점에서 우리는 목적을 달성하였으며, 이제 첨자 $(a)$는 혼동 없이 생략할 수 있다. 하지만 이것은 아직 계의 운동 방정식을 제공하는 데 유용한 형태는 아니다. 이제 우리는 이 원리를 일반화 좌표의 가상 변위를 포함하는 식으로 변환해야 한다. 일반화 좌표들은 서로 독립적이므로(홀로노믹 구속의 경우), 이를 통해 $\\delta q_i$의 계수들이 각각 0이 되도록 둘 수 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_02_달랑베르원리.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_03_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 03 일반화좌표와일반화힘",
+          "fileName": "GM_1.4_Snack_03_일반화좌표와일반화힘.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_03_일반화좌표와일반화힘.md",
+          "image": null,
+          "content": "달랑베르 원리를 운동 방정식으로 유용하게 만들기 위해, 변수들을 직교 좌표 $\\mathbf{r}_i$에서 일반화 좌표 $q_j$로 변환해야 한다. $\\mathbf{r}_i$에서 $q_j$라는 언어로의 변환은 다음과 같은 변환 방정식 (1.38)에서 출발한다.\n\n$$\n\\mathbf{r}_i = \\mathbf{r}_i(q_1, q_2, \\ldots, q_n, t) \\qquad (1.45')\n$$\n\n($n$개의 독립적인 좌표를 가정함). 그리고 편미분학의 일반적인 \"연쇄 법칙(chain rules)\"을 통해 변환이 수행된다. 따라서 $\\mathbf{v}_i$는 $\\dot{q}_k$를 사용하여 다음 공식으로 표현된다.\n\n$$\n\\mathbf{v}_i \\equiv \\frac{d\\mathbf{r}_i}{dt} = \\sum_k \\frac{\\partial \\mathbf{r}_i}{\\partial q_k} \\dot{q}_k + \\frac{\\partial \\mathbf{r}_i}{\\partial t}. \\qquad (1.46)\n$$\n\n마찬가지로, 임의의 가상 변위 $\\delta \\mathbf{r}_i$는 다음을 통해 가상 변위 $\\delta q_j$와 연결될 수 있다.\n\n$$\n\\delta \\mathbf{r}_i = \\sum_j \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\delta q_j. \\qquad (1.47)\n$$\n\n가상 변위는 정의에 의해 좌표들의 변위만을 고려하기 때문에 시간의 변화인 $\\delta t$가 여기에 포함되지 않음에 유의하라. (시간에 따라 구속 조건 자체가 변하는 경우, 오직 그래야만 가상 변위가 구속력에 수직이 된다.)\n\n일반화 좌표로 표현하면, $\\mathbf{F}_i$가 한 가상일은 다음과 같이 된다.\n\n$$\n\\sum_i \\mathbf{F}_i \\cdot \\delta \\mathbf{r}_i = \\sum_{i,j} \\mathbf{F}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\delta q_j\n$$\n\n$$\n= \\sum_j Q_j \\delta q_j, \\qquad (1.48)\n$$\n\n여기서 $Q_j$는 일반화 힘(generalized force)의 성분이라 불리며, 다음과 같이 정의된다.\n\n$$\nQ_j = \\sum_i \\mathbf{F}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j}. \\qquad (1.49)\n$$\n\n$q$가 길이의 차원을 가질 필요가 없듯이 $Q$또한 힘의 차원을 가질 필요는 없지만, $Q_j \\delta q_j$는 항상 일의 차원을 가져야만 한다는 점에 주목하라. 예를 들어, $Q_j$가 토크 $N_j$이고 $dq_j$가 미소 각도 $d\\theta_j$일 수 있으며, 이 경우 $N_j d\\theta_j$는 미소 일이 된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_03_일반화좌표와일반화힘.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_04_-_Part1",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 04 운동에너지와운동방정식 Part1",
+          "fileName": "GM_1.4_Snack_04_운동에너지와운동방정식_Part1.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_04_운동에너지와운동방정식_Part1.md",
+          "image": null,
+          "content": "이제 일반화 좌표를 사용한 달랑베르 원리의 식 (1.45)에 포함된 다른 항인 $\\sum_i \\dot{\\mathbf{p}}_i \\cdot \\delta \\mathbf{r}_i$로 넘어가 보자. 이 항은 다음과 같이 쓸 수 있다.\n\n$$\n\\sum_i \\dot{\\mathbf{p}}_i \\cdot \\delta \\mathbf{r}_i = \\sum_i m_i \\ddot{\\mathbf{r}}_i \\cdot \\delta \\mathbf{r}_i.\n$$\n\n(1.47)을 이용하여 $\\delta \\mathbf{r}_i$를 나타내면, 이것은 다음과 같이 된다.\n\n$$\n\\sum_{i,j} m_i \\ddot{\\mathbf{r}}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\delta q_j.\n$$\n\n이제 다음 관계식을 고려하자.\n\n$$\n\\sum_i m_i \\ddot{\\mathbf{r}}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = \\sum_i \\left[ \\frac{d}{dt} \\left( m_i \\dot{\\mathbf{r}}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\right) - m_i \\dot{\\mathbf{r}}_i \\cdot \\frac{d}{dt} \\left( \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\right) \\right]. \\qquad (1.50)\n$$\n\n식 (1.50)의 마지막 항에서 $t$에 대한 미분과 $q_j$에 대한 미분 순서를 바꿀 수 있는데, 이는 (1.46)과 유사하게 다음과 같이 전개되기 때문이다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\right) = \\frac{\\partial \\dot{\\mathbf{r}}_i}{\\partial q_j} = \\sum_k \\frac{\\partial^2 \\mathbf{r}_i}{\\partial q_j \\partial q_k} \\dot{q}_k + \\frac{\\partial^2 \\mathbf{r}_i}{\\partial q_j \\partial t},\n$$\n\n$$\n= \\frac{\\partial \\mathbf{v}_i}{\\partial q_j},\n$$\n\n이는 식 (1.46)에 의한 것이다. 나아가 식 (1.46)으로부터 다음 식도 알 수 있다.\n\n$$\n\\frac{\\partial \\mathbf{v}_i}{\\partial \\dot{q}_j} = \\frac{\\partial \\mathbf{r}_i}{\\partial q_j}. \\qquad (1.51)\n$$\n\n이러한 변화들을 (1.50)에 대입하면 다음 결과를 얻는다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_04_운동에너지와운동방정식_Part1.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_04_-_Part2",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 04 운동에너지와운동방정식 Part2",
+          "fileName": "GM_1.4_Snack_04_운동에너지와운동방정식_Part2.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_04_운동에너지와운동방정식_Part2.md",
+          "image": null,
+          "content": "$$\n\\sum_i m_i \\ddot{\\mathbf{r}}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = \\sum_i \\left[ \\frac{d}{dt} \\left( m_i \\mathbf{v}_i \\cdot \\frac{\\partial \\mathbf{v}_i}{\\partial \\dot{q}_j} \\right) - m_i \\mathbf{v}_i \\cdot \\frac{\\partial \\mathbf{v}_i}{\\partial q_j} \\right],\n$$\n\n그리고 달랑베르 원리의 좌변 두 번째 항은 다음과 같이 전개할 수 있다.\n\n$$\n\\sum_j \\left\\{ \\frac{d}{dt} \\left[ \\frac{\\partial}{\\partial \\dot{q}_j} \\left( \\sum_i \\frac{1}{2} m_i v_i^2 \\right) \\right] - \\frac{\\partial}{\\partial q_j} \\left( \\sum_i \\frac{1}{2} m_i v_i^2 \\right) - Q_j \\right\\} \\delta q_j.\n$$\n\n$\\sum_i \\frac{1}{2} m_i v_i^2$를 계의 운동 에너지 $T$와 동일시하면, 달랑베르 원리(식 (1.45) 참조)는 다음과 같이 된다.\n\n$$\n\\sum_j \\left\\{ \\left[ \\frac{d}{dt} \\left( \\frac{\\partial T}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial T}{\\partial q_j} \\right] - Q_j \\right\\} \\delta q_j = 0. \\qquad (1.52)\n$$\n\n데카르트 좌표계에서 $q_j$에 대한 $T$의 편미분은 영이 된다는 점에 유의하라. 따라서 미분 기하학의 언어로 말하자면, 이 항은 좌표 $q_j$의 곡률로부터 비롯된다. 예를 들어 극좌표계에서는, 각 좌표에 대한 $T$의 편미분 부분에 구심 가속도 항이 나타나게 된다.\n\n지금까지 구속 조건의 특성에 대해서는 가상 변위에서 일이 영이 되어야 한다는 점 외에 어떠한 제한도 두지 않았다. 변수 $q_j$는 계의 운동을 기술하는 데 사용되는 어떠한 좌표들의 집합이라도 될 수 있다. 그러나 만약 구속 조건이 홀로노믹하다면, 변환 방정식 (1.38) 내에 암묵적으로 구속 조건을 포함하는 독립적인 좌표 $q_j$의 집합을 찾는 것이 가능하다. 그러면 임의의 가상 변위 $\\delta q_j$는 $\\delta q_k$와 서로 독립적이 되며, 따라서 (1.52)가 성립하기 위한 유일한 방법은 각각의 계수들이 영이 되는 것뿐이다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial T}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial T}{\\partial q_j} = Q_j. \\qquad (1.53)\n$$\n\n이러한 방정식은 모두 $n$개가 존재한다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_04_운동에너지와운동방정식_Part2.png)"
+        },
+        {
+          "id": "GM_1-4_Snack_05_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · Snack 05 라그랑주방정식",
+          "fileName": "GM_1.4_Snack_05_라그랑주방정식.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_05_라그랑주방정식.md",
+          "image": null,
+          "content": "달랑베르 원리와 일반화 좌표를 통해 얻은 운동 에너지 관계식을 보존계에 적용해 보자. 힘들이 어떤 스칼라 퍼텐셜 함수 $V$로부터 유도될 수 있을 때,\n\n$$\n\\mathbf{F}_i = -\\nabla_i V.\n$$\n\n일반화 힘은 다음과 같이 쓸 수 있다.\n\n$$\nQ_j = \\sum_i \\mathbf{F}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = - \\sum_i \\nabla_i V \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j},\n$$\n\n이는 함수 $-V(\\mathbf{r}_1, \\mathbf{r}_2, \\ldots, \\mathbf{r}_N, t)$를 $q_j$에 대해 편미분한 식과 정확히 같다.\n\n$$\nQ_j \\equiv -\\frac{\\partial V}{\\partial q_j}. \\qquad (1.54)\n$$\n\n식 (1.47)을 참조하라. 그러면 식 (1.53)의 결과는 다음과 같이 다시 쓸 수 있다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial T}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial (T - V)}{\\partial q_j} = 0. \\qquad (1.55)\n$$\n\n형태가 (1.55)인 운동 방정식은 보존계(conservative systems)에만 반드시 국한되는 것은 아니다. 오직 $V$가 시간에 대한 명시적인 함수가 아닐 때만 그 계가 보존계가 된다(4페이지 참조). 여기서 정의된 바와 같이, 퍼텐셜 $V$는 일반화 속도(generalized velocities)에 의존하지 않는다. 따라서 우리는 $\\dot{q}_j$에 대한 편미분 부분에 $V$ 항을 포함시킬 수 있다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial (T - V)}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial (T - V)}{\\partial q_j} = 0.\n$$\n\n또는 라그랑지안(Lagrangian) $L$이라는 새로운 함수를 다음과 같이 정의하면,\n\n$$\nL = T - V, \\qquad (1.56)\n$$\n\n식 (1.53)은 다음과 같이 된다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial L}{\\partial q_j} = 0, \\qquad (1.57)\n$$\n\n이 수식들을 \"라그랑주 방정식(Lagrange's equations)\"이라고 부른다.\n\n특정한 운동 방정식의 집합에 대하여, 식 (1.57)이 주어진 일반화 좌표에서의 운동 방정식으로 유도되도록 하는 라그랑지안의 선택이 유일한 것은 아님에 주의하라. 따라서 유도(Derivations) 8과 10에서 볼 수 있듯이, 만약 $L(q, \\dot{q}, t)$가 적절한 라그랑지안이고 $F(q, t)$가 일반화 좌표와 시간에 대한 임의의 미분 가능한 함수라면,\n\n$$\nL'(q, \\dot{q}, t) = L(q, \\dot{q}, t) + \\frac{dF}{dt} \\qquad (1.57')\n$$\n\n또한 동일한 운동 방정식을 도출하는 라그랑지안이 된다. 이러한 처방에 의해 구성된 것 외에도 대안적인 라그랑지안들을 찾는 것이 종종 가능하다(연습문제 20 참조). 식 (1.56)은 보존계에 대한 라그랑지안을 구성하는 항상 적절한 방법이기는 하지만, 주어진 계에 적합한 유일한 라그랑지안을 제공하는 것은 아니다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_05_라그랑주방정식.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.5",
@@ -72,7 +306,58 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "21",
       "pageLabelEnd": "24",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-5_Snack_01_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · Snack 01 속도의존퍼텐셜",
+          "fileName": "GM_1.5_Snack_01_속도의존퍼텐셜.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_01_속도의존퍼텐셜.md",
+          "image": null,
+          "content": "**1.5 속도 의존 퍼텐셜과 소산 함수**\n\n일반화된 힘(generalized forces)이 다음과 같은 처방에 따라 함수 $U(q_j, \\dot{q}_j)$로부터 얻어진다면, 일반적인 의미의 퍼텐셜 함수 $V$가 존재하지 않더라도 라그랑주 방정식(Lagrange's equations)을 식 (1.57)의 형태로 나타낼 수 있다.\n\n$$\nQ_j = -\\frac{\\partial U}{\\partial q_j} + \\frac{d}{dt} \\left( \\frac{\\partial U}{\\partial \\dot{q}_j} \\right). \\quad (1.58)\n$$\n\n이 경우, 식 (1.57)은 다음과 같이 주어지는 라그랑지안(Lagrangian)을 사용한 식 (1.53)으로부터 여전히 도출된다.\n\n$$\nL = T - U. \\quad (1.59)\n$$\n\n여기서 $U$는 \"일반화된 퍼텐셜(generalized potential)\" 또는 \"속도 의존 퍼텐셜(velocity-dependent potential)\"이라고 부를 수 있다. 이러한 \"퍼텐셜\"을 사용할 수 있는 가능성은 단지 이론적인 호기심에 불과한 것이 아니다. 이는 매우 중요한 한 가지 형태의 힘의 장, 즉 움직이는 전하에 작용하는 전자기력(electromagnetic forces)에 적용된다. 그 중요성을 고려할 때, 이 주제에 대해 잠시 살펴보는 것은 충분히 가치가 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_01_속도의존퍼텐셜.png)"
+        },
+        {
+          "id": "GM_1-5_Snack_02_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · Snack 02 전자기장의라그랑지안",
+          "fileName": "GM_1.5_Snack_02_전자기장의라그랑지안.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_02_전자기장의라그랑지안.md",
+          "image": null,
+          "content": "시간과 위치에 따라 달라질 수 있는 전기장(electric field) $\\mathbf{E}$와 자기장(magnetic field) $\\mathbf{B}$가 모두 존재하고 그 외에는 전하가 없는 영역에서, 속도 $\\mathbf{v}$로 움직이는 질량 $m$, 전하량 $q$인 전하를 고려해 보자. 이 전하는 로런츠 힘(Lorentz force)이라고 불리는 힘을 받으며, 이는 다음과 같이 주어진다.\n\n$$\n\\mathbf{F} = q [\\mathbf{E} + (\\mathbf{v} \\times \\mathbf{B})]. \\quad (1.60)\n$$\n\n$\\mathbf{E}(x, y, z, t)$와 $\\mathbf{B}(x, y, z, t)$는 모두 시간과 위치의 연속 함수이며, 다음과 같이 스칼라 퍼텐셜(scalar potential) $\\phi(x, y, z, t)$와 벡터 퍼텐셜(vector potential) $\\mathbf{A}(x, y, z, t)$로부터 유도할 수 있다.\n\n$$\n\\mathbf{E} = -\\nabla \\phi - \\frac{\\partial \\mathbf{A}}{\\partial t} \\quad (1.61a)\n$$\n\n그리고\n\n$$\n\\mathbf{B} = \\nabla \\times \\mathbf{A}. \\quad (1.61b)\n$$\n\n전하에 작용하는 힘은 다음의 속도 의존 퍼텐셜 에너지(velocity-dependent potential energy)로부터 유도될 수 있다.\n\n$$\nU = q\\phi - q\\mathbf{A} \\cdot \\mathbf{v}, \\quad (1.62)\n$$\n\n따라서 라그랑지안 $L = T - U$는 다음과 같다.\n\n$$\nL = \\frac{1}{2}mv^2 - q\\phi + q\\mathbf{A} \\cdot \\mathbf{v}. \\quad (1.63)\n$$\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_02_전자기장의라그랑지안.png)"
+        },
+        {
+          "id": "GM_1-5_Snack_03_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · Snack 03 로런츠힘방정식",
+          "fileName": "GM_1.5_Snack_03_로런츠힘방정식.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_03_로런츠힘방정식.md",
+          "image": null,
+          "content": "전자기장 내 전하의 운동에 대한 라그랑주 방정식의 $x$-성분만 고려하면 다음과 같다.\n\n$$\nm\\ddot{x} = q\\left(v_x \\frac{\\partial A_x}{\\partial x} + v_y \\frac{\\partial A_y}{\\partial x} + v_z \\frac{\\partial A_z}{\\partial x}\\right) - q\\left(\\frac{\\partial \\phi}{\\partial x} + \\frac{dA_x}{dt}\\right). \\quad (1.64)\n$$\n\n$A_x$의 전시간 미분(total time derivative)은 편미분(partial time derivative)과 다음의 관계를 갖는다.\n\n$$\n\\frac{dA_x}{dt} = \\frac{\\partial A_x}{\\partial t} + \\mathbf{v} \\cdot \\nabla A_x\n$$\n\n$$\n= \\frac{\\partial A_x}{\\partial t} + v_x \\frac{\\partial A_x}{\\partial x} + v_y \\frac{\\partial A_x}{\\partial y} + v_z \\frac{\\partial A_x}{\\partial z}. \\quad (1.65)\n$$\n\n식 (1.61b)는 다음을 제공한다.\n\n$$\n(\\mathbf{v} \\times \\mathbf{B})_x = v_y\\left(\\frac{\\partial A_y}{\\partial x} - \\frac{\\partial A_x}{\\partial y}\\right) + v_z\\left(\\frac{\\partial A_z}{\\partial x} - \\frac{\\partial A_x}{\\partial z}\\right).\n$$\n\n이 식들을 결합하면 $x$-방향의 운동 방정식이 얻어진다.\n\n$$\nm\\ddot{x} = q [E_x + (\\mathbf{v} \\times \\mathbf{B})_x]. \\quad (1.66)\n$$\n\n성분별로 비교해 보면, 식 (1.66)과 식 (1.60)은 동일하며, 이는 로런츠 힘 방정식이 식 (1.61)과 (1.62)로부터 유도될 수 있음을 보여준다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_03_로런츠힘방정식.png)"
+        },
+        {
+          "id": "GM_1-5_Snack_04_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · Snack 04 레일리소산함수",
+          "fileName": "GM_1.5_Snack_04_레일리소산함수.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_04_레일리소산함수.md",
+          "image": null,
+          "content": "계에 작용하는 모든 힘을 퍼텐셜로부터 유도할 수 있는 것은 아닌 경우, 라그랑주 방정식은 항상 다음과 같은 형태로 쓸 수 있음에 유의하라.\n\n$$\n\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{q}_j}\\right) - \\frac{\\partial L}{\\partial q_j} = Q_j,\n$$\n\n여기서 $L$은 이전과 같이 보존력(conservative forces)의 퍼텐셜을 포함하고, $Q_j$는 퍼텐셜에서 기인하지 *않는* 힘을 나타낸다. 이러한 상황은 마찰력(frictional forces)이 존재할 때 종종 발생한다. 마찰력은 입자의 속도에 비례하는 경우가 많으며, 이 때 마찰력의 $x$-성분은 다음과 같은 형태를 갖는다.\n\n$$\nF_{fx} = -k_x v_x.\n$$\n\n이러한 종류의 마찰력은 *레일리 소산 함수(Rayleigh's dissipation function)*라고 알려진 함수 $\\mathcal{F}$의 항으로 유도될 수 있으며, 이는 다음과 같이 정의된다.\n\n$$\n\\mathcal{F} = \\frac{1}{2}\\sum_i \\left( k_x v_{ix}^2 + k_y v_{iy}^2 + k_z v_{iz}^2 \\right), \\quad (1.67)\n$$\n\n여기서 합은 계의 입자들에 대한 것이다. 이 정의로부터 다음이 명확해진다.\n\n$$\nF_{f x_i} = -\\frac{\\partial \\mathcal{F}}{\\partial v_{x_i}},\n$$\n\n또는 기호로 나타내면,\n\n$$\n\\mathbf{F}_f = -\\nabla_v \\mathcal{F}. \\quad (1.68)\n$$\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_04_레일리소산함수.png)"
+        },
+        {
+          "id": "GM_1-5_Snack_05_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · Snack 05 에너지소산율",
+          "fileName": "GM_1.5_Snack_05_에너지소산율.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_05_에너지소산율.md",
+          "image": null,
+          "content": "소산 함수에 대한 물리적 해석도 가능하다. 계가 마찰에 *대항하여* 한 일(work)은 다음과 같다.\n\n$$\ndW_f = -\\mathbf{F}_f \\cdot d\\mathbf{r} = -\\mathbf{F}_f \\cdot \\mathbf{v} dt = \\left( k_x v_x^2 + k_y v_y^2 + k_z v_z^2 \\right) dt.\n$$\n\n따라서 $2\\mathcal{F}$는 마찰로 인한 에너지 소산율(rate of energy dissipation)이다. 마찰력에 의해 발생하는 일반화된 힘의 성분은 다음과 같이 주어진다.\n\n$$\nQ_j = \\sum_i \\mathbf{F}_{fi} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = -\\sum_i \\nabla_v \\mathcal{F} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j}\n$$\n\n$$\n= -\\sum_i \\nabla_v \\mathcal{F} \\cdot \\frac{\\partial \\dot{\\mathbf{r}}_i}{\\partial \\dot{q}_j}, \\quad (\\text{식 } 1.51\\text{에 의해}),\n$$\n\n$$\n= -\\frac{\\partial \\mathcal{F}}{\\partial \\dot{q}_j}. \\quad (1.69)\n$$\n\n그 예로 스토크스 법칙(Stokes' law)을 들 수 있는데, 점성(viscosity) $\\eta$인 매질에서 속력 $v$로 움직이는 반지름 $a$의 구(sphere)는 마찰 항력(frictional drag force) $\\mathbf{F}_f = -6\\pi\\eta a\\mathbf{v}$를 받는다. 소산을 포함하는 라그랑주 방정식은 다음과 같이 된다.\n\n$$\n\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{q}_j}\\right) - \\frac{\\partial L}{\\partial q_j} + \\frac{\\partial \\mathcal{F}}{\\partial \\dot{q}_j} = 0, \\quad (1.70)\n$$\n\n따라서 운동 방정식을 얻기 위해서는 두 개의 스칼라 함수 $L$과 $\\mathcal{F}$가 지정되어야 한다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_05_에너지소산율.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.6",
@@ -84,7 +369,68 @@ window.GOLDSTEIN_SITE_DATA = {
       "pageLabelStart": "24",
       "pageLabelEnd": "29",
       "note": "boundary page duplicated with next unit",
-      "entries": []
+      "entries": [
+        {
+          "id": "GM_1-6_Snack_01_-_-_-_-_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 01 라그랑주 형식화의 개요와 운동 에너지",
+          "fileName": "GM_1.6_Snack_01_라그랑주_형식화의_개요와_운동_에너지.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_01_라그랑주_형식화의_개요와_운동_에너지.md",
+          "image": null,
+          "content": "# 1.6 라그랑주 형식화의 간단한 응용: 개요와 운동 에너지\n\n이전 절들에서는 라그랑지안을 정의할 수 있는 계, 즉 작용하는 힘이 일반적인 퍼텐셜 또는 일반화 퍼텐셜로부터 유도될 수 있고 구속 조건이 일을 하지 않는 홀로노믹 계의 경우, 운동 방정식을 세우는 매우 편리한 방법을 얻게 됨을 보여준다. 우리는 운동 방정식에서 구속력을 제거하고자 하는 바람에서 라그랑주 형식화를 도입하게 되었으며, 이 목표를 달성하는 과정에서 많은 다른 이점들을 얻었다. 운동 방정식의 원래 형태인 식 (1.19)를 세울 때, 많은 벡터 힘들과 가속도들을 다루어야만 한다. 라그랑주 방법을 사용하면 두 개의 스칼라 함수 $T$와 $V$만을 다루게 되므로 문제가 크게 단순화된다.\n\n이제 라그랑주 형식화가 적용될 수 있는 역학의 모든 문제에 대해 간단하고 판에 박힌 절차를 확립할 수 있다. 단지 $T$와 $V$를 일반화 좌표로 쓰고, 이들로부터 $L$을 구성한 다음, 이를 식 (1.57)에 대입하여 운동 방정식을 얻기만 하면 된다. 데카르트 좌표계에서 일반화 좌표계로 $T$와 $V$를 변환하는 데 필요한 변환은 변환 방정식 (1.38)과 (1.45')를 적용하여 얻는다. 따라서 일반적으로 $T$는 다음과 같이 주어진다.\n\n$$\nT = \\sum_i \\frac{1}{2} m_i v_i^2 = \\sum_i \\frac{1}{2} m_i \\left( \\sum_j \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\dot{q}_j + \\frac{\\partial \\mathbf{r}_i}{\\partial t} \\right)^2\n$$\n\n전개를 수행하면 일반화 좌표에서 $T$에 대한 표현식이 다음 형태를 가질 것임이 분명하다.\n\n$$\nT = M_0 + \\sum_j M_j \\dot{q}_j + \\frac{1}{2} \\sum_{j,k} M_{jk} \\dot{q}_j \\dot{q}_k, \\quad (1.71)\n$$\n\n여기서 $M_0$, $M_j$, $M_{jk}$는 $\\mathbf{r}$들과 $t$의, 따라서 $q$들과 $t$의 명확한 함수이다. 사실, 비교해 보면 다음과 같다.\n\n$$\nM_0 = \\sum_i \\frac{1}{2} m_i \\left(\\frac{\\partial \\mathbf{r}_i}{\\partial t}\\right)^2,\n$$\n\n$$\nM_j = \\sum_i m_i \\frac{\\partial \\mathbf{r}_i}{\\partial t} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j}, \\quad (1.72)\n$$\n\n그리고\n\n$$\nM_{jk} = \\sum_i m_i \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_k}.\n$$\n\n따라서 계의 운동 에너지는 일반화 속도들에 대한 세 개의 동차(homogeneous) 함수의 합으로 항상 쓸 수 있다.\n\n$$\nT = T_0 + T_1 + T_2, \\quad (1.73)\n$$\n\n여기서 $T_0$는 일반화 속도들과 무관하며, $T_1$은 속도들에 대해 1차식이고, $T_2$는 속도들에 대해 2차식이다. 구속 조건이 시간에 무관할 때(스클레로노믹) 나타날 수 있는 것처럼, 만약 변환 방정식에 시간이 명시적으로 포함되지 않는다면 식 (1.71)에서 마지막 항만이 0이 아니게 되며, $T$는 일반화 속도들에 대해 항상 동차 2차 형식을 갖는다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_01_라그랑주_형식화의_개요와_운동_에너지.png)"
+        },
+        {
+          "id": "GM_1-6_Snack_02_-_-_-_Part1",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 02 단일 입자의 운동 Part1",
+          "fileName": "GM_1.6_Snack_02_단일_입자의_운동_Part1.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part1.md",
+          "image": null,
+          "content": "# 1.6 라그랑주 형식화의 간단한 응용: 단일 입자의 운동\n\n이제 라그랑주 형식화 절차에 대한 간단한 예제들을 고려해 보자.\n1. 공간상의 단일 입자\n   (a) 데카르트 좌표계\n   (b) 평면 극좌표계\n\n**1. (a) 단일 입자의 운동: 데카르트 좌표계 사용.**\n식 (1.53)에 필요한 일반화 힘은 명백히 $F_x$, $F_y$, $F_z$이다. 그러면\n\n$$\nT = \\frac{1}{2}m(\\dot{x}^2 + \\dot{y}^2 + \\dot{z}^2),\n$$\n\n$$\n\\frac{\\partial T}{\\partial x} = \\frac{\\partial T}{\\partial y} = \\frac{\\partial T}{\\partial z} = 0,\n$$\n\n$$\n\\frac{\\partial T}{\\partial \\dot{x}} = m\\dot{x}, \\quad \\frac{\\partial T}{\\partial \\dot{y}} = m\\dot{y}, \\quad \\frac{\\partial T}{\\partial \\dot{z}} = m\\dot{z},\n$$\n\n이고, 운동 방정식은 다음과 같다.\n\n$$\n\\frac{d}{dt}(m\\dot{x}) = F_x, \\quad \\frac{d}{dt}(m\\dot{y}) = F_y, \\quad \\frac{d}{dt}(m\\dot{z}) = F_z. \\quad (1.74)\n$$\n\n따라서 원래의 뉴턴의 운동 방정식으로 다시 되돌아오게 된다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part1.png)"
+        },
+        {
+          "id": "GM_1-6_Snack_02_-_-_-_Part2_A",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 02 단일 입자의 운동 Part2 A",
+          "fileName": "GM_1.6_Snack_02_단일_입자의_운동_Part2_A.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_A.md",
+          "image": null,
+          "content": "**(b) 단일 입자의 운동: 평면 극좌표계 사용.** \n여기서는 $T$를 $\\dot{r}$과 $\\dot{\\theta}$로 표현해야 한다. 변환 방정식인 식 (1.38)은 다음과 같다.\n\n$$\nx = r \\cos \\theta\n$$\n\n$$\ny = r \\sin \\theta\n$$\n\n(1.46)과 유사하게, 속도는 다음과 같이 주어진다.\n\n$$\n\\dot{x} = \\dot{r} \\cos \\theta - r \\dot{\\theta} \\sin \\theta,\n$$\n\n$$\n\\dot{y} = \\dot{r} \\sin \\theta + r \\dot{\\theta} \\cos \\theta.\n$$\n\n그러면 운동 에너지 $T = \\frac{1}{2}m(\\dot{x}^2 + \\dot{y}^2)$는 형식적으로 다음과 같이 간략화된다.\n\n$$\nT = \\frac{1}{2}m \\left[ \\dot{r}^2 + (r\\dot{\\theta})^2 \\right]. \\quad (1.75)\n$$\n\n식 (1.75)의 대안적인 유도는 속도의 평면 극좌표 성분이 $\\mathbf{r}$을 따르는 $\\dot{r}$과 단위 벡터 $\\boldsymbol{\\hat{\\theta}}$로 표시되는 $\\mathbf{r}$에 수직인 방향을 따르는 $r\\dot{\\theta}$임을 인식하여 얻을 수 있다. 따라서 극좌표계로 표현된 속도의 제곱은 간단히 $\\dot{r}^2 + (r\\dot{\\theta})^2$이 된다. 식 (1.49)의 정의로부터 일반화 힘의 성분을 얻을 수 있는데, $\\hat{\\mathbf{r}}$과 $\\boldsymbol{\\hat{\\theta}}$가 각각 $\\mathbf{r}$과 $\\boldsymbol{\\theta}$방향의 단위 벡터인$z=0$평면으로 제한된 원통 좌표계에서의 미소 위치 벡터$d\\mathbf{r}$에 대한 다음 식의 도움을 받는다.\n\n$$\nd\\mathbf{r} = \\hat{\\mathbf{r}} dr + r \\boldsymbol{\\hat{\\theta}} d\\theta + \\hat{\\mathbf{k}} dz\n$$\n\n$$\nQ_r = \\mathbf{F} \\cdot \\frac{\\partial \\mathbf{r}}{\\partial r} = \\mathbf{F} \\cdot \\hat{\\mathbf{r}} = F_r,\n$$\n\n$$\nQ_\\theta = \\mathbf{F} \\cdot \\frac{\\partial \\mathbf{r}}{\\partial \\theta} = \\mathbf{F} \\cdot r \\boldsymbol{\\hat{\\theta}} = r F_\\theta,\n$$\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_A.png)"
+        },
+        {
+          "id": "GM_1-6_Snack_02_-_-_-_Part2_B",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 02 단일 입자의 운동 Part2 B",
+          "fileName": "GM_1.6_Snack_02_단일_입자의_운동_Part2_B.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_B.md",
+          "image": null,
+          "content": "왜냐하면 도함수의 정의에 의해 $\\theta$에 대한 $\\mathbf{r}$의 미분은 $\\boldsymbol{\\hat{\\theta}}$방향의 벡터이기 때문이다 (그림 1.6 참조). 두 개의 일반화 좌표가 있으므로 라그랑주 방정식도 두 개이다.$r$ 방정식에 나타나는 미분은 다음과 같다.\n\n$$\n\\frac{\\partial T}{\\partial r} = m r \\dot{\\theta}^2, \\quad \\frac{\\partial T}{\\partial \\dot{r}} = m \\dot{r}, \\quad \\frac{d}{dt}\\left(\\frac{\\partial T}{\\partial \\dot{r}}\\right) = m \\ddot{r},\n$$\n\n이고, 방정식 자체는 다음과 같다.\n\n$$\nm \\ddot{r} - m r \\dot{\\theta}^2 = F_r,\n$$\n\n여기서 두 번째 항은 구심 가속도 항이다. $\\theta$ 방정식에 대해, 다음 미분들을 얻는다.\n\n$$\n\\frac{\\partial T}{\\partial \\theta} = 0, \\quad \\frac{\\partial T}{\\partial \\dot{\\theta}} = m r^2 \\dot{\\theta}, \\quad \\frac{d}{dt}\\left(m r^2 \\dot{\\theta}\\right) = m r^2 \\ddot{\\theta} + 2 m r \\dot{r} \\dot{\\theta},\n$$\n\n따라서 방정식은 다음과 같이 된다.\n\n$$\n\\frac{d}{dt}\\left(m r^2 \\dot{\\theta}\\right) = m r^2 \\ddot{\\theta} + 2 m r \\dot{r} \\dot{\\theta} = r F_\\theta.\n$$\n\n방정식의 좌변은 단순히 각운동량의 시간 미분이고 우변은 정확히 작용하는 토크이므로, 우리는 단지 토크 방정식 (1.26)을 다시 유도한 것임을 유의하라. 여기서 $L = m r^2 \\dot{\\theta}$이고$N^{(e)} = r F_\\theta$이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_B.png)"
+        },
+        {
+          "id": "GM_1-6_Snack_03_-_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 03 애트우드 기계",
+          "fileName": "GM_1.6_Snack_03_애트우드_기계.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_03_애트우드_기계.md",
+          "image": null,
+          "content": "# 1.6 라그랑주 형식화의 간단한 응용: 애트우드 기계\n\n**2. 애트우드 기계**—(그림 1.7 참조) \n홀로노믹, 스클레로노믹 구속 조건을 가진 보존계의 예이다 (도르래는 마찰이 없고 질량이 없다고 가정한다). 분명히 독립된 좌표는$x$하나뿐이며, 다른 추의 위치는 둘 사이의 밧줄 길이가$l$이라는 구속 조건에 의해 결정된다. 퍼텐셜 에너지는 다음과 같고,\n\n$$\nV = - M_1 g x - M_2 g (l - x),\n$$\n\n운동 에너지는 다음과 같다.\n\n$$\nT = \\frac{1}{2} (M_1 + M_2) \\dot{x}^2.\n$$\n\n이 둘을 결합하면 라그랑지안은 다음과 같은 형태를 갖는다.\n\n$$\nL = T - V = \\frac{1}{2} (M_1 + M_2) \\dot{x}^2 + M_1 g x + M_2 g (l - x).\n$$\n\n미분들을 포함하는 운동 방정식은 단 하나뿐이다.\n\n$$\n\\frac{\\partial L}{\\partial x} = (M_1 - M_2) g,\n$$\n\n$$\n\\frac{\\partial L}{\\partial \\dot{x}} = (M_1 + M_2) \\dot{x},\n$$\n\n따라서 다음을 얻는다.\n\n$$\n(M_1 + M_2) \\ddot{x} = (M_1 - M_2) g,\n$$\n\n또는\n\n$$\n\\ddot{x} = \\frac{M_1 - M_2}{M_1 + M_2} g,\n$$\n\n이는 더 기초적인 방법으로 얻은 익숙한 결과이다. 이 간단한 문제는 라그랑주 형식화에서 구속력—여기서는 밧줄의 장력—이 어디에도 나타나지 않는다는 점을 강조한다. 같은 이유로, 밧줄의 장력 역시 라그랑주 방법을 통해 직접적으로 찾을 수 없다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_03_애트우드_기계.png)"
+        },
+        {
+          "id": "GM_1-6_Snack_04_-_-_-_-",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · Snack 04 회전하는 철사 위의 구슬",
+          "fileName": "GM_1.6_Snack_04_회전하는_철사_위의_구슬.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_04_회전하는_철사_위의_구슬.md",
+          "image": null,
+          "content": "# 1.6 라그랑주 형식화의 간단한 응용: 회전하는 철사 위의 구슬\n\n**3. 시간에 의존하는 구속 조건: 회전하는 철사를 따라 미끄러지는 구슬**\n힘이 없는 공간에서 균일하게 회전하는 철사를 따라 미끄러지는 구슬(또는 고리). 철사는 곧고, 철사에 수직인 고정축을 중심으로 균일하게 회전한다. 이 예제는 회전축이 $z$축이고 철사가 $xy$ 평면에 있는, 시간에 의존하는 구속 조건의 간단한 예시로 선택되었다. 변환 방정식은 명시적으로 시간을 포함한다.\n\n$$\nx = r \\cos \\omega t, \\quad (\\omega = \\text{회전 각속도})\n$$\n\n$$\ny = r \\sin \\omega t. \\quad (r = \\text{회전축으로부터 철사를 따라 측정한 거리})\n$$\n\n그러면 (1.71)을 얻는 데 사용된 것과 같은 절차로 $T$(여기서는$L$과 같음)를 찾을 수 있지만, 구속 조건을 $\\dot{\\theta} = \\omega$ 관계로 표현하여 (1.75)를 직접 가져다 쓰는 것이 더 간단하다.\n\n$$\nT = \\frac{1}{2} m (\\dot{r}^2 + r^2 \\omega^2).\n$$\n\n이제 $\\dot{r}$을 포함하지 않는 항이 있으므로, $T$는 일반화 속도들에 대한 동차 2차 함수가 아님에 유의하라. 그러면 운동 방정식은 다음과 같다.\n\n$$\nm \\ddot{r} - m r \\omega^2 = 0\n$$\n\n또는\n\n$$\n\\ddot{r} = r \\omega^2,\n$$\n\n이는 부호가 바뀐 익숙한 단순 조화 진동자 방정식이다. 철사 위에서 처음에 정지해 있던 구슬에 대한 해 $r = e^{\\omega t}$는 구슬이 지수함수적으로 바깥쪽으로 움직임을 보여준다. 다시 한번 말하지만, 이 방법은 구슬을 철사 위에 머물게 하는 구속력을 제공할 수 없다. 각운동량 $L = m r^2 \\omega = m \\omega r_0^2 e^{2 \\omega t}$를 포함하는 식 (1.26)은 힘 $F = N/r$을 제공하며, 이는 철사와 회전축에 수직으로 작용하는 구속력 $F = 2 m r_0 \\omega^2 e^{\\omega t}$를 만들어낸다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_04_회전하는_철사_위의_구슬.png)"
+        }
+      ]
     },
     {
       "id": "GM_1.7",
