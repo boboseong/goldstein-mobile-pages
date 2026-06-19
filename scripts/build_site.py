@@ -312,6 +312,7 @@ def build_data(source_root: Path):
         section_id = section_id_from_dir(section_dir)
         entries = []
 
+        # 1. Scan snacks/regular entries
         for md_path in sorted(section_dir.glob("*.md"), key=lambda item: item.name.lower()):
             kind = entry_kind(md_path)
             if not kind:
@@ -334,6 +335,39 @@ def build_data(source_root: Path):
                     ),
                 }
             )
+
+        # 2. Scan Reference_Exercises subdirectory if it exists (register as translation only)
+        ref_ex_dir = section_dir / "Reference_Exercises"
+        if ref_ex_dir.is_dir():
+            for md_path in sorted(ref_ex_dir.glob("*.md"), key=lambda item: item.name.lower()):
+                relative_path = md_path.relative_to(source_root).as_posix()
+                image_path = find_entry_image(md_path)
+
+                # Format label as: {section_id} · 참고 문항 · {chap_sec} Problem {prob_num}
+                match = re.match(r"^GM_([0-9.]+)_Problem_(\d+)", md_path.name)
+                if match:
+                    chap_sec = match.group(1)
+                    prob_num = match.group(2)
+                    label = f"{section_id} · 참고 문항 · {chap_sec} Problem {prob_num}"
+                else:
+                    label = f"{section_id} · 참고 문항 · {md_path.stem}"
+
+                entries.append(
+                    {
+                        "id": re.sub(r"[^a-zA-Z0-9_-]+", "-", md_path.stem),
+                        "kind": "translation",
+                        "version": file_version(md_path),
+                        "label": label,
+                        "fileName": md_path.name,
+                        "sourcePath": relative_path,
+                        "image": copy_entry_image(image_path, source_root) if image_path else None,
+                        "content": rewrite_inline_image_urls(
+                            md_path.read_text(encoding="utf-8-sig").strip(),
+                            md_path,
+                            source_root,
+                        ),
+                    }
+                )
 
         sections.append(
             {

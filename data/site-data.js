@@ -1,5 +1,5 @@
 window.GOLDSTEIN_SITE_DATA = {
-  "generatedAt": "2026-06-19T15:23:31.908350+00:00",
+  "generatedAt": "2026-06-19T15:30:06.277701+00:00",
   "source": "Mechanics_Goldstein_Classical Chapters 1-2, PDFs excluded",
   "sections": [
     {
@@ -64,6 +64,36 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_04_보존력과에너지보존.md",
           "image": null,
           "content": "힘의 장(force field)이 점 1과 2 사이의 물리적으로 가능한 어떠한 경로에 대해서도 한 일 $W_{12}$가 동일하게 나타난다면, 그 힘(그리고 그 계)을 보존적(conservative)이라고 한다. 보존계에 대한 대안적인 설명은 입자가 한 가능한 경로를 통해 점 1에서 점 2로 이동한 다음 다른 경로를 통해 점 1로 되돌아오는 것을 상상함으로써 얻어진다. 특정 경로에 대해 $W_{12}$가 독립적이라는 것은 그러한 폐회로(closed circuit)를 따라 한 일이 0임을 의미한다. 즉:\n\n$$\n\\oint \\mathbf{F} \\cdot d\\mathbf{s} = 0. \\quad (1.15)\n$$\n\n물리적으로 볼 때, 마찰력이나 다른 소산력(dissipation force)이 존재하는 경우 계는 보존계일 수 없음이 분명하다. 왜냐하면 마찰에 의한 $\\mathbf{F} \\cdot d\\mathbf{s}$는 항상 양수이며 적분값이 사라질 수 없기 때문이다.\n\n벡터 해석학의 잘 알려진 정리에 따르면, 일 $W_{12}$가 입자가 취하는 물리적 경로에 무관하기 위한 필요충분조건은 $\\mathbf{F}$가 위치에 대한 어떤 스칼라 함수의 그래디언트(gradient)가 되는 것이다.\n\n$$\n\\mathbf{F} = -\\nabla V(\\mathbf{r}), \\quad (1.16)\n$$\n\n여기서 $V$는 퍼텐셜(potential) 또는 퍼텐셜 에너지(potential energy)라고 부른다. $V$의 존재는 간단한 논증을 통해 직관적으로 추론할 수 있다. 끝점 1과 2 사이의 적분 경로에 대해 $W_{12}$가 독립적이라면, $W_{12}$를 양 끝점의 위치에만 의존하는 어떤 양의 변화로 표현하는 것이 가능해야 한다. 이 양을 $-V$로 지정할 수 있으며, 그러면 미소 경로 길이에 대해 다음과 같은 관계식을 얻는다.\n\n$$\n\\mathbf{F} \\cdot d\\mathbf{s} = -dV\n$$\n\n또는\n\n$$\nF_s = -\\frac{\\partial V}{\\partial s},\n$$\n\n이는 식 (1.16)과 동치이다. 식 (1.16)에서 결과에 영향을 주지 않고 $V$에 공간상 일정한 임의의 양을 더할 수 있다는 점에 유의하라. 따라서 $V$의 영점(zero level)은 임의적이다.\n\n보존계에서 힘이 한 일은 다음과 같다.\n\n$$\nW_{12} = V_1 - V_2. \\quad (1.17)\n$$\n\n식 (1.17)을 식 (1.14)와 결합하면 다음의 결과를 얻는다.\n\n$$\nT_1 + V_1 = T_2 + V_2, \\quad (1.18)\n$$\n\n이는 기호로 다음을 진술하는 것이다.\n\n**입자의 에너지 보존 정리:** 입자에 작용하는 힘이 보존력이면 입자의 총 에너지 $T + V$는 보존된다.\n\n입자에 가해지는 힘이 어떤 상황에서는 입자의 위치와 시간에 모두 명시적으로 의존하는 스칼라 함수의 그래디언트로 주어질 수도 있다. 그러나, 입자가 거리 $ds$를 이동할 때 입자에 한 일은\n\n$$\n\\mathbf{F} \\cdot d\\mathbf{s} = -\\frac{\\partial V}{\\partial s} ds,\n$$\n\n가 되며, 이는 더 이상 변위 동안의 $-V$의 전체 변화량이 되지 않는데, 왜냐하면 입자가 움직임에 따라 $V$역시 시간에 대해 명시적으로 변하기 때문이다. 따라서, 입자가 점 1에서 점 2로 이동할 때 한 일은 더 이상 그 점들 사이의 함수$V$의 차이가 아니다. 총 에너지 $T + V$를 여전히 정의할 수는 있겠지만, 그것은 입자의 운동 과정 동안 보존되지 않는다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/GM_1.1_Snack_04_보존력과에너지보존.png)"
+        },
+        {
+          "id": "GM_1-7_Problem_01_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · 참고 문항 · 1.7 Problem 01",
+          "fileName": "GM_1.7_Problem_01_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/Reference_Exercises/GM_1.7_Problem_01_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 01**\n\n1. 질량이 일정한 단일 입자의 경우 운동 방정식이 운동 에너지에 대한 다음 미분 방정식을 내포함을 보이시오.\n\n$$\n\\frac{dT}{dt} = \\mathbf{F} \\cdot \\mathbf{v},\n$$\n\n반면 질량이 시간에 따라 변하는 경우 해당하는 방정식은 다음과 같음을 보이시오.\n\n$$\n\\frac{d(mT)}{dt} = \\mathbf{F} \\cdot \\mathbf{p}.\n$$"
+        },
+        {
+          "id": "GM_1-7_Problem_02_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · 참고 문항 · 1.7 Problem 02",
+          "fileName": "GM_1.7_Problem_02_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/Reference_Exercises/GM_1.7_Problem_02_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 02**\n\n2. 임의의 원점에서 질량 중심까지의 위치 벡터의 크기 $R$이 다음 방정식으로 주어짐을 증명하시오.\n\n$$\nM^2 R^2 = M \\sum_i m_i r_i^2 - \\frac{1}{2} \\sum_{i \\neq j} m_i m_j r_{ij}^2.\n$$"
+        },
+        {
+          "id": "GM_1-8_Problem_11_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.1 · 참고 문항 · 1.8 Problem 11",
+          "fileName": "GM_1.8_Problem_11_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.1_Mechanics_of_a_Particle/Reference_Exercises/GM_1.8_Problem_11_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 11**\n\n**11.** 힘 $\\mathbf{F} = yz\\mathbf{\\hat{i}} + zx\\mathbf{\\hat{j}} + xy\\mathbf{\\hat{k}}$가 보존력인지 아닌지 확인하라."
         }
       ]
     },
@@ -137,6 +167,36 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_06_전체에너지와강체.md",
           "image": null,
           "content": "이러한 고찰로부터, 외력과 내력이 모두 퍼텐셜로부터 도출될 수 있다면 계의 전체 퍼텐셜 에너지 $V$를 정의하는 것이 가능함이 분명해진다.\n\n$$\nV = \\sum_i V_i + \\frac{1}{2} \\sum_{\\substack{i,j \\\\ i \\neq j}} V_{ij}, \\quad (1.36)\n$$\n\n이 정의를 통해 전체 에너지 $T + V$가 보존되며, 이는 단일 입자에 대한 보존 정리 (1.18)과 유사하다.\n\n식 (1.36)의 우변 두 번째 항은 계의 내부 퍼텐셜 에너지(internal potential energy)라고 불릴 것이다. 일반적으로 이것은 0일 필요가 없으며, 더 중요하게는 계가 시간에 따라 변함에 따라 함께 변할 수 있다. 오직 강체(rigid bodies)로 알려진 특정 부류의 계에 대해서만 내부 퍼텐셜이 항상 일정한 값을 갖는다.\n\n형식적으로, 강체는 거리 $r_{ij}$가 고정되어 시간에 따라 변할 수 없는 입자계로 정의할 수 있다. 그러한 경우에 벡터 $d\\mathbf{r}_{ij}$는 대응하는 $\\mathbf{r}_{ij}$에, 따라서 $\\mathbf{F}_{ij}$에 수직일 수밖에 없다. 그러므로 강체에서 내력은 일을 하지 않으며, 내부 퍼텐셜은 일정하게 유지되어야 한다. 어떤 경우든 전체 퍼텐셜은 더해지는 상수(additive constant)만큼의 불확실성을 가지므로, 변하지 않는 내부 퍼텐셜은 계의 운동을 논할 때 완전히 무시할 수 있다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/GM_1.2_Snack_06_전체에너지와강체.png)"
+        },
+        {
+          "id": "GM_1-7_Problem_03_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · 참고 문항 · 1.7 Problem 03",
+          "fileName": "GM_1.7_Problem_03_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/Reference_Exercises/GM_1.7_Problem_03_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 03**\n\n3. 두 입자로 이루어진 계가 운동 방정식인 식 (1.22)와 (1.26)을 따른다고 가정하자. 개별 입자의 운동 방정식으로부터 입자들 사이의 내력이 작용과 반작용의 약한 법칙과 강한 법칙을 모두 만족함을 보이시오. 이 논증은 임의의 수의 입자를 가진 계로 일반화될 수 있으며, 따라서 식 (1.22)와 (1.26)을 도출했던 논증의 역을 증명할 수 있다."
+        },
+        {
+          "id": "GM_1-8_Problem_13_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · 참고 문항 · 1.8 Problem 13",
+          "fileName": "GM_1.8_Problem_13_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/Reference_Exercises/GM_1.8_Problem_13_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 13**\n\n**13.** 로켓은 꼬리에서 배출되는 배기가스의 운동량 반작용에 의해 추진된다. 이 가스들은 로켓에 탑재된 연료의 반응에서 발생하기 때문에, 로켓의 질량은 일정하지 않고 연료가 소비됨에 따라 감소한다. 대기 마찰을 무시할 때, 균일한 중력장 내에서 수직 위로 발사된 로켓의 운동 방정식이 다음과 같음을 보여라.\n\n$$\nm \\frac{dv}{dt} = -v' \\frac{dm}{dt} - mg,\n$$\n\n여기서 $m$은 로켓의 질량이고, $v'$는 로켓에 대한 배기가스의 상대 탈출 속도이다. 시간에 따른 질량 감소율이 일정하다고 가정하고, 이 방정식을 적분하여 $v$를 $m$의 함수로 구하라. 초기 정지 상태에서 출발하는 로켓에 대해 $v'$가 2.1 km/s이고 초당 질량 감소량이 초기 질량의 1/60과 같다고 할 때, 탈출 속도에 도달하기 위해서는 빈 로켓의 무게에 대한 연료 무게의 비가 거의 300이 되어야 함을 보여라!"
+        },
+        {
+          "id": "GM_1-8_Problem_17_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.2 · 참고 문항 · 1.8 Problem 17",
+          "fileName": "GM_1.8_Problem_17_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.2_Mechanics_of_a_System_of_Particles/Reference_Exercises/GM_1.8_Problem_17_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 17**\n\n**17.** 원래 정지해 있던 원자핵이 방사성 붕괴를 하여 1.73 MeV/$c$의 운동량을 가진 전자를 방출하고, 전자의 방향과 직각으로 1.00 MeV/$c$의 운동량을 가진 중성미자를 방출한다. (백만 전자볼트인 MeV는 현대 물리학에서 사용되는 에너지 단위로 $1.60 \\times 10^{-13}$ J과 같다. 이에 상응하여 MeV/$c$는 선운동량의 단위이며 $5.34 \\times 10^{-22}$kg$\\cdot$ m/s와 같다.) 원자핵은 어느 방향으로 반동하는가? 그 운동량은 몇 MeV/$c$인가? 남은 원자핵의 질량이 $3.90 \\times 10^{-25}$ kg이라면, 그 운동 에너지는 몇 전자볼트인가?"
         }
       ]
     },
@@ -210,6 +270,36 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_05_구속의처리.md",
           "image": null,
           "content": "부분적으로는 종속적인 좌표들을 제거할 수 있기 때문에, 홀로노믹 구속들을 포함하는 문제들은 언제나 형식적인 해법으로 다루어질 수 있다. 하지만 비홀로노믹 예제들을 공략할 일반적인 방법은 존재하지 않는다. 물론 구속이 적분 불가능한 경우, 구속의 미분 방정식을 운동의 미분 방정식과 함께 문제 안으로 끌어들여 결과적으로 라그랑주 승수법(method of Lagrange multipliers)을 통해 종속 방정식들을 제거할 수는 있다.\n\n우리는 나중에 이 방법으로 다시 돌아올 것이다. 그러나 더 악랄한 형태의 비홀로노믹 구속 문제들은 개별적으로 대처되어야만 하며, 결과적으로 고전 역학의 형식적인 측면들을 전개할 때는 거의 변함없이, 만일 구속이 존재한다면 그것은 홀로노믹이라고 가정하게 된다. 일상생활에서 접하는 많은 구속들이 비홀로노믹이라는 사실에도 불구하고, 이러한 제약이 역학 이론의 적용 가능성을 크게 제한하지는 않는다. 그 이유는 철사나 표면, 혹은 벽 등의 매개체를 통해 계에 부여되는 구속이라는 전체적인 개념이 특히 거시적이거나 대규모의 문제에서만 적절하기 때문이다. 그러나 오늘날 물리학자들은 원자나 원자핵 문제에 더 큰 관심을 두고 있다. 이러한 미시적인 규모에서는 계의 안팎을 막론하고 모든 대상들이 한결같이 분자, 원자, 혹은 더 작은 입자들로 구성되어 명확한 힘을 가하고 있으며, 구속이라는 개념은 인위적인 것이 되어 거의 나타나지 않는다. 이때 구속 조건은 실제 물리적 상황에 대한 수학적 이상화(mathematical idealizations)로 사용되거나, \"스핀(spin)\"에 대한 강체 회전의 예처럼 양자 역학적 성질에 대한 고전적인 근사로만 쓰이게 된다. 그러한 구속들은 항상 홀로노믹이며, 역학 이론의 체계 안에 매끄럽게 잘 들어맞는다.\n\n두 번째 어려움, 즉 구속력이 선험적으로 알려져 있지 않다는 점을 극복하기 위해, 우리는 구속력이 사라지도록 역학을 공식화하고자 강구한다. 그렇게 되면 우리는 오직 이미 알려진 가해진 힘(applied forces)만을 다루면 된다. 이러한 절차에 대한 힌트는 구속이 있는 특정 계, 즉 강체에서 내부의 힘(여기서는 구속력)이 한 일(work)이 사라진다는 사실로부터 제공된다. 이어지는 섹션들에서 우리는 이러한 단서를 좇아 그 안에 포함된 아이디어들을 일반화할 것이다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/GM_1.3_Snack_05_구속의처리.png)"
+        },
+        {
+          "id": "GM_1-7_Problem_04_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · 참고 문항 · 1.7 Problem 04",
+          "fileName": "GM_1.7_Problem_04_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/Reference_Exercises/GM_1.7_Problem_04_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 04**\n\n4. 구르는 원판에 대한 구속 방정식인 식 (1.39)는 다음과 같은 형태의 일반적인 선형 미분 구속 방정식의 특수한 경우이다.\n\n$$\n\\sum_{i=1}^{n} g_i(x_1, \\dots, x_n) dx_i = 0.\n$$\n\n이러한 형태의 구속 조건은 이것을 완전 미분으로 바꾸어주는 적분 함수 $f(x_1, \\dots, x_n)$를 찾을 수 있을 때만 홀로노믹(holonomic)이다. 분명히 이 함수는 모든 $i \\neq j$에 대하여\n\n$$\n\\frac{\\partial (fg_i)}{\\partial x_j} = \\frac{\\partial (fg_j)}{\\partial x_i}\n$$\n\n를 만족해야 한다. 식 (1.39)의 어느 것에 대해서도 이러한 적분 인자를 찾을 수 없음을 보이시오."
+        },
+        {
+          "id": "GM_1-7_Problem_05_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · 참고 문항 · 1.7 Problem 05",
+          "fileName": "GM_1.7_Problem_05_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/Reference_Exercises/GM_1.7_Problem_05_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 05**\n\n5. 반지름이 $a$인 두 바퀴가 길이가 $b$인 공통 축의 양 끝에 장착되어 바퀴들이 독립적으로 회전할 수 있다. 이 결합체 전체가 평면 위에서 미끄러지지 않고 구른다. 두 개의 비홀로노믹 구속 방정식,\n\n$$\n\\cos \\theta dx + \\sin \\theta dy = 0\n$$\n\n$$\n\\sin \\theta dx - \\cos \\theta dy = \\frac{1}{2} a \\left( d\\phi + d\\phi' \\right),\n$$\n\n(여기서 $\\theta$, $\\phi$, 그리고 $\\phi'$은 단일 수직 원판 문제에서와 비슷한 의미를 가지며, $(x, y)$는 두 바퀴 사이의 축 중앙에 있는 점의 좌표이다)과 하나의 홀로노믹 구속 방정식,\n\n$$\n\\theta = C - \\frac{a}{b} (\\phi - \\phi'),\n$$\n\n이 존재함을 보이시오. 여기서 $C$는 상수이다."
+        },
+        {
+          "id": "GM_1-7_Problem_06_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.3 · 참고 문항 · 1.7 Problem 06",
+          "fileName": "GM_1.7_Problem_06_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.3_Constraints/Reference_Exercises/GM_1.7_Problem_06_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 06**\n\n6. 한 입자가 $xy$평면에서 속도 벡터가 항상$x$축 위의 한 점을 향하도록 하는 구속 조건 하에 운동하고 있으며, 이 점의 가로좌표(abscissa)는 시간에 대한 어떤 주어진 함수 $f(t)$이다. $f(t)$가 미분 가능하지만 그 외에는 임의의 함수일 때, 이 구속이 비홀로노믹임을 보이시오."
         }
       ]
     },
@@ -293,6 +383,46 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_05_라그랑주방정식.md",
           "image": null,
           "content": "달랑베르 원리와 일반화 좌표를 통해 얻은 운동 에너지 관계식을 보존계에 적용해 보자. 힘들이 어떤 스칼라 퍼텐셜 함수 $V$로부터 유도될 수 있을 때,\n\n$$\n\\mathbf{F}_i = -\\nabla_i V.\n$$\n\n일반화 힘은 다음과 같이 쓸 수 있다.\n\n$$\nQ_j = \\sum_i \\mathbf{F}_i \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = - \\sum_i \\nabla_i V \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j},\n$$\n\n이는 함수 $-V(\\mathbf{r}_1, \\mathbf{r}_2, \\ldots, \\mathbf{r}_N, t)$를 $q_j$에 대해 편미분한 식과 정확히 같다.\n\n$$\nQ_j \\equiv -\\frac{\\partial V}{\\partial q_j}. \\qquad (1.54)\n$$\n\n식 (1.47)을 참조하라. 그러면 식 (1.53)의 결과는 다음과 같이 다시 쓸 수 있다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial T}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial (T - V)}{\\partial q_j} = 0. \\qquad (1.55)\n$$\n\n형태가 (1.55)인 운동 방정식은 보존계(conservative systems)에만 반드시 국한되는 것은 아니다. 오직 $V$가 시간에 대한 명시적인 함수가 아닐 때만 그 계가 보존계가 된다(4페이지 참조). 여기서 정의된 바와 같이, 퍼텐셜 $V$는 일반화 속도(generalized velocities)에 의존하지 않는다. 따라서 우리는 $\\dot{q}_j$에 대한 편미분 부분에 $V$ 항을 포함시킬 수 있다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial (T - V)}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial (T - V)}{\\partial q_j} = 0.\n$$\n\n또는 라그랑지안(Lagrangian) $L$이라는 새로운 함수를 다음과 같이 정의하면,\n\n$$\nL = T - V, \\qquad (1.56)\n$$\n\n식 (1.53)은 다음과 같이 된다.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{q}_j} \\right) - \\frac{\\partial L}{\\partial q_j} = 0, \\qquad (1.57)\n$$\n\n이 수식들을 \"라그랑주 방정식(Lagrange's equations)\"이라고 부른다.\n\n특정한 운동 방정식의 집합에 대하여, 식 (1.57)이 주어진 일반화 좌표에서의 운동 방정식으로 유도되도록 하는 라그랑지안의 선택이 유일한 것은 아님에 주의하라. 따라서 유도(Derivations) 8과 10에서 볼 수 있듯이, 만약 $L(q, \\dot{q}, t)$가 적절한 라그랑지안이고 $F(q, t)$가 일반화 좌표와 시간에 대한 임의의 미분 가능한 함수라면,\n\n$$\nL'(q, \\dot{q}, t) = L(q, \\dot{q}, t) + \\frac{dF}{dt} \\qquad (1.57')\n$$\n\n또한 동일한 운동 방정식을 도출하는 라그랑지안이 된다. 이러한 처방에 의해 구성된 것 외에도 대안적인 라그랑지안들을 찾는 것이 종종 가능하다(연습문제 20 참조). 식 (1.56)은 보존계에 대한 라그랑지안을 구성하는 항상 적절한 방법이기는 하지만, 주어진 계에 적합한 유일한 라그랑지안을 제공하는 것은 아니다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/GM_1.4_Snack_05_라그랑주방정식.png)"
+        },
+        {
+          "id": "GM_1-7_Problem_07_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · 참고 문항 · 1.7 Problem 07",
+          "fileName": "GM_1.7_Problem_07_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/Reference_Exercises/GM_1.7_Problem_07_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 07**\n\n7. 식 (1.53)의 형태인 라그랑주 방정식(Lagrange's equations)을 다음과 같이 쓸 수도 있음을 보이시오.\n\n$$\n\\frac{\\partial \\dot{T}}{\\partial \\dot{q}_j} - 2 \\frac{\\partial T}{\\partial q_j} = Q_j.\n$$\n\n이는 때때로 라그랑주 방정식의 닐센 형태(Nielsen form)로 알려져 있다."
+        },
+        {
+          "id": "GM_1-7_Problem_08_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · 참고 문항 · 1.7 Problem 08",
+          "fileName": "GM_1.7_Problem_08_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/Reference_Exercises/GM_1.7_Problem_08_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 08**\n\n8. $L$이 라그랑주 방정식을 만족하는 자유도 $n$인 계의 라그랑지안(Lagrangian)일 때, 직접 대입하여\n\n$$\nL' = L + \\frac{dF(q_1, \\dots, q_n, t)}{dt}\n$$\n\n또한 라그랑주 방정식을 만족함을 보이시오. 여기서 $F$는 그 변수들에 대한 임의의 미분 가능한 함수이다."
+        },
+        {
+          "id": "GM_1-7_Problem_10_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · 참고 문항 · 1.7 Problem 10",
+          "fileName": "GM_1.7_Problem_10_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/Reference_Exercises/GM_1.7_Problem_10_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 10**\n\n10. $q_1, \\dots, q_n$이 라그랑지안 $L(q, \\dot{q}, t)$를 가지는 자유도 $n$인 계의 독립적인 일반화 좌표의 집합이라 하자. 다음 변환 방정식을 통해 또 다른 독립적인 좌표 집합 $s_1, \\dots, s_n$으로 변환한다고 가정하자.\n\n$$\nq_i = q_i(s_1, \\dots, s_n, t), \\quad i = 1, \\dots, n.\n$$\n\n(이러한 변환을 점 변환(point transformation)이라 부른다.) 만약 변환 방정식을 통해 라그랑지안 함수가 $s_j, \\dot{s}_j$, 그리고 $t$의 함수로 표현된다면, $L$이 $s$ 좌표계에 대해서도 라그랑주 방정식을 만족함을 보이시오.\n\n$$\n\\frac{d}{dt} \\left( \\frac{\\partial L}{\\partial \\dot{s}_j} \\right) - \\frac{\\partial L}{\\partial s_j} = 0.\n$$\n\n다시 말해서, 라그랑주 방정식의 형태는 점 변환 아래에서 불변이다."
+        },
+        {
+          "id": "GM_1-8_Problem_20_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.4 · 참고 문항 · 1.8 Problem 20",
+          "fileName": "GM_1.8_Problem_20_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.4_DAlemberts_Principle_and_Lagranges_Equations/Reference_Exercises/GM_1.8_Problem_20_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 20**\n\n**20.** 질량이 $m$인 입자가 1차원에서 운동하며 다음과 같은 라그랑지안을 갖는다.\n\n$$\nL = \\frac{m^2\\dot{x}^4}{12} + m\\dot{x}^2V(x) - V^2(x),\n$$\n\n여기서 $V$는 $x$에 대한 어떤 미분 가능한 함수이다. $x(t)$에 대한 운동 방정식을 구하고, 이 방정식을 바탕으로 계의 물리적 특성을 설명하라."
         }
       ]
     },
@@ -356,6 +486,36 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_05_에너지소산율.md",
           "image": null,
           "content": "소산 함수에 대한 물리적 해석도 가능하다. 계가 마찰에 *대항하여* 한 일(work)은 다음과 같다.\n\n$$\ndW_f = -\\mathbf{F}_f \\cdot d\\mathbf{r} = -\\mathbf{F}_f \\cdot \\mathbf{v} dt = \\left( k_x v_x^2 + k_y v_y^2 + k_z v_z^2 \\right) dt.\n$$\n\n따라서 $2\\mathcal{F}$는 마찰로 인한 에너지 소산율(rate of energy dissipation)이다. 마찰력에 의해 발생하는 일반화된 힘의 성분은 다음과 같이 주어진다.\n\n$$\nQ_j = \\sum_i \\mathbf{F}_{fi} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j} = -\\sum_i \\nabla_v \\mathcal{F} \\cdot \\frac{\\partial \\mathbf{r}_i}{\\partial q_j}\n$$\n\n$$\n= -\\sum_i \\nabla_v \\mathcal{F} \\cdot \\frac{\\partial \\dot{\\mathbf{r}}_i}{\\partial \\dot{q}_j}, \\quad (\\text{식 } 1.51\\text{에 의해}),\n$$\n\n$$\n= -\\frac{\\partial \\mathcal{F}}{\\partial \\dot{q}_j}. \\quad (1.69)\n$$\n\n그 예로 스토크스 법칙(Stokes' law)을 들 수 있는데, 점성(viscosity) $\\eta$인 매질에서 속력 $v$로 움직이는 반지름 $a$의 구(sphere)는 마찰 항력(frictional drag force) $\\mathbf{F}_f = -6\\pi\\eta a\\mathbf{v}$를 받는다. 소산을 포함하는 라그랑주 방정식은 다음과 같이 된다.\n\n$$\n\\frac{d}{dt}\\left(\\frac{\\partial L}{\\partial \\dot{q}_j}\\right) - \\frac{\\partial L}{\\partial q_j} + \\frac{\\partial \\mathcal{F}}{\\partial \\dot{q}_j} = 0, \\quad (1.70)\n$$\n\n따라서 운동 방정식을 얻기 위해서는 두 개의 스칼라 함수 $L$과 $\\mathcal{F}$가 지정되어야 한다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/GM_1.5_Snack_05_에너지소산율.png)"
+        },
+        {
+          "id": "GM_1-7_Problem_09_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · 참고 문항 · 1.7 Problem 09",
+          "fileName": "GM_1.7_Problem_09_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/Reference_Exercises/GM_1.7_Problem_09_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.7 Problem 09**\n\n9. 전자기장은 스칼라 및 벡터 퍼텐셜의 다음과 같은 게이지 변환(gauge transformation)에 대해 불변이다.\n\n$$\n\\mathbf{A} \\rightarrow \\mathbf{A} + \\nabla \\psi(\\mathbf{r}, t),\n$$\n\n$$\n\\phi \\rightarrow \\phi - \\frac{1}{c} \\frac{\\partial \\psi}{\\partial t},\n$$\n\n여기서 $\\psi$는 임의의 (단, 미분 가능한) 함수이다. 이 게이지 변환이 전자기장 속을 운동하는 입자의 라그랑지안에 어떤 영향을 미치는가? 운동이 영향을 받는가?"
+        },
+        {
+          "id": "GM_1-8_Problem_15_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · 참고 문항 · 1.8 Problem 15",
+          "fileName": "GM_1.8_Problem_15_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/Reference_Exercises/GM_1.8_Problem_15_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 15**\n\n**15.** 점 입자가 다음과 같은 형태의 일반화 퍼텐셜에서 유도될 수 있는 힘의 영향을 받아 공간에서 운동하고 있다.\n\n$$\nU(\\mathbf{r}, \\mathbf{v}) = V(r) + \\boldsymbol{\\sigma} \\cdot \\mathbf{L},\n$$\n\n여기서 $\\mathbf{r}$은 고정점으로부터의 반경 벡터이고, $\\mathbf{L}$은 그 점에 대한 각운동량이며, $\\boldsymbol{\\sigma}$는 공간 내의 고정된 벡터이다.\n(a) 식 (1.58)을 바탕으로 입자에 작용하는 힘의 성분을 데카르트 좌표계와 구면 극좌표계 모두에서 구하라.\n(b) 두 좌표계에서의 성분들이 식 (1.49)에서와 같이 서로 연관되어 있음을 보여라.\n(c) 구면 극좌표계에서의 운동 방정식을 구하라."
+        },
+        {
+          "id": "GM_1-8_Problem_16_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.5 · 참고 문항 · 1.8 Problem 16",
+          "fileName": "GM_1.8_Problem_16_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.5_Velocity-Dependent_Potentials_and_the_Dissipation_Function/Reference_Exercises/GM_1.8_Problem_16_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 16**\n\n**16.** 입자가 힘의 중심을 향해 작용하는 힘의 영향을 받아 평면에서 운동하고 있으며, 그 힘의 크기는 다음과 같다.\n\n$$\nF = \\frac{1}{r^2} \\left( 1 - \\frac{\\dot{r}^2 - 2r\\ddot{r}}{c^2} \\right),\n$$\n\n여기서 $r$은 힘의 중심에서 입자까지의 거리이다. 이러한 힘을 발생시키는 일반화 퍼텐셜을 찾고, 그로부터 평면 내 운동에 대한 라그랑지안을 구하라. ($F$에 대한 표현은 베버(Weber)의 전기동역학에서 두 전하 사이의 힘을 나타낸다.)"
         }
       ]
     },
@@ -429,6 +589,86 @@ window.GOLDSTEIN_SITE_DATA = {
           "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_04_회전하는_철사_위의_구슬.md",
           "image": null,
           "content": "# 1.6 라그랑주 형식화의 간단한 응용: 회전하는 철사 위의 구슬\n\n**3. 시간에 의존하는 구속 조건: 회전하는 철사를 따라 미끄러지는 구슬**\n힘이 없는 공간에서 균일하게 회전하는 철사를 따라 미끄러지는 구슬(또는 고리). 철사는 곧고, 철사에 수직인 고정축을 중심으로 균일하게 회전한다. 이 예제는 회전축이 $z$축이고 철사가 $xy$ 평면에 있는, 시간에 의존하는 구속 조건의 간단한 예시로 선택되었다. 변환 방정식은 명시적으로 시간을 포함한다.\n\n$$\nx = r \\cos \\omega t, \\quad (\\omega = \\text{회전 각속도})\n$$\n\n$$\ny = r \\sin \\omega t. \\quad (r = \\text{회전축으로부터 철사를 따라 측정한 거리})\n$$\n\n그러면 (1.71)을 얻는 데 사용된 것과 같은 절차로 $T$(여기서는$L$과 같음)를 찾을 수 있지만, 구속 조건을 $\\dot{\\theta} = \\omega$ 관계로 표현하여 (1.75)를 직접 가져다 쓰는 것이 더 간단하다.\n\n$$\nT = \\frac{1}{2} m (\\dot{r}^2 + r^2 \\omega^2).\n$$\n\n이제 $\\dot{r}$을 포함하지 않는 항이 있으므로, $T$는 일반화 속도들에 대한 동차 2차 함수가 아님에 유의하라. 그러면 운동 방정식은 다음과 같다.\n\n$$\nm \\ddot{r} - m r \\omega^2 = 0\n$$\n\n또는\n\n$$\n\\ddot{r} = r \\omega^2,\n$$\n\n이는 부호가 바뀐 익숙한 단순 조화 진동자 방정식이다. 철사 위에서 처음에 정지해 있던 구슬에 대한 해 $r = e^{\\omega t}$는 구슬이 지수함수적으로 바깥쪽으로 움직임을 보여준다. 다시 한번 말하지만, 이 방법은 구슬을 철사 위에 머물게 하는 구속력을 제공할 수 없다. 각운동량 $L = m r^2 \\omega = m \\omega r_0^2 e^{2 \\omega t}$를 포함하는 식 (1.26)은 힘 $F = N/r$을 제공하며, 이는 철사와 회전축에 수직으로 작용하는 구속력 $F = 2 m r_0 \\omega^2 e^{\\omega t}$를 만들어낸다.\n\n\n![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_04_회전하는_철사_위의_구슬.png)"
+        },
+        {
+          "id": "GM_1-8_Problem_12_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 12",
+          "fileName": "GM_1.8_Problem_12_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_12_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 12**\n\n**12.** 고도 720 km에서 지구 주위를 도는 위성의 궤도 주기와 궤도 각속도를 계산하라. [주어진 값: 지구의 반지름 $R = 6000$km,$g = 9.83 \\text{ m/s}^2$.]"
+        },
+        {
+          "id": "GM_1-8_Problem_14_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 14",
+          "fileName": "GM_1.8_Problem_14_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_14_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 14**\n\n**14.** 질량이 $m$인 두 질점이 길이가 $l$인 질량이 없는 강체 막대로 연결되어 있으며, 이 막대의 중심은 반지름 $a$인 원 위를 움직이도록 구속되어 있다. 운동 에너지를 일반화 좌표로 나타내어라."
+        },
+        {
+          "id": "GM_1-8_Problem_18_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 18",
+          "fileName": "GM_1.8_Problem_18_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_18_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 18**\n\n**18.** 특정 물리계에 대한 라그랑지안은 다음과 같이 쓸 수 있다.\n\n$$\nL' = \\frac{m}{2} \\left( a\\dot{x}^2 + 2b\\dot{x}\\dot{y} + c\\dot{y}^2 \\right) - \\frac{K}{2} \\left( ax^2 + 2bxy + cy^2 \\right),\n$$\n\n여기서 $a, b, c$는 임의의 상수이지만 $b^2 - ac \\neq 0$이라는 조건을 만족해야 한다. 운동 방정식은 무엇인가? 특히 $a = 0 = c$인 경우와 $b = 0, c = -a$인 두 가지 경우를 조사하라. 위의 라그랑지안이 설명하는 물리계는 무엇인가? 식 (1.56)으로 정의되는 이 계의 일반적인 라그랑지안이 점 변환(유도 10 참조)에 의해 $L'$과 관련되어 있음을 보여라. $b^2 - ac$의 값에 대한 조건이 갖는 의미는 무엇인가?"
+        },
+        {
+          "id": "GM_1-8_Problem_19_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 19",
+          "fileName": "GM_1.8_Problem_19_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_19_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 19**\n\n**19.** 구면 진자, 즉 질량이 없는 강체 막대에 매달린 질점의 라그랑주 운동 방정식을 구하라."
+        },
+        {
+          "id": "GM_1-8_Problem_21_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 21",
+          "fileName": "GM_1.8_Problem_21_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_21_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 21**\n\n**21.** 질량이 $m_1$과 $m_2$인 두 질점이 매끄러운 탁자의 구멍을 통과하는 끈으로 연결되어, $m_1$은 탁자 표면에 놓여 있고 $m_2$는 매달려 있다. $m_2$가 수직선상에서만 움직인다고 가정할 때, 이 계의 일반화 좌표는 무엇인가? 계의 라그랑주 방정식을 쓰고, 가능하다면 그 방정식들 중 어느 것이든 가질 수 있는 물리적 의미에 대해 논의하라. 이 문제를 하나의 2계 미분 방정식으로 단순화하고 방정식의 제1적분(first integral)을 구하라. 그것의 물리적 의미는 무엇인가? (운동은 $m_1$이 구멍에 도달할 때까지만 고려하라.)"
+        },
+        {
+          "id": "GM_1-8_Problem_22_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 22",
+          "fileName": "GM_1.8_Problem_22_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_22_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 22**\n\n**22.** 그림 1.4에 그려진 이중 진자의 라그랑지안과 운동 방정식을 구하라. 여기서 진자의 길이는 $l_1$과 $l_2$이고 해당 질량은 $m_1$과 $m_2$이다."
+        },
+        {
+          "id": "GM_1-8_Problem_23_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 23",
+          "fileName": "GM_1.8_Problem_23_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_23_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 23**\n\n**23.** 각각 2 kg과 3 kg인 두 질량이 매끄러운 도르래를 지나는 질량이 없고 늘어나지 않는 끈의 양끝에 묶여 있다. 계를 가만히 놓았을 때, 질량들의 가속도와 끈의 장력을 계산하라."
+        },
+        {
+          "id": "GM_1-8_Problem_24_KR_TTS",
+          "kind": "translation",
+          "version": "main",
+          "label": "GM_1.6 · 참고 문항 · 1.8 Problem 24",
+          "fileName": "GM_1.8_Problem_24_KR_TTS.md",
+          "sourcePath": "Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/Reference_Exercises/GM_1.8_Problem_24_KR_TTS.md",
+          "image": null,
+          "content": "**[참고 문항] 1.8 Problem 24**\n\n**24.** 정지 길이(장력이 없을 때)가 $L_a$인 용수철이 한쪽 끝은 지지대에 연결되어 있고 다른 쪽 끝에는 질량 $M$이 매달려 있다. 용수철의 질량과 질량 $M$의 크기는 무시하고, 운동은 수직 평면 내로 제한된다고 가정하라. 또한 용수철은 구부러지지 않고 늘어나기만 하지만 평면 내에서 흔들릴 수 있다고 가정하라.\n(a) 수직선으로부터 질량의 각변위와 끈이 정지 길이(질량 $m$이 매달려 있을 때)로부터 늘어난 길이를 사용하여 라그랑주 방정식을 구하라.\n(b) 작은 늘어남과 각변위에 대해 이 방정식들을 풀어라.\n(c) 늘어남과 각변위 모두에 대해 다음 차수(next order)까지 부분 (a)의 방정식들을 풀어라. 이 부분은 손으로 계산하기에 적합하다. 용수철 상수, 질량, 정지 길이에 대한 몇 가지 합리적인 가정들을 사용하여 운동을 논의하라. 문제에 명시된 가정 하에서 공명이 발생할 가능성이 있는가?\n(d) (해석적 컴퓨터 프로그램의 경우.) 용수철의 전체 질량이 $m \\ll M$이라고 생각하자. 용수철의 구부러짐을 무시하고, $m$과 각변위 및 선형 변위에 대해 1차(first order)까지 라그랑주 방정식을 올바르게 세워라.\n(e) (수치적 컴퓨터 분석의 경우.) 부분 (a)의 상수들에 대한 합리적인 가정들의 집합을 만들고 시간에 따른 두 좌표의 단일 그래프를 그려라."
         }
       ]
     },
