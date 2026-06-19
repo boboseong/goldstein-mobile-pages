@@ -1,0 +1,1 @@
+Recreated the textbook-style diagram using primitive SVG elements: horizontal and vertical coordinate axes with origin label, three origin vectors with arrowheads for `r_i`, `R`, and `r_j`, a scattered cluster of point masses, labels for `m_i`, `m_j`, vector labels, and a leader arrow with the "Center of mass" label.

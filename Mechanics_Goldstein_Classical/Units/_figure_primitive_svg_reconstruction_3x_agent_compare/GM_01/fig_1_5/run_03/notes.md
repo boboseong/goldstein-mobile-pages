@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG line art: the x, y, and z axes with labels, origin mark, inclined reference line with theta arc, tilted vertical disk as an ellipse, internal radius/angle construction labeled phi, curved path through the contact point, and the tangent velocity arrow labeled v.

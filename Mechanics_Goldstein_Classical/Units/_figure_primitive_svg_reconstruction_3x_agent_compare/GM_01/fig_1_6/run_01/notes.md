@@ -1,0 +1,1 @@
+Recreated the textbook-style vector diagram with primitive SVG elements: horizontal and vertical coordinate axes, origin label, two radial vectors labeled `r (θ)` and `r (θ + Δθ)`, the short connecting arrow labeled `r Δθ`, and the small angular arc labeled `Δθ`.

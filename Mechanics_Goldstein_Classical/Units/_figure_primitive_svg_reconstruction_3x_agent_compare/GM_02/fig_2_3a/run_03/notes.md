@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate diagram as SVG primitives: x, y, and z axes with arrowheads; the open bowl surface with upper and lower elliptical rims; curved sidewalls; hidden dashed interior construction lines; the shaded horizontal elliptical section with stippling; and point labels for (x1,y1) and (x2,y2).

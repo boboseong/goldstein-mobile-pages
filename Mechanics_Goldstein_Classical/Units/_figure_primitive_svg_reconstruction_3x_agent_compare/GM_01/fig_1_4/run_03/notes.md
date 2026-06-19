@@ -1,0 +1,1 @@
+Recreated the textbook-style line figure with primitive SVG elements: dashed vertical reference lines, two slanted rod/vector paths with arrowheads, a lower filled mass point, curved angle markers, and theta_1/theta_2 labels in italic serif styling.

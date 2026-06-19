@@ -1,0 +1,1 @@
+Recreated the textbook-style figure as primitive SVG geometry: horizontal and vertical coordinate axes, separate direction arrows for x and y, endpoint dots labeled 1 and 2, the smooth falling trajectory curve, and the tangent velocity arrow labeled v. The SVG uses only vector elements and does not embed the source image or base64 data.

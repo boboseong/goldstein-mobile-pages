@@ -1,0 +1,1 @@
+Recreated the figure as SVG primitives: x, y, and z axes with arrowheads; the nested elliptical rims and curved side boundaries; the shaded stippled cross-section; the lower ellipse and central construction line; and the coordinate labels `(x2,y2)` and `(x1,y1)` in a thin textbook style.

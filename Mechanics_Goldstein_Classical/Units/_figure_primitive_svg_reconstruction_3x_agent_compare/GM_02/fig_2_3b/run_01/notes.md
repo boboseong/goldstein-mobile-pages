@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, the small tick and label for `a`, the `b` label on the vertical axis, the smooth C-shaped curve, filled endpoint dots, and serif math labels for `(x1, y1)` and `(x2, y2)`.

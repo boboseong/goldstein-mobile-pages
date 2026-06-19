@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, separate x and y direction arrows, the curved trajectory from point 1 to point 2, filled endpoint dots, numeric labels, and the tangent velocity arrow labeled v.

@@ -1,0 +1,1 @@
+Recreated the circular pulley with center axle point, dashed horizontal datum, two hanging vertical strings, boxed masses labeled M1 and M2, double-headed dimension arrows, extension ticks, and italic textbook labels x and l - x.

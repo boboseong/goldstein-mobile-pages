@@ -1,0 +1,1 @@
+Recreated the textbook figure as primitive SVG: horizontal x-axis and vertical y-axis with tick marks, labels for x_1,y_1, pi a, 2 pi a, a/2a/3a, x, and y; the broad U-shaped trajectory with endpoint direction arrows; the right-hand continuation branch; the marked center and right points; and the curve annotations x_2 << y_2, x_2 = pi/2 y_2, and x_2 >> y_2.

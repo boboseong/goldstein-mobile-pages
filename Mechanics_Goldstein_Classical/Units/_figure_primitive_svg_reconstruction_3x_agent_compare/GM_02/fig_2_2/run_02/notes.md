@@ -1,0 +1,1 @@
+Recreated the figure as SVG primitives: the horizontal and vertical axes with italic axis labels, two smooth black paths connecting the same lower-left and upper-right endpoints, filled endpoint dots, and the math-style coordinate labels with subscripts.

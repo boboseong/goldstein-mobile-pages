@@ -1,0 +1,1 @@
+Recreated the pulley diagram with SVG primitives: a circular pulley with center mark and dashed horizontal reference line, two vertical string segments, labeled hanging masses M1 and M2, and dimension arrows labeled x and l - x in a textbook-style black line drawing.

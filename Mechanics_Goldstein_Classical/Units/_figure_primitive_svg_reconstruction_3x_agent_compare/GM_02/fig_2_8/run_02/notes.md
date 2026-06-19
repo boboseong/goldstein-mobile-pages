@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG elements: the lower coordinate axes, vertical z-axis with arrow, perspective ellipse, conical generator rays, small conical surface element, angular arcs for theta/dtheta/dphi, and the slanted vector label.

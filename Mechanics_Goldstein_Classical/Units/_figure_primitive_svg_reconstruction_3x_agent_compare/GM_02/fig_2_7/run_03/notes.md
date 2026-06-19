@@ -1,0 +1,1 @@
+Recreated the textbook-style diagram as hand-drawn SVG primitives: horizontal and vertical coordinate axes, two radial position arrows from the origin, the short top displacement arrow, and the labels `r_i(q_i)`, `r_i(q_i + dq_i)`, and `dq_i n` with italic serif math styling and subscript placement.

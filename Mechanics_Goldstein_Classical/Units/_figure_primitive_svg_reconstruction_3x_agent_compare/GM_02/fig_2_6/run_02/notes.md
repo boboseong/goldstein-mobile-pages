@@ -1,0 +1,1 @@
+Recreated the figure as a primitive SVG circuit diagram: upper and lower rectangular wire loops, three voltage-source arrows, capacitor plates, zigzag resistors, coil-style inductors, mutual-inductance labels, component labels, and the plain black-on-white textbook style.

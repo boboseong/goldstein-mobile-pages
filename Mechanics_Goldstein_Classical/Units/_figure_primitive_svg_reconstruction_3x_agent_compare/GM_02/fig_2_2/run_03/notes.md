@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, the x and y axis labels, two smooth black curves joining the same endpoints, filled endpoint dots, and the coordinate labels `(x_1, y_1)` and `(x_2, y_2)` using SVG primitives only.

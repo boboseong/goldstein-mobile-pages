@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG: horizontal and vertical axes with origin label, two radial vectors with arrowheads, the short outer displacement segment with arrowhead, the small angle arc, and the labels `r (theta + Delta theta)`, `r (theta)`, `r Delta theta`, and `Delta theta`.

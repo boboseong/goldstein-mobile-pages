@@ -1,0 +1,1 @@
+Recreated the figure as native SVG line art: upper and lower circuit loops, straight connecting wires, zigzag resistors R1-R3, capacitor plates C1-C3, coiled inductors L1-L3, upward emf arrows E1-E3, and the node labels M12, M13, and M23 in a thin serif textbook style.

@@ -1,0 +1,1 @@
+Recreated the textbook-style line diagram using SVG primitives: the x, y, and z axes from O; the inclined line and theta angle; the tilted wheel ellipse; the internal phi construction; the curved contact trace; and the velocity arrow with labels.

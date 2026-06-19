@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, origin label, three position vectors with arrowheads, particle-dot cluster, mass labels, center-of-mass pointer, and the labels `r_i`, `r_j`, and `R` using SVG primitives and Times-style text.

@@ -1,0 +1,1 @@
+Recreated the textbook-style diagram as primitive SVG: horizontal and vertical axes with ticks and labels, the main cycloid-like curve between the marked cusp points, the right-hand continuation branch, direction arrows on the curve, the three filled points, and the labels for x1/y1, pi a, 2 pi a, x2 << y2, x2 >> y2, x2 = pi/2 y2, x, y, a, 2a, and 3a.

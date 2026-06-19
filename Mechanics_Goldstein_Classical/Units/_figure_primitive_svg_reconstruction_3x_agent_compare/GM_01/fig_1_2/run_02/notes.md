@@ -1,0 +1,1 @@
+Recreated the textbook figure as primitive SVG elements: perpendicular coordinate axes with origin label, two arrowed position vectors labeled r_i and r_j, the arrowed relative vector labeled r_ij between their endpoints, and the surrounding cluster of black point particles.

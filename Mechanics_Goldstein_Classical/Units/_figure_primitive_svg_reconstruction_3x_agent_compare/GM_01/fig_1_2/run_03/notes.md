@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes with origin label, vectors r_i and r_j from O, the interparticle vector r_ij between the two selected particles, arrowheads, surrounding point-particle dots, and the three math-style labels using primitive SVG shapes and text.

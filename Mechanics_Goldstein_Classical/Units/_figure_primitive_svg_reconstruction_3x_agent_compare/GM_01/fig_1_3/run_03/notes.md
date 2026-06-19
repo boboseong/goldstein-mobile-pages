@@ -1,0 +1,1 @@
+Recreated the figure as a primitive SVG diagram: perpendicular coordinate axes with origin label O, the position vector r_i from the origin to particle i, the vector R from the origin to the center of mass, the relative vector r'_i from the center of mass toward i, arrowheads, the particle dot, and the "Center of mass" label.

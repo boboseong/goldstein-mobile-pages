@@ -1,0 +1,1 @@
+Recreated the textbook-style vector rotation diagram with primitive SVG elements: the vertical omega axis, base axes, dashed perspective circle, two nearby slanted radius vectors labeled r(t) and r(t + dt), the dphi arc at the vector tips, the theta angle marker, arrowheads, and thin monochrome line styling.

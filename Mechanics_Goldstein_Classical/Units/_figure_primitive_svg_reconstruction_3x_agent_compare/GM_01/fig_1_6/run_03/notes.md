@@ -1,0 +1,1 @@
+Recreated the coordinate axes, origin label, two radial vectors with arrowheads, the connecting transverse side, the small angular arc, and the labels `r (θ+Δθ)`, `r (θ)`, `r Δθ`, and `Δθ` using native SVG primitives only. No embedded raster image or base64 data is used.

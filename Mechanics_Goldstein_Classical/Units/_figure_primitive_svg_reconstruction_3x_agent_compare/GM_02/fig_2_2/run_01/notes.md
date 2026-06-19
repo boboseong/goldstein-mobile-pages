@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG elements: Cartesian axes without arrowheads, italic axis labels, two smooth curved paths connecting the same endpoints, filled endpoint dots, and math-style coordinate labels for `(x1, y1)` and `(x2, y2)`.

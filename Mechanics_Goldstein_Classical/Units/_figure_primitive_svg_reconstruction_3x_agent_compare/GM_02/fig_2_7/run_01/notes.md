@@ -1,0 +1,1 @@
+Recreated the plain horizontal and vertical axes, the two slanted position vectors from the origin, the short connecting displacement arrow between vector tips, arrowheads, and the math-style labels for r_i(q_j), r_i(q_j + dq_j), and dq_j n.

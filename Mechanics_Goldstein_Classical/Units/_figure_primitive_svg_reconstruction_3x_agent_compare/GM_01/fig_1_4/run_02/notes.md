@@ -1,0 +1,1 @@
+Recreated the textbook-style figure as native SVG geometry: two dashed vertical reference lines, an upper slanted pendulum/link with an arrowhead, a lower slanted link ending at a filled circular mass point, curved angle marks, and the theta subscript labels for theta 1 and theta 2.

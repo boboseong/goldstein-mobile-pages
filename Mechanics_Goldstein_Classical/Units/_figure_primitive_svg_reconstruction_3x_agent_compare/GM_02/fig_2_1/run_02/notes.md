@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes with small italic x and y labels, the curved trajectory, the straight interval chord from t1 to t2, the irregular closed neighboring-path envelope, and the small italic t1 and t2 labels using only primitive SVG elements.

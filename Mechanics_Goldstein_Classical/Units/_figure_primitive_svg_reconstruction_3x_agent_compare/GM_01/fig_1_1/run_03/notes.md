@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, origin label, three arrowed position vectors labeled r_i, R, and r_j, the point-mass cloud, m_i and m_j labels, and the center-of-mass point with its callout arrow and label.

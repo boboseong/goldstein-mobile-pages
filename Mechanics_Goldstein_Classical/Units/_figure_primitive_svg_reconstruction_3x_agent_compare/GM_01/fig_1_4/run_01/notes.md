@@ -1,0 +1,1 @@
+Recreated the textbook-style two-link figure using SVG primitives: dashed vertical reference lines, two solid slanted pendulum segments, a filled lower bob, a triangular arrowhead at the upper joint of the lower segment, curved angle markers, and the labels theta_1 and theta_2.

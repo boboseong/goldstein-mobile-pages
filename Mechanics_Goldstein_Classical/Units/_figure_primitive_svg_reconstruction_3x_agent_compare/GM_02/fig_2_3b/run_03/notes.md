@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG elements: thin x and y axes with small a and b reference ticks, a smooth left-bulging curve, filled point markers at (x1, y1) and (x2, y2), and Times-style italic math labels matching the textbook layout.

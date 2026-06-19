@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, origin label, two position vectors from the origin, the relative vector from the center of mass to the point labeled i, arrowheads, the particle dot, the R, r_i, r'_i labels, and the two-line "Center of mass" annotation using primitive SVG shapes and text only.

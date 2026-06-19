@@ -1,0 +1,1 @@
+Recreated the vertical and horizontal axes, small x and y direction arrows, labeled endpoints 1 and 2 with black point markers, the smooth descending trajectory, the tangent velocity arrow, and the serif italic labels matching the textbook style.

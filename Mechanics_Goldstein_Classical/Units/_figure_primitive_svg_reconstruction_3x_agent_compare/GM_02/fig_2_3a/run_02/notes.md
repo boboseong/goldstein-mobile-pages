@@ -1,0 +1,1 @@
+Recreated the Goldstein figure 2.3a diagram as SVG primitives: x, y, and z axes with arrowheads; the flared surface outline with top and lower ellipses; a shaded, stippled horizontal elliptical section; interior guide curves; and the labels (x2, y2) and (x1, y1).

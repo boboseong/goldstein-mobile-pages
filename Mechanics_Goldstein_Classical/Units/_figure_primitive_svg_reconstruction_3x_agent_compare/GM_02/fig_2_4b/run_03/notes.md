@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, tick marks and labels for x, y, a, 2a, 3a, pi a, and 2 pi a. Drew the cycloid-like arch with marked cusp and midpoint dots, the short continuing branch on the right, and the figure annotations x2 << y2, x2 >> y2, and x2 = (pi/2)y2 as SVG text and simple vector strokes.

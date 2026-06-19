@@ -1,0 +1,1 @@
+Recreated the figure as native SVG primitives: thin x and y axes with italic labels, the curved trajectory through the region, an irregular closed boundary around the middle segment, and the small italic t1/t2 labels near the two marked positions.

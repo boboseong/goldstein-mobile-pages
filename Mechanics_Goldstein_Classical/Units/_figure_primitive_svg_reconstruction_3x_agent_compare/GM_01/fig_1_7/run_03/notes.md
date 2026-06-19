@@ -1,0 +1,1 @@
+Recreated the textbook-style pulley diagram with primitive SVG elements: the circular pulley and axle dot, dashed horizontal reference line, two vertical rope segments, rectangular hanging masses labeled M1 and M2, vertical double-arrow dimension guides labeled x and l - x, and the small witness lines at the top and bottom of the dimensions.

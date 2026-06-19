@@ -1,0 +1,1 @@
+Recreated the textbook-style coordinate axes, two position vectors from the origin, the short differential displacement arrow between vector tips, arrowheads, and the labels r_i(q_j), r_i(q_j + dq_j), and dq_j n using SVG primitives and text.

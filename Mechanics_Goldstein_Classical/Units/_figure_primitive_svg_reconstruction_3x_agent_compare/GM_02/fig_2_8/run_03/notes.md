@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG line art: a vertical z axis with arrow, the lower reference axes from the origin, the dashed perspective ellipse, two nearby slanted radius vectors, the narrow cone boundary, a shaded differential solid-angle patch labeled dOmega, and the right-side r(q + dq) label.

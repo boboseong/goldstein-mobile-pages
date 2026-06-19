@@ -1,0 +1,1 @@
+Recreated the textbook line drawing with SVG primitives: the O-x-y-z coordinate axes, the slanted construction line with theta angle mark, the curved track through the contact point, the tilted disk/ellipse, the interior phi construction, and the velocity arrow labeled v.

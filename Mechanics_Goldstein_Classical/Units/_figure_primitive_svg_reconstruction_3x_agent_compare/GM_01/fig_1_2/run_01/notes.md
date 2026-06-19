@@ -1,0 +1,1 @@
+Recreated the figure as primitive SVG elements: thin coordinate axes through the origin, two thick position vectors labeled r_i and r_j, the interparticle vector labeled r_ij, filled arrowheads, serif italic labels, and the surrounding scatter of black particle dots.
