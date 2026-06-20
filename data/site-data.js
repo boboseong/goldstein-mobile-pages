@@ -1,5 +1,5 @@
 window.GOLDSTEIN_SITE_DATA = {
-  "generatedAt": "2026-06-20T07:33:04.487238+00:00",
+  "generatedAt": "2026-06-20T12:31:12.765199+00:00",
   "source": "Mechanics_Goldstein_Classical Chapters 1-2, PDFs excluded",
   "sections": [
     {
