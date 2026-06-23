@@ -22,8 +22,7 @@ $$
 \frac{d}{dt}\left(m r^2 \dot{\theta}\right) = m r^2 \ddot{\theta} + 2 m r \dot{r} \dot{\theta} = r F_\theta.
 $$
 
-방정식의 좌변은 단순히 각운동량의 시간 미분이고 우변은 정확히 작용하는 토크이므로, 우리는 단지 토크 방정식 (1.26)을 다시 유도한 것임을 유의하라. 여기서 $L = m r^2 \dot{\theta}$이고$N^{(e)} = r F_\theta$이다.
-($\frac{d\mathbf{L}}{dt} = \mathbf{N}^{(e)}$ 1.26)
+방정식의 좌변은 단순히 각운동량의 시간 미분이고 우변은 정확히 작용하는 토크이므로, 우리는 단지 토크 방정식 (1.26 $\frac{d\mathbf{L}}{dt} = \mathbf{N}^{(e)}$)을 다시 유도한 것임을 유의하라. 여기서 $L = m r^2 \dot{\theta}$이고$N^{(e)} = r F_\theta$이다.
 
 
 ![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_B.png)

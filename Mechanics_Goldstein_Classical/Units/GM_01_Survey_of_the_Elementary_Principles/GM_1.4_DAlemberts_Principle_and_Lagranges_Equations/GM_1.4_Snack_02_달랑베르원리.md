@@ -10,8 +10,7 @@ $$
 \mathbf{F}_i - \dot{\mathbf{p}}_i = 0,
 $$
 
-이는 계 안의 입자들이 실제 힘에 "역유효력(reversed effective force)"인 $-\dot{\mathbf{p}}_i$를 더한 힘 아래에서 평형 상태에 있을 것임을 뜻한다. (1.40) 대신에, 즉시 다음과 같이 쓸 수 있다.
-($\sum_i \mathbf{F}_i \cdot \delta \mathbf{r}_i = 0$ 1.40)
+이는 계 안의 입자들이 실제 힘에 "역유효력(reversed effective force)"인 $-\dot{\mathbf{p}}_i$를 더한 힘 아래에서 평형 상태에 있을 것임을 뜻한다. (1.40 $\sum_i \mathbf{F}_i \cdot \delta \mathbf{r}_i = 0$) 대신에, 즉시 다음과 같이 쓸 수 있다.
 
 $$
 \sum_i (\mathbf{F}_i - \dot{\mathbf{p}}_i) \cdot \delta \mathbf{r}_i = 0, \qquad (1.44)

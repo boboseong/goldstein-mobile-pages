@@ -8,8 +8,7 @@ $$
 
 입자계의 선운동량 보존 정리: 전체 외력이 0이면, 전체 선운동량은 보존된다.
 
-외적 $\mathbf{r}_i \times \mathbf{p}_i$를 취하고 $i$에 대해 합산함으로써 계의 전체 각운동량을 얻는다. 식 (1.19)에서 이 연산을 수행하면 항등식의 도움으로 다음 결과를 얻는다.
-($\sum_j \mathbf{F}_{ji} + \mathbf{F}_i^{(e)} = \dot{\mathbf{p}}_i$ 1.19)
+외적 $\mathbf{r}_i \times \mathbf{p}_i$를 취하고 $i$에 대해 합산함으로써 계의 전체 각운동량을 얻는다. 식 (1.19 $\sum_j \mathbf{F}_{ji} + \mathbf{F}_i^{(e)} = \dot{\mathbf{p}}_i$)에서 이 연산을 수행하면 항등식의 도움으로 다음 결과를 얻는다.
 
 $$
 \sum_i (\mathbf{r}_i \times \dot{\mathbf{p}}_i) = \sum_i \frac{d}{dt} (\mathbf{r}_i \times \mathbf{p}_i) = \dot{\mathbf{L}} = \sum_i \mathbf{r}_i \times \mathbf{F}_i^{(e)} + \sum_{\substack{i,j \\ i \neq j}} \mathbf{r}_i \times \mathbf{F}_{ji}. \quad (1.24)

@@ -1,7 +1,6 @@
 ﻿# 1.3 구속 (Constraints)
 
-앞의 섹션들을 통해 고전 역학의 모든 문제들이 다음의 미분 방정식 (1.19)의 세트를 푸는 것으로 환원되었다는 인상을 받을 수 있을 것이다.
-($\sum_j \mathbf{F}_{ji} + \mathbf{F}_i^{(e)} = \dot{\mathbf{p}}_i$ 1.19)
+앞의 섹션들을 통해 고전 역학의 모든 문제들이 다음의 미분 방정식 (1.19 $\sum_j \mathbf{F}_{ji} + \mathbf{F}_i^{(e)} = \dot{\mathbf{p}}_i$)의 세트를 푸는 것으로 환원되었다는 인상을 받을 수 있을 것이다.
 
 $$
 m_i \ddot{\mathbf{r}}_i = \mathbf{F}_i^{(e)} + \sum_j \mathbf{F}_{ji}

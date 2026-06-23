@@ -11,9 +11,7 @@ $$
 y = r \sin \omega t. \quad (r = \text{회전축으로부터 철사를 따라 측정한 거리})
 $$
 
-그러면 (1.71)을 얻는 데 사용된 것과 같은 절차로 $T$(여기서는$L$과 같음)를 찾을 수 있지만, 구속 조건을 $\dot{\theta} = \omega$ 관계로 표현하여 (1.75)를 직접 가져다 쓰는 것이 더 간단하다.
-($T = M_0 + \sum_j M_j \dot{q}_j + \frac{1}{2} \sum_{j,k} M_{jk} \dot{q}_j \dot{q}_k$ 1.71)
-($T = \frac{1}{2}m \left[ \dot{r}^2 + (r\dot{\theta})^2 \right]$ 1.75)
+그러면 (1.71 $T = M_0 + \sum_j M_j \dot{q}_j + \frac{1}{2} \sum_{j,k} M_{jk} \dot{q}_j \dot{q}_k$)을 얻는 데 사용된 것과 같은 절차로 $T$(여기서는$L$과 같음)를 찾을 수 있지만, 구속 조건을 $\dot{\theta} = \omega$ 관계로 표현하여 (1.75 $T = \frac{1}{2}m \left[ \dot{r}^2 + (r\dot{\theta})^2 \right]$)를 직접 가져다 쓰는 것이 더 간단하다.
 
 $$
 T = \frac{1}{2} m (\dot{r}^2 + r^2 \omega^2).
@@ -31,8 +29,7 @@ $$
 \ddot{r} = r \omega^2,
 $$
 
-이는 부호가 바뀐 익숙한 단순 조화 진동자 방정식이다. 철사 위에서 처음에 정지해 있던 구슬에 대한 해 $r = e^{\omega t}$는 구슬이 지수함수적으로 바깥쪽으로 움직임을 보여준다. 다시 한번 말하지만, 이 방법은 구슬을 철사 위에 머물게 하는 구속력을 제공할 수 없다. 각운동량 $L = m r^2 \omega = m \omega r_0^2 e^{2 \omega t}$를 포함하는 식 (1.26)은 힘 $F = N/r$을 제공하며, 이는 철사와 회전축에 수직으로 작용하는 구속력 $F = 2 m r_0 \omega^2 e^{\omega t}$를 만들어낸다.
-($\frac{d\mathbf{L}}{dt} = \mathbf{N}^{(e)}$ 1.26)
+이는 부호가 바뀐 익숙한 단순 조화 진동자 방정식이다. 철사 위에서 처음에 정지해 있던 구슬에 대한 해 $r = e^{\omega t}$는 구슬이 지수함수적으로 바깥쪽으로 움직임을 보여준다. 다시 한번 말하지만, 이 방법은 구슬을 철사 위에 머물게 하는 구속력을 제공할 수 없다. 각운동량 $L = m r^2 \omega = m \omega r_0^2 e^{2 \omega t}$를 포함하는 식 (1.26 $\frac{d\mathbf{L}}{dt} = \mathbf{N}^{(e)}$)은 힘 $F = N/r$을 제공하며, 이는 철사와 회전축에 수직으로 작용하는 구속력 $F = 2 m r_0 \omega^2 e^{\omega t}$를 만들어낸다.
 
 
 ![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_04_회전하는_철사_위의_구슬.png)

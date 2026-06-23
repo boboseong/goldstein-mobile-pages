@@ -1,5 +1,4 @@
-﻿이제 식 (1.29)의 우변을 살펴보자. 외력을 어떤 퍼텐셜의 그래디언트(gradient)로 도출할 수 있는 특수한 경우에, 첫 번째 항은 다음과 같이 쓸 수 있다.
-($W_{12} = \sum_i \int_1^2 \mathbf{F}_i \cdot d\mathbf{s}_i = \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i + \sum_{\substack{i,j \\ i \neq j}} \int_1^2 \mathbf{F}_{ji} \cdot d\mathbf{s}_i$ 1.29)
+﻿이제 식 (1.29 $W_{12} = \sum_i \int_1^2 \mathbf{F}_i \cdot d\mathbf{s}_i = \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i + \sum_{\substack{i,j \\ i \neq j}} \int_1^2 \mathbf{F}_{ji} \cdot d\mathbf{s}_i$)의 우변을 살펴보자. 외력을 어떤 퍼텐셜의 그래디언트(gradient)로 도출할 수 있는 특수한 경우에, 첫 번째 항은 다음과 같이 쓸 수 있다.
 
 $$
 \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i = - \sum_i \int_1^2 \nabla_i V_i \cdot d\mathbf{s}_i = - \sum_i \left. V_i \right|_1^2,
@@ -25,8 +24,7 @@ $$
 
 여기서 $f$는 어떤 스칼라 함수이다. 만약 $V_{ij}$가 속도나 (현대 물리학의 영역으로 넘어가서) 고유한 "스핀(spin)" 각운동량과 같이 입자들과 연관된 어떤 다른 벡터 쌍의 차이의 함수이기도 하다면, 힘은 여전히 크기가 같고 방향이 반대이겠지만 반드시 입자 사이의 방향을 따라 놓이지는 않을 것이다.
 
-모든 힘이 보존력일 때, 식 (1.29)의 두 번째 항은 입자 쌍에 대한 합으로 다시 쓸 수 있으며, 각 쌍에 대한 항은 다음과 같은 형태가 된다.
-($W_{12} = \sum_i \int_1^2 \mathbf{F}_i \cdot d\mathbf{s}_i = \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i + \sum_{\substack{i,j \\ i \neq j}} \int_1^2 \mathbf{F}_{ji} \cdot d\mathbf{s}_i$ 1.29)
+모든 힘이 보존력일 때, 식 (1.29 $W_{12} = \sum_i \int_1^2 \mathbf{F}_i \cdot d\mathbf{s}_i = \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i + \sum_{\substack{i,j \\ i \neq j}} \int_1^2 \mathbf{F}_{ji} \cdot d\mathbf{s}_i$)의 두 번째 항은 입자 쌍에 대한 합으로 다시 쓸 수 있으며, 각 쌍에 대한 항은 다음과 같은 형태가 된다.
 
 $$
 - \int_1^2 (\nabla_i V_{ij} \cdot d\mathbf{s}_i + \nabla_j V_{ij} \cdot d\mathbf{s}_j).

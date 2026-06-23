@@ -22,8 +22,7 @@ $$
 T = \frac{1}{2} \sum_i m_i v_i^2. \quad (1.30)
 $$
 
-식 (1.27)에 주어진 질량 중심 좌표계로의 변환을 이용하면, $T$를 다음과 같이 쓸 수도 있다.
-($\mathbf{r}_i = \mathbf{r}'_i + \mathbf{R}$ 1.27)
+식 (1.27 $\mathbf{r}_i = \mathbf{r}'_i + \mathbf{R}$)에 주어진 질량 중심 좌표계로의 변환을 이용하면, $T$를 다음과 같이 쓸 수도 있다.
 
 $$
 T = \frac{1}{2} \sum_i m_i (\mathbf{v} + \mathbf{v}'_i) \cdot (\mathbf{v} + \mathbf{v}'_i)
