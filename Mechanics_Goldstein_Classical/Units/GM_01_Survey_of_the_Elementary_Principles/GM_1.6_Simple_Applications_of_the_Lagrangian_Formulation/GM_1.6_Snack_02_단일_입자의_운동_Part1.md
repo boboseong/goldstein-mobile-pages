@@ -6,7 +6,7 @@
    (b) 평면 극좌표계
 
 **1. (a) 단일 입자의 운동: 데카르트 좌표계 사용.**
-식 (1.53 $\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} ight) - \frac{\partial T}{\partial q_j} = Q_j$)에 필요한 일반화 힘은 명백히 $F_x$, $F_y$, $F_z$이다. 그러면
+식 (1.53 $\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} \right) - \frac{\partial T}{\partial q_j} = Q_j$)에 필요한 일반화 힘은 명백히 $F_x$, $F_y$, $F_z$이다. 그러면
 
 $$
 T = \frac{1}{2}m(\dot{x}^2 + \dot{y}^2 + \dot{z}^2),
