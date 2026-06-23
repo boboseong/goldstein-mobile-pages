@@ -1,7 +1,7 @@
-﻿그리고 달랑베르 원리의 좌변 두 번째 항은 다음과 같이 전개할 수 있다.
+그리고 달랑베르 원리 식 (1.45 $\sum_i (\mathbf{F}_i^{(a)} - \dot{\mathbf{p}}_i) \cdot \delta \mathbf{r}_i = 0$)은 다음과 같이 된다.
 
 $$
-\sum_j \left\{ \frac{d}{dt} \left[ \frac{\partial}{\partial \dot{q}_j} \left( \sum_i \frac{1}{2} m_i v_i^2 \right) \right] - \frac{\partial}{\partial q_j} \left( \sum_i \frac{1}{2} m_i v_i^2 \right) - Q_j \right\} \delta q_j.
+\sum_j \left\{ \frac{d}{dt} \left[ \frac{\partial}{\partial \dot{q}_j} \left( \sum_i \frac{1}{2} m_i v_i^2 \right) \right] - \frac{\partial}{\partial q_j} \left( \sum_i \frac{1}{2} m_i v_i^2 \right) - Q_j \right\} \delta q_j = 0.
 $$
 
 $\sum_i \frac{1}{2} m_i v_i^2$를 계의 운동 에너지 $T$와 동일시하면, 달랑베르 원리(식 (1.45 $\sum_i (\mathbf{F}_i^{(a)} - \dot{\mathbf{p}}_i) \cdot \delta \mathbf{r}_i = 0$) 참조)는 다음과 같이 된다.
