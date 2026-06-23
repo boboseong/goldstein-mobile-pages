@@ -1,4 +1,4 @@
-﻿**(b) 단일 입자의 운동: 평면 극좌표계 사용.** 
+﻿**(b) 단일 입자의 운동: 평면 극좌표계 사용.**
 여기서는 $T$를 $\dot{r}$과 $\dot{\theta}$로 표현해야 한다. 변환 방정식인 식 (1.38 $\vdots$)은 다음과 같다.
 
 $$
@@ -38,6 +38,8 @@ $$
 $$
 Q_\theta = \mathbf{F} \cdot \frac{\partial \mathbf{r}}{\partial \theta} = \mathbf{F} \cdot r \boldsymbol{\hat{\theta}} = r F_\theta,
 $$
+
+왜냐하면 도함수의 정의에 의해 $\theta$에 대한 $\mathbf{r}$의 미분은 $\boldsymbol{\hat{\theta}}$방향의 벡터이기 때문이다 (그림 1.6 참조).
 
 
 ![인포그래픽](Mechanics_Goldstein_Classical/Units/GM_01_Survey_of_the_Elementary_Principles/GM_1.6_Simple_Applications_of_the_Lagrangian_Formulation/GM_1.6_Snack_02_단일_입자의_운동_Part2_A.png)

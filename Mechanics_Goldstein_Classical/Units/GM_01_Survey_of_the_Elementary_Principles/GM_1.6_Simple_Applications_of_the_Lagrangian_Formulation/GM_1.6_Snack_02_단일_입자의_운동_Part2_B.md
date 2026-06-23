@@ -1,4 +1,4 @@
-﻿왜냐하면 도함수의 정의에 의해 $\theta$에 대한 $\mathbf{r}$의 미분은 $\boldsymbol{\hat{\theta}}$방향의 벡터이기 때문이다 (그림 1.6 참조). 두 개의 일반화 좌표가 있으므로 라그랑주 방정식도 두 개이다.$r$ 방정식에 나타나는 미분은 다음과 같다.
+﻿두 개의 일반화 좌표가 있으므로 라그랑주 방정식도 두 개이다.$r$ 방정식에 나타나는 미분은 다음과 같다.
 
 $$
 \frac{\partial T}{\partial r} = m r \dot{\theta}^2, \quad \frac{\partial T}{\partial \dot{r}} = m \dot{r}, \quad \frac{d}{dt}\left(\frac{\partial T}{\partial \dot{r}}\right) = m \ddot{r},

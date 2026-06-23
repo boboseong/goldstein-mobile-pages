@@ -1,4 +1,4 @@
-# 1.4 달랑베르 원리와 라그랑주 방정식 (D'Alembert's Principle and Lagrange's Equations)
+﻿# 1.4 달랑베르 원리와 라그랑주 방정식 (D'Alembert's Principle and Lagrange's Equations)
 
 계의 가상적(무한소) 변위란, 주어진 순간 $t$에 계에 가해진 힘과 구속에 모순되지 않도록 좌표를 임의의 무한소만큼 변화시킨 결과($\delta \mathbf{r}_i$)로 나타나는 계의 배열(configuration)의 변화를 의미한다. 이 변위는 시간 간격 $dt$ 동안 실제로 일어나는(그 동안 힘과 구속 조건이 변할 수 있는) 계의 실제 변위와 구별하기 위해 가상적(virtual)이라고 부른다. 계가 평형 상태에 있다고 가정하자. 즉, 각 입자에 작용하는 알짜힘이 영($\mathbf{F}_i = 0$)이다. 그러면 내적 $\mathbf{F}_i \cdot \delta \mathbf{r}_i$역시 명백히 영이 되는데, 이것은 변위$\delta \mathbf{r}_i$동안 힘$\mathbf{F}_i$가 한 가상일(virtual work)이다. 모든 입자에 대해 이 영이 되는 곱들을 합한 것 역시 영이어야만 한다.
 
