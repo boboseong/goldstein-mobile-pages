@@ -1,4 +1,4 @@
-점 $O$에 대한 입자의 각운동량(angular momentum)은 $\mathbf{L}$로 표기하며, 다음과 같이 정의된다.
+﻿점 $O$에 대한 입자의 각운동량(angular momentum)은 $\mathbf{L}$로 표기하며, 다음과 같이 정의된다.
 
 $$
 \mathbf{L} = \mathbf{r} \times \mathbf{p}, \quad (1.7)
@@ -11,6 +11,8 @@ $$
 $$
 
 $\mathbf{N}$에 대하여 식 (1.3)과 유사한 방정식은 식 (1.4)에 $\mathbf{r}$의 외적(cross product)을 취하여 얻을 수 있다.
+($\mathbf{F} = \frac{d\mathbf{p}}{dt} \equiv \dot{\mathbf{p}}$ 1.3)
+($\mathbf{F} = \frac{d}{dt}(m\mathbf{v})$ 1.4)
 
 $$
 \mathbf{r} \times \mathbf{F} = \mathbf{N} = \mathbf{r} \times \frac{d}{dt}(m\mathbf{v}). \quad (1.9)
@@ -31,6 +33,7 @@ $$
 $\mathbf{N}$과 $\mathbf{L}$모두 모멘트의 기준이 되는 점$O$에 의존한다는 점에 유의하라.
 
 식 (1.3)의 경우와 마찬가지로, 토크 방정식 (1.11) 역시 즉각적인 보존 정리를 내놓는다. 이번에는 다음과 같다.
+($\mathbf{F} = \frac{d\mathbf{p}}{dt} \equiv \dot{\mathbf{p}}$ 1.3)
 
 **입자의 각운동량 보존 정리:** 총 토크 $\mathbf{N}$이 0이면 $\dot{\mathbf{L}} = 0$이 되고, 각운동량 $\mathbf{L}$은 보존된다.
 

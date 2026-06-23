@@ -1,4 +1,4 @@
-앞서 다룬 가상일의 원리는 정역학만을 다루고 있다. 우리가 원하는 계의 일반적인 운동을 포함하는 원리를 얻기 위해, 제임스 베르누이(James Bernoulli)가 처음 고안하고 달랑베르(D'Alembert)가 발전시킨 방식을 사용한다. 운동 방정식,
+﻿앞서 다룬 가상일의 원리는 정역학만을 다루고 있다. 우리가 원하는 계의 일반적인 운동을 포함하는 원리를 얻기 위해, 제임스 베르누이(James Bernoulli)가 처음 고안하고 달랑베르(D'Alembert)가 발전시킨 방식을 사용한다. 운동 방정식,
 
 $$
 \mathbf{F}_i = \dot{\mathbf{p}}_i,
@@ -11,6 +11,7 @@ $$
 $$
 
 이는 계 안의 입자들이 실제 힘에 "역유효력(reversed effective force)"인 $-\dot{\mathbf{p}}_i$를 더한 힘 아래에서 평형 상태에 있을 것임을 뜻한다. (1.40) 대신에, 즉시 다음과 같이 쓸 수 있다.
+($\sum_i \mathbf{F}_i \cdot \delta \mathbf{r}_i = 0$ 1.40)
 
 $$
 \sum_i (\mathbf{F}_i - \dot{\mathbf{p}}_i) \cdot \delta \mathbf{r}_i = 0, \qquad (1.44)

@@ -1,4 +1,4 @@
-마지막으로 에너지 방정식을 고려해 보자. 단일 입자의 경우에서와 마찬가지로, 계를 초기 배열 1에서 최종 배열 2로 이동시키는 데 모든 힘이 한 일(work)을 계산한다.
+﻿마지막으로 에너지 방정식을 고려해 보자. 단일 입자의 경우에서와 마찬가지로, 계를 초기 배열 1에서 최종 배열 2로 이동시키는 데 모든 힘이 한 일(work)을 계산한다.
 
 $$
 W_{12} = \sum_i \int_1^2 \mathbf{F}_i \cdot d\mathbf{s}_i = \sum_i \int_1^2 \mathbf{F}_i^{(e)} \cdot d\mathbf{s}_i + \sum_{\substack{i,j \\ i \neq j}} \int_1^2 \mathbf{F}_{ji} \cdot d\mathbf{s}_i. \quad (1.29)
@@ -23,6 +23,7 @@ T = \frac{1}{2} \sum_i m_i v_i^2. \quad (1.30)
 $$
 
 식 (1.27)에 주어진 질량 중심 좌표계로의 변환을 이용하면, $T$를 다음과 같이 쓸 수도 있다.
+($\mathbf{r}_i = \mathbf{r}'_i + \mathbf{R}$ 1.27)
 
 $$
 T = \frac{1}{2} \sum_i m_i (\mathbf{v} + \mathbf{v}'_i) \cdot (\mathbf{v} + \mathbf{v}'_i)

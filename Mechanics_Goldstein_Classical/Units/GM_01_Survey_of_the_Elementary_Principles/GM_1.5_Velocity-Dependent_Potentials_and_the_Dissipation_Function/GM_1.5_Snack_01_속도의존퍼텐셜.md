@@ -1,12 +1,15 @@
-**1.5 속도 의존 퍼텐셜과 소산 함수**
+﻿**1.5 속도 의존 퍼텐셜과 소산 함수**
 
 일반화된 힘(generalized forces)이 다음과 같은 처방에 따라 함수 $U(q_j, \dot{q}_j)$로부터 얻어진다면, 일반적인 의미의 퍼텐셜 함수 $V$가 존재하지 않더라도 라그랑주 방정식(Lagrange's equations)을 식 (1.57)의 형태로 나타낼 수 있다.
+($\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) - \frac{\partial L}{\partial q_j} = 0$ 1.57)
 
 $$
 Q_j = -\frac{\partial U}{\partial q_j} + \frac{d}{dt} \left( \frac{\partial U}{\partial \dot{q}_j} \right). \quad (1.58)
 $$
 
 이 경우, 식 (1.57)은 다음과 같이 주어지는 라그랑지안(Lagrangian)을 사용한 식 (1.53)으로부터 여전히 도출된다.
+($\frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) - \frac{\partial L}{\partial q_j} = 0$ 1.57)
+($\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} \right) - \frac{\partial T}{\partial q_j} = Q_j$ 1.53)
 
 $$
 L = T - U. \quad (1.59)

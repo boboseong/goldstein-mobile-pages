@@ -1,4 +1,4 @@
-달랑베르 원리와 일반화 좌표를 통해 얻은 운동 에너지 관계식을 보존계에 적용해 보자. 힘들이 어떤 스칼라 퍼텐셜 함수 $V$로부터 유도될 수 있을 때,
+﻿달랑베르 원리와 일반화 좌표를 통해 얻은 운동 에너지 관계식을 보존계에 적용해 보자. 힘들이 어떤 스칼라 퍼텐셜 함수 $V$로부터 유도될 수 있을 때,
 
 $$
 \mathbf{F}_i = -\nabla_i V.
@@ -17,6 +17,8 @@ Q_j \equiv -\frac{\partial V}{\partial q_j}. \qquad (1.54)
 $$
 
 식 (1.47)을 참조하라. 그러면 식 (1.53)의 결과는 다음과 같이 다시 쓸 수 있다.
+($\delta \mathbf{r}_i = \sum_j \frac{\partial \mathbf{r}_i}{\partial q_j} \delta q_j$ 1.47)
+($\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} \right) - \frac{\partial T}{\partial q_j} = Q_j$ 1.53)
 
 $$
 \frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} \right) - \frac{\partial (T - V)}{\partial q_j} = 0. \qquad (1.55)
@@ -35,6 +37,7 @@ L = T - V, \qquad (1.56)
 $$
 
 식 (1.53)은 다음과 같이 된다.
+($\frac{d}{dt} \left( \frac{\partial T}{\partial \dot{q}_j} \right) - \frac{\partial T}{\partial q_j} = Q_j$ 1.53)
 
 $$
 \frac{d}{dt} \left( \frac{\partial L}{\partial \dot{q}_j} \right) - \frac{\partial L}{\partial q_j} = 0, \qquad (1.57)
